@@ -28,23 +28,6 @@ Ensure you have the required Python libraries:
 pip install pandas matplotlib seaborn
 ```
 
-## Usage
-Run the script in a Jupyter Notebook or as a standalone Python script.
-
-### 1. Load and Visualize Energy Data
-```
-df = load_energy_data()
-plot_energy_data(df)
-```
-
-### 2. Extract Node Metadata
-```
-nodes_info = load_rocrate_metadata()
-for node in nodes_info:
-    print(f"Node: {node['name']}, FQDN: {node['fqdn']}")
-    print(f"Topology Data:\n{node['topology']}\n")
-```
-
 ## Output
 - **Plots:** Time-series visualizations of power, current, voltage, and energy trends.
 - **Node Metadata:** Extracted and printed node details, including topology information.
