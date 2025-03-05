@@ -3,19 +3,19 @@
 This Jupyter Notebook processes and visualizes energy measurement data from testbed experiments. It extracts energy metrics from CSV files and retrieves detailed node metadata from RO-Crate JSON files, including CPU, memory, NICs, and topology information.
 
 ## Features
-	•	Loads energy measurement data from multiple experiment runs.
-	•	Parses timestamps and associates data with respective nodes.
-	•	Extracts node metadata (FQDN, topology, CPU, memory, and NICs) from ro-crate-metadata.json.
-	•	Automatically detects available experiment runs and processes them dynamically.
-	•	Handles missing data gracefully, ensuring smooth execution.
-	•	Generates multiple visualizations:
-	•	Power consumption trends over time.
-	•	Cumulative energy counter trends for total energy usage.
-	•	Current and voltage trends to analyze stability.
-	•	Formats node metadata output, including:
-	•	Clickable topology links (if available).
-	•	Structured hardware details (CPU, RAM, NICs).
-	•	Automatic summary of system-wide specs.
+•	Loads energy measurement data from multiple experiment runs.
+•	Parses timestamps and associates data with respective nodes.
+•	Extracts node metadata (FQDN, topology, CPU, memory, and NICs) from ro-crate-metadata.json.
+•	Automatically detects available experiment runs and processes them dynamically.
+•	Handles missing data gracefully, ensuring smooth execution.
+•	Generates multiple visualizations:
+•	Power consumption trends over time.
+•	Cumulative energy counter trends for total energy usage.
+•	Current and voltage trends to analyze stability.
+•	Formats node metadata output, including:
+•	Clickable topology links (if available).
+•	Structured hardware details (CPU, RAM, NICs).
+•	Automatic summary of system-wide specs.
 
 ## File Structure
 •	Energy CSV files are stored inside:
@@ -28,11 +28,11 @@ This Jupyter Notebook processes and visualizes energy measurement data from test
 ```
 •	Topology files are referenced inside ro-crate-metadata.json and extracted dynamically.
 
-## Installation
+## Requirements
 
-Ensure you have the required Python libraries:
-
+```
 pip install pandas matplotlib seaborn
+````
 
 ## Usage
 
