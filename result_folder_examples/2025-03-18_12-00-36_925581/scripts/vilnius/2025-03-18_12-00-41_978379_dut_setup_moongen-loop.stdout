@@ -1,0 +1,1139 @@
+vilnius
+Cloning https://github.com/libmoon/libmoon.git into libmoon
+Submodule path 'deps/dpdk': checked out '6d6c77b373757ec98010b4bf4fcb671423fa3ce2'
+Submodule path 'deps/highwayhash': checked out '14dedecd1de87cb662f7a882ea1578d2384feb2f'
+Submodule path 'deps/luajit': checked out '8271c643c21d1b2f344e339f559f2de6f3663191'
+Submodule path 'deps/pciids': checked out 'eea0f7199045fbaf3800a499e867ef1a4e5d1f9e'
+Submodule path 'deps/tbb': checked out 'd7e150913467f3c168ba6319c985cf341fd81012'
+Submodule path 'lua/lib/pf': checked out 'b16b31aed678a3b8ce809391c9e6bcd67f70be0e'
+Submodule path 'lua/lib/syscall': checked out '2a18b1b62947c597b4e573bb042483ff18434b6f'
+Submodule path 'lua/lib/turbo': checked out 'd69c85a255a6ceed329813f04e40bd2a9cefcf5e'
+Your branch is up to date with 'origin/master'.
+==== Building LuaJIT 2.1.0-beta3 ====
+make -C src
+make[1]: Entering directory '/root/libmoon/deps/luajit/src'
+HOSTCC    host/minilua.o
+HOSTCC    host/buildvm_asm.o
+HOSTCC    host/buildvm_peobj.o
+HOSTCC    host/buildvm_lib.o
+HOSTCC    host/buildvm_fold.o
+CC        lj_gc.o
+CC        lj_char.o
+CC        lj_obj.o
+CC        lj_buf.o
+CC        lj_str.o
+CC        lj_tab.o
+CC        lj_func.o
+CC        lj_udata.o
+CC        lj_meta.o
+CC        lj_debug.o
+CC        lj_state.o
+CC        lj_vmevent.o
+CC        lj_vmmath.o
+CC        lj_strscan.o
+CC        lj_strfmt.o
+CC        lj_strfmt_num.o
+CC        lj_api.o
+CC        lj_profile.o
+CC        lj_lex.o
+CC        lj_parse.o
+CC        lj_bcread.o
+CC        lj_bcwrite.o
+CC        lj_load.o
+CC        lj_ir.o
+CC        lj_opt_mem.o
+CC        lj_opt_narrow.o
+CC        lj_opt_dce.o
+CC        lj_opt_loop.o
+CC        lj_opt_split.o
+CC        lj_opt_sink.o
+CC        lj_mcode.o
+CC        lj_snap.o
+CC        lj_asm.o
+CC        lj_trace.o
+CC        lj_gdbjit.o
+CC        lj_ctype.o
+CC        lj_cdata.o
+CC        lj_cconv.o
+CC        lj_ccall.o
+CC        lj_ccallback.o
+CC        lj_carith.o
+CC        lj_clib.o
+CC        lj_cparse.o
+CC        lj_lib.o
+CC        lj_alloc.o
+CC        lib_aux.o
+CC        lib_package.o
+CC        lib_init.o
+CC        luajit.o
+HOSTLINK  host/minilua
+DYNASM    host/buildvm_arch.h
+HOSTCC    host/buildvm.o
+HOSTLINK  host/buildvm
+BUILDVM   lj_vm.S
+BUILDVM   lj_ffdef.h
+BUILDVM   lj_bcdef.h
+BUILDVM   lj_folddef.h
+BUILDVM   lj_recdef.h
+BUILDVM   lj_libdef.h
+BUILDVM   jit/vmdef.lua
+CC        lj_err.o
+CC        lj_bc.o
+CC        lj_dispatch.o
+CC        lj_record.o
+CC        lj_crecord.o
+CC        lj_ffrecord.o
+CC        lib_base.o
+CC        lib_math.o
+CC        lib_bit.o
+CC        lib_string.o
+CC        lib_table.o
+CC        lib_io.o
+CC        lib_os.o
+CC        lib_debug.o
+CC        lib_jit.o
+CC        lib_ffi.o
+ASM       lj_vm.o
+CC        lj_opt_fold.o
+AR        libluajit.a
+LINK      luajit
+OK        Successfully built LuaJIT
+make[1]: Leaving directory '/root/libmoon/deps/luajit/src'
+==== Successfully built LuaJIT 2.1.0-beta3 ====
+==== Installing LuaJIT 2.1.0-beta3 to /usr/local ====
+mkdir -p /root/libmoon/deps/luajit/usr/local/bin /root/libmoon/deps/luajit/usr/local/lib /root/libmoon/deps/luajit/usr/local/include/luajit-2.1 /root/libmoon/deps/luajit/usr/local/share/man/man1 /root/libmoon/deps/luajit/usr/local/lib/pkgconfig /root/libmoon/deps/luajit/usr/local/share/luajit-2.1.0-beta3/jit /root/libmoon/deps/luajit/usr/local/share/lua/5.1 /root/libmoon/deps/luajit/usr/local/lib/lua/5.1
+cd src && install -m 0755 luajit /root/libmoon/deps/luajit/usr/local/bin/luajit-2.1.0-beta3
+cd src && test -f libluajit.a && install -m 0644 libluajit.a /root/libmoon/deps/luajit/usr/local/lib/libluajit-5.1.a || :
+rm -f /root/libmoon/deps/luajit/usr/local/lib/libluajit-5.1.so.2.1.0 /root/libmoon/deps/luajit/usr/local/lib/libluajit-5.1.so /root/libmoon/deps/luajit/usr/local/lib/libluajit-5.1.so.2
+cd src && test -f libluajit.so && \
+  install -m 0755 libluajit.so /root/libmoon/deps/luajit/usr/local/lib/libluajit-5.1.so.2.1.0 && \
+  ldconfig -n /root/libmoon/deps/luajit/usr/local/lib && \
+  ln -sf libluajit-5.1.so.2.1.0 /root/libmoon/deps/luajit/usr/local/lib/libluajit-5.1.so && \
+  ln -sf libluajit-5.1.so.2.1.0 /root/libmoon/deps/luajit/usr/local/lib/libluajit-5.1.so.2 || :
+cd etc && install -m 0644 luajit.1 /root/libmoon/deps/luajit/usr/local/share/man/man1
+cd etc && sed -e "s|^prefix=.*|prefix=/usr/local|" -e "s|^multilib=.*|multilib=lib|" luajit.pc > luajit.pc.tmp && \
+  install -m 0644 luajit.pc.tmp /root/libmoon/deps/luajit/usr/local/lib/pkgconfig/luajit.pc && \
+  rm -f luajit.pc.tmp
+cd src && install -m 0644 lua.h lualib.h lauxlib.h luaconf.h lua.hpp luajit.h /root/libmoon/deps/luajit/usr/local/include/luajit-2.1
+cd src/jit && install -m 0644 bc.lua bcsave.lua dump.lua p.lua v.lua zone.lua dis_x86.lua dis_x64.lua dis_arm.lua dis_arm64.lua dis_arm64be.lua dis_ppc.lua dis_mips.lua dis_mipsel.lua dis_mips64.lua dis_mips64el.lua vmdef.lua /root/libmoon/deps/luajit/usr/local/share/luajit-2.1.0-beta3/jit
+==== Successfully installed LuaJIT 2.1.0-beta3 to /usr/local ====
+
+Note: the development releases deliberately do NOT install a symlink for luajit
+You can do this now by running this command (with sudo):
+
+  ln -sf luajit-2.1.0-beta3 /root/libmoon/deps/luajit/usr/local/bin/luajit
+
+Configuration done using x86_64-native-linuxapp-gcc
+== Build lib
+== Build lib/librte_compat
+== Build lib/librte_eal
+  SYMLINK-FILE include/rte_compat.h
+== Build lib/librte_eal/common
+  SYMLINK-FILE include/generic/rte_atomic.h
+  SYMLINK-FILE include/generic/rte_byteorder.h
+  SYMLINK-FILE include/generic/rte_cycles.h
+  SYMLINK-FILE include/generic/rte_prefetch.h
+  SYMLINK-FILE include/generic/rte_spinlock.h
+  SYMLINK-FILE include/generic/rte_memcpy.h
+  SYMLINK-FILE include/generic/rte_cpuflags.h
+  SYMLINK-FILE include/generic/rte_rwlock.h
+  SYMLINK-FILE include/generic/rte_vect.h
+  SYMLINK-FILE include/generic/rte_pause.h
+  SYMLINK-FILE include/generic/rte_io.h
+  SYMLINK-FILE include/rte_branch_prediction.h
+  SYMLINK-FILE include/rte_common.h
+  SYMLINK-FILE include/rte_debug.h
+  SYMLINK-FILE include/rte_eal.h
+  SYMLINK-FILE include/rte_errno.h
+  SYMLINK-FILE include/rte_launch.h
+  SYMLINK-FILE include/rte_lcore.h
+  SYMLINK-FILE include/rte_log.h
+  SYMLINK-FILE include/rte_memory.h
+  SYMLINK-FILE include/rte_memzone.h
+  SYMLINK-FILE include/rte_pci.h
+  SYMLINK-FILE include/rte_per_lcore.h
+  SYMLINK-FILE include/rte_random.h
+  SYMLINK-FILE include/rte_tailq.h
+  SYMLINK-FILE include/rte_interrupts.h
+  SYMLINK-FILE include/rte_alarm.h
+  SYMLINK-FILE include/rte_string_fns.h
+  SYMLINK-FILE include/rte_version.h
+  SYMLINK-FILE include/rte_eal_memconfig.h
+  SYMLINK-FILE include/rte_malloc_heap.h
+  SYMLINK-FILE include/rte_hexdump.h
+  SYMLINK-FILE include/rte_devargs.h
+  SYMLINK-FILE include/rte_bus.h
+  SYMLINK-FILE include/rte_dev.h
+  SYMLINK-FILE include/rte_vdev.h
+  SYMLINK-FILE include/rte_pci_dev_feature_defs.h
+  SYMLINK-FILE include/rte_pci_dev_features.h
+  SYMLINK-FILE include/rte_malloc.h
+  SYMLINK-FILE include/rte_keepalive.h
+  SYMLINK-FILE include/rte_time.h
+  SYMLINK-FILE include/rte_service.h
+  SYMLINK-FILE include/rte_service_component.h
+  SYMLINK-FILE include/rte_rwlock.h
+  SYMLINK-FILE include/rte_memcpy.h
+  SYMLINK-FILE include/rte_cycles.h
+  SYMLINK-FILE include/rte_pause.h
+  SYMLINK-FILE include/rte_spinlock.h
+  SYMLINK-FILE include/rte_atomic_32.h
+  SYMLINK-FILE include/rte_vect.h
+  SYMLINK-FILE include/rte_prefetch.h
+  SYMLINK-FILE include/rte_byteorder_32.h
+  SYMLINK-FILE include/rte_atomic_64.h
+  SYMLINK-FILE include/rte_byteorder_64.h
+  SYMLINK-FILE include/rte_cpuflags.h
+  SYMLINK-FILE include/rte_rtm.h
+  SYMLINK-FILE include/rte_atomic.h
+  SYMLINK-FILE include/rte_io.h
+  SYMLINK-FILE include/rte_byteorder.h
+== Build lib/librte_eal/linuxapp
+== Build lib/librte_eal/linuxapp/eal
+== Build lib/librte_eal/linuxapp/igb_uio
+  CC eal.o
+  CC eal_hugepage_info.o
+  CC eal_memory.o
+  CC eal_thread.o
+  CC eal_log.o
+  CC eal_vfio.o
+  CC eal_vfio_mp_sync.o
+  CC eal_pci.o
+  CC eal_pci_uio.o
+  CC eal_pci_vfio.o
+  CC eal_debug.o
+  CC eal_lcore.o
+  CC eal_timer.o
+  CC eal_interrupts.o
+  CC eal_alarm.o
+  CC eal_common_lcore.o
+  CC eal_common_timer.o
+  CC eal_common_memzone.o
+  CC eal_common_log.o
+  CC eal_common_launch.o
+  CC eal_common_vdev.o
+  CC eal_common_pci.o
+  CC eal_common_pci_uio.o
+  CC eal_common_memory.o
+  CC eal_common_tailqs.o
+  CC eal_common_errno.o
+  CC eal_common_cpuflags.o
+  CC eal_common_string_fns.o
+  CC eal_common_hexdump.o
+  CC eal_common_devargs.o
+  CC eal_common_bus.o
+  CC eal_common_dev.o
+  CC eal_common_options.o
+  CC eal_common_thread.o
+  CC eal_common_proc.o
+  CC rte_malloc.o
+  CC malloc_elem.o
+  CC malloc_heap.o
+  CC rte_keepalive.o
+  CC rte_service.o
+  CC rte_cpuflags.o
+  CC rte_spinlock.o
+  SYMLINK-FILE include/exec-env/rte_interrupts.h
+  SYMLINK-FILE include/exec-env/rte_kni_common.h
+  SYMLINK-FILE include/exec-env/rte_dom0_common.h
+  CC [M]  /root/libmoon/deps/dpdk/x86_64-native-linuxapp-gcc/build/lib/librte_eal/linuxapp/igb_uio/igb_uio.o
+  AR librte_eal.a
+  INSTALL-LIB librte_eal.a
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /root/libmoon/deps/dpdk/x86_64-native-linuxapp-gcc/build/lib/librte_eal/linuxapp/igb_uio/igb_uio.mod.o
+  LD [M]  /root/libmoon/deps/dpdk/x86_64-native-linuxapp-gcc/build/lib/librte_eal/linuxapp/igb_uio/igb_uio.ko
+INSTALL-MODULE igb_uio.ko
+== Build lib/librte_timer
+== Build lib/librte_ring
+== Build lib/librte_cfgfile
+== Build lib/librte_cmdline
+== Build lib/librte_kvargs
+== Build lib/librte_lpm
+== Build lib/librte_acl
+== Build lib/librte_jobstats
+  CC rte_ring.o
+  CC rte_cfgfile.o
+  CC rte_kvargs.o
+  CC rte_lpm.o
+  CC cmdline.o
+  CC rte_jobstats.o
+  CC rte_timer.o
+  CC tb_mem.o
+  SYMLINK-FILE include/rte_kvargs.h
+  AR librte_kvargs.a
+  INSTALL-LIB librte_kvargs.a
+== Build lib/librte_metrics
+  CC cmdline_cirbuf.o
+  SYMLINK-FILE include/rte_ring.h
+  AR librte_ring.a
+  INSTALL-LIB librte_ring.a
+  CC cmdline_parse.o
+  SYMLINK-FILE include/rte_cfgfile.h
+  AR librte_cfgfile.a
+  INSTALL-LIB librte_cfgfile.a
+== Build lib/librte_power
+  CC cmdline_parse_etheraddr.o
+  SYMLINK-FILE include/rte_timer.h
+  CC rte_metrics.o
+  AR librte_timer.a
+  INSTALL-LIB librte_timer.a
+  SYMLINK-FILE include/rte_metrics.h
+== Build lib/librte_meter
+  CC cmdline_parse_ipaddr.o
+  CC rte_acl.o
+  CC cmdline_parse_num.o
+  CC rte_power.o
+  AR librte_metrics.a
+  INSTALL-LIB librte_metrics.a
+  SYMLINK-FILE include/rte_jobstats.h
+== Build lib/librte_mempool
+  AR librte_jobstats.a
+== Build lib/librte_eventdev
+  INSTALL-LIB librte_jobstats.a
+== Build lib/librte_hash
+  CC rte_power_acpi_cpufreq.o
+  CC cmdline_parse_string.o
+  CC rte_meter.o
+  SYMLINK-FILE include/rte_meter.h
+  CC cmdline_rdline.o
+  AR librte_meter.a
+  INSTALL-LIB librte_meter.a
+  CC rte_power_kvm_vm.o
+  CC rte_eventdev.o
+  CC rte_mempool.o
+  CC rte_cuckoo_hash.o
+  CC guest_channel.o
+  CC rte_lpm6.o
+  CC acl_bld.o
+  SYMLINK-FILE include/rte_power.h
+  CC acl_gen.o
+  CC cmdline_vt100.o
+  CC cmdline_socket.o
+  CC cmdline_parse_portlist.o
+  SYMLINK-FILE include/cmdline.h
+  SYMLINK-FILE include/cmdline_parse.h
+  SYMLINK-FILE include/cmdline_parse_num.h
+  SYMLINK-FILE include/cmdline_parse_ipaddr.h
+  SYMLINK-FILE include/cmdline_parse_etheraddr.h
+  SYMLINK-FILE include/cmdline_parse_string.h
+  SYMLINK-FILE include/cmdline_rdline.h
+  SYMLINK-FILE include/cmdline_vt100.h
+  SYMLINK-FILE include/cmdline_socket.h
+  SYMLINK-FILE include/cmdline_cirbuf.h
+  SYMLINK-FILE include/cmdline_parse_portlist.h
+  AR librte_cmdline.a
+  INSTALL-LIB librte_cmdline.a
+  CC acl_run_scalar.o
+  AR librte_power.a
+  INSTALL-LIB librte_power.a
+  CC acl_run_sse.o
+  CC rte_mempool_ops.o
+  CC acl_run_avx2.o
+  CC rte_event_ring.o
+  SYMLINK-FILE include/rte_lpm.h
+  SYMLINK-FILE include/rte_lpm6.h
+  SYMLINK-FILE include/rte_lpm_sse.h
+  SYMLINK-FILE include/rte_eventdev.h
+  AR librte_lpm.a
+  INSTALL-LIB librte_lpm.a
+  SYMLINK-FILE include/rte_eventdev_pmd.h
+  SYMLINK-FILE include/rte_eventdev_pmd_pci.h
+  SYMLINK-FILE include/rte_eventdev_pmd_vdev.h
+  SYMLINK-FILE include/rte_event_ring.h
+  SYMLINK-FILE include/rte_acl_osdep.h
+  AR librte_eventdev.a
+  INSTALL-LIB librte_eventdev.a
+  SYMLINK-FILE include/rte_acl.h
+  SYMLINK-FILE include/rte_mempool.h
+  CC rte_fbk_hash.o
+  SYMLINK-FILE include/rte_hash.h
+  SYMLINK-FILE include/rte_hash_crc.h
+  SYMLINK-FILE include/rte_jhash.h
+  SYMLINK-FILE include/rte_thash.h
+  SYMLINK-FILE include/rte_fbk_hash.h
+  AR librte_mempool.a
+  INSTALL-LIB librte_mempool.a
+== Build lib/librte_mbuf
+  CC rte_mbuf.o
+  SYMLINK-FILE include/rte_mbuf.h
+  CC rte_mbuf_ptype.o
+  SYMLINK-FILE include/rte_mbuf_ptype.h
+  AR librte_hash.a
+  AR librte_mbuf.a
+  INSTALL-LIB librte_hash.a
+  INSTALL-LIB librte_mbuf.a
+== Build lib/librte_efd
+== Build lib/librte_reorder
+== Build lib/librte_cryptodev
+== Build lib/librte_net
+  SYMLINK-FILE include/rte_efd.h
+  CC rte_efd.o
+  CC rte_cryptodev.o
+  SYMLINK-FILE include/rte_crypto.h
+  CC rte_cryptodev_pmd.o
+  SYMLINK-FILE include/rte_crypto_sym.h
+  CC rte_net.o
+  CC rte_net_crc.o
+  SYMLINK-FILE include/rte_ip.h
+  CC rte_reorder.o
+  SYMLINK-FILE include/rte_reorder.h
+  SYMLINK-FILE include/rte_cryptodev.h
+  SYMLINK-FILE include/rte_cryptodev_pmd.h
+  SYMLINK-FILE include/rte_cryptodev_vdev.h
+  SYMLINK-FILE include/rte_cryptodev_pci.h
+  SYMLINK-FILE include/rte_tcp.h
+  SYMLINK-FILE include/rte_udp.h
+  SYMLINK-FILE include/rte_sctp.h
+  SYMLINK-FILE include/rte_icmp.h
+  SYMLINK-FILE include/rte_arp.h
+  SYMLINK-FILE include/rte_ether.h
+  SYMLINK-FILE include/rte_gre.h
+  SYMLINK-FILE include/rte_net.h
+  SYMLINK-FILE include/rte_net_crc.h
+  AR librte_net.a
+  INSTALL-LIB librte_net.a
+== Build lib/librte_ether
+== Build lib/librte_sched
+  CC rte_ethdev.o
+  CC rte_flow.o
+  CC rte_tm.o
+  CC rte_sched.o
+  AR librte_acl.a
+  INSTALL-LIB librte_acl.a
+  CC rte_red.o
+  AR librte_reorder.a
+  INSTALL-LIB librte_reorder.a
+  CC rte_approx.o
+  CC rte_reciprocal.o
+  AR librte_cryptodev.a
+  INSTALL-LIB librte_cryptodev.a
+  SYMLINK-FILE include/rte_sched.h
+  SYMLINK-FILE include/rte_bitmap.h
+  SYMLINK-FILE include/rte_sched_common.h
+  SYMLINK-FILE include/rte_red.h
+  SYMLINK-FILE include/rte_approx.h
+  SYMLINK-FILE include/rte_reciprocal.h
+  SYMLINK-FILE include/rte_ethdev.h
+  SYMLINK-FILE include/rte_ethdev_pci.h
+  SYMLINK-FILE include/rte_ethdev_vdev.h
+  SYMLINK-FILE include/rte_eth_ctrl.h
+  SYMLINK-FILE include/rte_dev_info.h
+  SYMLINK-FILE include/rte_flow.h
+  SYMLINK-FILE include/rte_flow_driver.h
+  SYMLINK-FILE include/rte_tm.h
+  SYMLINK-FILE include/rte_tm_driver.h
+  AR librte_efd.a
+  INSTALL-LIB librte_efd.a
+  AR librte_ethdev.a
+  AR librte_sched.a
+  INSTALL-LIB librte_ethdev.a
+  INSTALL-LIB librte_sched.a
+== Build lib/librte_vhost
+== Build lib/librte_ip_frag
+== Build lib/librte_gro
+== Build lib/librte_bitratestats
+== Build lib/librte_distributor
+== Build lib/librte_latencystats
+== Build lib/librte_kni
+== Build lib/librte_pdump
+  CC fd_man.o
+  CC rte_gro.o
+  CC rte_ipv4_fragmentation.o
+  CC rte_kni.o
+  CC rte_pdump.o
+  CC rte_latencystats.o
+  CC rte_distributor_v20.o
+  CC rte_bitrate.o
+  CC socket.o
+  SYMLINK-FILE include/rte_bitrate.h
+  AR librte_bitratestats.a
+  INSTALL-LIB librte_bitratestats.a
+  CC vhost.o
+  CC gro_tcp4.o
+  SYMLINK-FILE include/rte_latencystats.h
+  CC rte_distributor.o
+  AR librte_latencystats.a
+  INSTALL-LIB librte_latencystats.a
+  CC rte_distributor_match_sse.o
+  CC vhost_user.o
+  CC rte_ipv6_fragmentation.o
+  SYMLINK-FILE include/rte_kni.h
+  AR librte_kni.a
+  INSTALL-LIB librte_kni.a
+  CC rte_ipv4_reassembly.o
+  SYMLINK-FILE include/rte_distributor.h
+  CC rte_ipv6_reassembly.o
+  CC virtio_net.o
+  SYMLINK-FILE include/rte_gro.h
+  AR librte_gro.a
+  INSTALL-LIB librte_gro.a
+  SYMLINK-FILE include/rte_vhost.h
+  CC rte_ip_frag_common.o
+  SYMLINK-FILE include/rte_pdump.h
+  AR librte_pdump.a
+  INSTALL-LIB librte_pdump.a
+  CC ip_frag_internal.o
+  SYMLINK-FILE include/rte_ip_frag.h
+  AR librte_distributor.a
+  INSTALL-LIB librte_distributor.a
+  AR librte_ip_frag.a
+  INSTALL-LIB librte_ip_frag.a
+== Build lib/librte_port
+  CC rte_port_ethdev.o
+  CC rte_port_ring.o
+  CC rte_port_frag.o
+  CC rte_port_ras.o
+  CC rte_port_sched.o
+  CC rte_port_fd.o
+  CC rte_port_kni.o
+  CC rte_port_source_sink.o
+  AR librte_vhost.a
+  INSTALL-LIB librte_vhost.a
+  SYMLINK-FILE include/rte_port.h
+  SYMLINK-FILE include/rte_port_ethdev.h
+  SYMLINK-FILE include/rte_port_ring.h
+  SYMLINK-FILE include/rte_port_frag.h
+  SYMLINK-FILE include/rte_port_ras.h
+  SYMLINK-FILE include/rte_port_sched.h
+  SYMLINK-FILE include/rte_port_fd.h
+  SYMLINK-FILE include/rte_port_kni.h
+  SYMLINK-FILE include/rte_port_source_sink.h
+  AR librte_port.a
+  INSTALL-LIB librte_port.a
+== Build lib/librte_table
+  CC rte_table_lpm.o
+  CC rte_table_lpm_ipv6.o
+  CC rte_table_acl.o
+  CC rte_table_hash_cuckoo.o
+  CC rte_table_hash_key8.o
+  CC rte_table_hash_key16.o
+  CC rte_table_hash_key32.o
+  CC rte_table_hash_ext.o
+  CC rte_table_hash_lru.o
+  CC rte_table_array.o
+  CC rte_table_stub.o
+  SYMLINK-FILE include/rte_table.h
+  SYMLINK-FILE include/rte_table_lpm.h
+  SYMLINK-FILE include/rte_table_lpm_ipv6.h
+  SYMLINK-FILE include/rte_table_acl.h
+  SYMLINK-FILE include/rte_table_hash.h
+  SYMLINK-FILE include/rte_lru.h
+  SYMLINK-FILE include/rte_lru_x86.h
+  SYMLINK-FILE include/rte_table_array.h
+  SYMLINK-FILE include/rte_table_stub.h
+  AR librte_table.a
+  INSTALL-LIB librte_table.a
+== Build lib/librte_pipeline
+  SYMLINK-FILE include/rte_pipeline.h
+  CC rte_pipeline.o
+  AR librte_pipeline.a
+  INSTALL-LIB librte_pipeline.a
+== Build buildtools
+== Build buildtools/pmdinfogen
+  HOSTCC pmdinfogen.o
+  HOSTLD dpdk-pmdinfogen
+  INSTALL-HOSTAPP dpdk-pmdinfogen
+== Build drivers
+== Build drivers/bus
+== Build drivers/mempool
+== Build drivers/event
+== Build drivers/mempool/stack
+== Build drivers/mempool/ring
+== Build drivers/event/skeleton
+== Build drivers/event/sw
+== Build drivers/event/octeontx
+  CC rte_mempool_ring.o
+  CC rte_mempool_stack.o
+  CC skeleton_eventdev.o
+  CC ssovf_worker.o
+  CC ssovf_evdev.o
+  CC ssovf_probe.o
+  CC sw_evdev.o
+  CC sw_evdev_worker.o
+  PMDINFO skeleton_eventdev.o.pmd.c
+  CC skeleton_eventdev.o.pmd.o
+  PMDINFO ssovf_probe.o.pmd.c
+  CC ssovf_probe.o.pmd.o
+  LD skeleton_eventdev.o
+  LD ssovf_probe.o
+  AR librte_pmd_skeleton_event.a
+  INSTALL-LIB librte_pmd_skeleton_event.a
+  PMDINFO ssovf_evdev.o.pmd.c
+  CC ssovf_evdev.o.pmd.o
+  CC ssovf_mbox.o
+  CC sw_evdev_scheduler.o
+  LD ssovf_evdev.o
+  SYMLINK-FILE include/rte_pmd_octeontx_ssovf.h
+  CC sw_evdev_xstats.o
+  AR librte_pmd_octeontx_ssovf.a
+  INSTALL-LIB librte_pmd_octeontx_ssovf.a
+  PMDINFO sw_evdev.o.pmd.c
+  CC sw_evdev.o.pmd.o
+  LD sw_evdev.o
+  AR librte_mempool_stack.a
+  INSTALL-LIB librte_mempool_stack.a
+  AR librte_mempool_ring.a
+  INSTALL-LIB librte_mempool_ring.a
+== Build drivers/net
+== Build drivers/crypto
+  AR librte_pmd_sw_event.a
+  INSTALL-LIB librte_pmd_sw_event.a
+== Build drivers/crypto/scheduler
+== Build drivers/crypto/null
+== Build drivers/net/ark
+== Build drivers/net/af_packet
+== Build drivers/net/avp
+== Build drivers/net/bonding
+== Build drivers/net/e1000
+== Build drivers/net/cxgbe
+  CC rte_eth_bond_api.o
+  CC avp_ethdev.o
+  CC scheduler_pmd.o
+  CC rte_eth_af_packet.o
+  CC ark_ddm.o
+  CC null_crypto_pmd.o
+  CC cxgbe_ethdev.o
+  CC ark_ethdev.o
+  CC e1000_80003es2lan.o
+  CC e1000_82540.o
+  CC scheduler_pmd_ops.o
+  CC e1000_82541.o
+  PMDINFO null_crypto_pmd.o.pmd.c
+  CC null_crypto_pmd.o.pmd.o
+  CC rte_eth_bond_pmd.o
+  LD null_crypto_pmd.o
+  CC null_crypto_pmd_ops.o
+  PMDINFO ark_ethdev.o.pmd.c
+  CC ark_ethdev.o.pmd.o
+  LD ark_ethdev.o
+  CC ark_ethdev_rx.o
+  CC e1000_82542.o
+  CC e1000_82543.o
+  CC rte_cryptodev_scheduler.o
+  PMDINFO cxgbe_ethdev.o.pmd.c
+  CC cxgbe_ethdev.o.pmd.o
+  LD cxgbe_ethdev.o
+  CC cxgbe_main.o
+  AR librte_pmd_null_crypto.a
+  INSTALL-LIB librte_pmd_null_crypto.a
+  CC sge.o
+  CC e1000_82571.o
+  PMDINFO rte_eth_af_packet.o.pmd.c
+  CC rte_eth_af_packet.o.pmd.o
+  LD rte_eth_af_packet.o
+  AR librte_pmd_af_packet.a
+  INSTALL-LIB librte_pmd_af_packet.a
+== Build drivers/net/ena
+  CC e1000_82575.o
+  CC ena_ethdev.o
+  PMDINFO avp_ethdev.o.pmd.c
+  CC avp_ethdev.o.pmd.o
+  CC ark_ethdev_tx.o
+  LD avp_ethdev.o
+  SYMLINK-FILE include/rte_avp_common.h
+  SYMLINK-FILE include/rte_avp_fifo.h
+  AR librte_pmd_avp.a
+  INSTALL-LIB librte_pmd_avp.a
+== Build drivers/net/enic
+  CC enic_ethdev.o
+== Build drivers/net/failsafe
+  CC scheduler_roundrobin.o
+  CC failsafe.o
+  CC e1000_i210.o
+  CC ark_mpu.o
+  CC ark_pktchkr.o
+  PMDINFO enic_ethdev.o.pmd.c
+  CC enic_ethdev.o.pmd.o
+  CC e1000_api.o
+  CC scheduler_pkt_size_distr.o
+  LD enic_ethdev.o
+  CC enic_main.o
+  PMDINFO rte_eth_bond_pmd.o.pmd.c
+  CC rte_eth_bond_pmd.o.pmd.o
+  LD rte_eth_bond_pmd.o
+  CC rte_eth_bond_args.o
+  PMDINFO failsafe.o.pmd.c
+  CC failsafe.o.pmd.o
+  LD failsafe.o
+  CC failsafe_args.o
+  CC e1000_ich8lan.o
+  PMDINFO ena_ethdev.o.pmd.c
+  CC ena_ethdev.o.pmd.o
+  LD ena_ethdev.o
+  CC ena_com.o
+  CC ark_pktdir.o
+  CC scheduler_failover.o
+  CC rte_eth_bond_8023ad.o
+  CC failsafe_eal.o
+  CC ena_eth_com.o
+  CC ark_pktgen.o
+  CC t4_hw.o
+  CC enic_rxtx.o
+  AR librte_pmd_ena.a
+  INSTALL-LIB librte_pmd_ena.a
+== Build drivers/net/fm10k
+  CC scheduler_multicore.o
+  CC failsafe_ops.o
+  CC e1000_mac.o
+  CC fm10k_ethdev.o
+  CC ark_rqp.o
+  CC ark_udm.o
+  AR librte_pmd_ark.a
+  INSTALL-LIB librte_pmd_ark.a
+== Build drivers/net/i40e
+  CC e1000_manage.o
+  CC i40e_adminq.o
+  CC e1000_mbx.o
+  SYMLINK-FILE include/rte_cryptodev_scheduler_operations.h
+  SYMLINK-FILE include/rte_cryptodev_scheduler.h
+  AR librte_pmd_crypto_scheduler.a
+  INSTALL-LIB librte_pmd_crypto_scheduler.a
+  CC e1000_nvm.o
+  CC failsafe_rxtx.o
+  CC enic_clsf.o
+  CC enic_res.o
+  CC rte_eth_bond_alb.o
+  CC e1000_osdep.o
+  CC e1000_phy.o
+  CC failsafe_ether.o
+  CC enic_flow.o
+  AR librte_pmd_cxgbe.a
+  INSTALL-LIB librte_pmd_cxgbe.a
+== Build drivers/net/ixgbe
+  CC base/vnic_cq.o
+  SYMLINK-FILE include/rte_eth_bond.h
+  SYMLINK-FILE include/rte_eth_bond_8023ad.h
+  AR librte_pmd_bond.a
+  INSTALL-LIB librte_pmd_bond.a
+== Build drivers/net/liquidio
+  CC i40e_common.o
+  CC ixgbe_common.o
+  CC lio_ethdev.o
+  CC base/vnic_wq.o
+  CC e1000_vf.o
+  CC failsafe_flow.o
+  CC base/vnic_dev.o
+  CC igb_ethdev.o
+  PMDINFO fm10k_ethdev.o.pmd.c
+  CC fm10k_ethdev.o.pmd.o
+  LD fm10k_ethdev.o
+  CC fm10k_rxtx.o
+  CC base/vnic_intr.o
+  CC base/vnic_rq.o
+  AR librte_pmd_failsafe.a
+  INSTALL-LIB librte_pmd_failsafe.a
+== Build drivers/net/nfp
+  PMDINFO lio_ethdev.o.pmd.c
+  CC lio_ethdev.o.pmd.o
+  LD lio_ethdev.o
+  CC lio_rxtx.o
+  CC nfp_net.o
+  CC base/vnic_rss.o
+  CC ixgbe_82598.o
+  CC ixgbe_82599.o
+  CC ixgbe_x540.o
+  CC fm10k_pf.o
+  CC ixgbe_x550.o
+  CC ixgbe_phy.o
+  CC i40e_diag.o
+  PMDINFO igb_ethdev.o.pmd.c
+  CC igb_ethdev.o.pmd.o
+  LD igb_ethdev.o
+  CC igb_rxtx.o
+  CC fm10k_tlv.o
+  PMDINFO nfp_net.o.pmd.c
+  CC nfp_net.o.pmd.o
+  LD nfp_net.o
+  AR librte_pmd_nfp.a
+  INSTALL-LIB librte_pmd_nfp.a
+== Build drivers/net/bnxt
+  CC i40e_hmc.o
+  CC ixgbe_api.o
+  CC lio_23xx_vf.o
+  CC fm10k_common.o
+  CC bnxt_cpr.o
+  CC fm10k_mbx.o
+  CC ixgbe_vf.o
+  CC ixgbe_hv_vf.o
+  CC i40e_lan_hmc.o
+  CC ixgbe_dcb.o
+  CC ixgbe_dcb_82599.o
+  CC bnxt_ethdev.o
+  CC lio_mbox.o
+  CC fm10k_vf.o
+  CC ixgbe_dcb_82598.o
+  AR librte_pmd_enic.a
+  INSTALL-LIB librte_pmd_enic.a
+== Build drivers/net/null
+  CC fm10k_api.o
+  CC ixgbe_mbx.o
+  CC ixgbe_rxtx.o
+  CC fm10k_rxtx_vec.o
+  CC rte_eth_null.o
+  CC ixgbe_ethdev.o
+  AR librte_pmd_lio.a
+  CC i40e_nvm.o
+  INSTALL-LIB librte_pmd_lio.a
+== Build drivers/net/qede
+  CC igb_pf.o
+  PMDINFO bnxt_ethdev.o.pmd.c
+  CC bnxt_ethdev.o.pmd.o
+  LD bnxt_ethdev.o
+  CC bnxt_filter.o
+  CC ecore_dev.o
+  CC bnxt_hwrm.o
+  CC igb_flow.o
+  PMDINFO rte_eth_null.o.pmd.c
+  CC rte_eth_null.o.pmd.o
+  LD rte_eth_null.o
+  AR librte_pmd_null.a
+  INSTALL-LIB librte_pmd_null.a
+== Build drivers/net/ring
+  CC i40e_dcb.o
+  AR librte_pmd_fm10k.a
+  INSTALL-LIB librte_pmd_fm10k.a
+== Build drivers/net/sfc
+  CC rte_eth_ring.o
+  CC sfc_ethdev.o
+  CC em_ethdev.o
+  CC i40e_ethdev.o
+  PMDINFO rte_eth_ring.o.pmd.c
+  CC rte_eth_ring.o.pmd.o
+  LD rte_eth_ring.o
+  SYMLINK-FILE include/rte_eth_ring.h
+  AR librte_pmd_ring.a
+  INSTALL-LIB librte_pmd_ring.a
+  CC sfc_kvargs.o
+  PMDINFO em_ethdev.o.pmd.c
+  CC em_ethdev.o.pmd.o
+  LD em_ethdev.o
+  CC ecore_hw.o
+  CC em_rxtx.o
+  CC bnxt_ring.o
+  PMDINFO ixgbe_ethdev.o.pmd.c
+  CC ixgbe_ethdev.o.pmd.o
+  LD ixgbe_ethdev.o
+  CC ixgbe_fdir.o
+  CC sfc.o
+  CC ixgbe_pf.o
+  PMDINFO sfc_ethdev.o.pmd.c
+  CC sfc_ethdev.o.pmd.o
+  LD sfc_ethdev.o
+  CC sfc_mcdi.o
+  CC bnxt_rxq.o
+  CC sfc_intr.o
+  CC ecore_cxt.o
+  CC sfc_ev.o
+  CC ixgbe_flow.o
+  CC ixgbe_rxtx_vec_sse.o
+  AR librte_pmd_e1000.a
+  INSTALL-LIB librte_pmd_e1000.a
+== Build drivers/net/tap
+  CC bnxt_rxr.o
+  CC sfc_port.o
+  CC rte_eth_tap.o
+  CC sfc_rx.o
+  CC bnxt_stats.o
+  CC sfc_tx.o
+  CC ecore_l2.o
+  CC rte_pmd_ixgbe.o
+  CC bnxt_txq.o
+  CC ixgbe_tm.o
+  CC sfc_tso.o
+  CC bnxt_txr.o
+  CC sfc_filter.o
+  SYMLINK-FILE include/rte_pmd_ixgbe.h
+  CC sfc_flow.o
+  AR librte_pmd_ixgbe.a
+  INSTALL-LIB librte_pmd_ixgbe.a
+== Build drivers/net/thunderx
+  CC ecore_sp_commands.o
+  PMDINFO rte_eth_tap.o.pmd.c
+  CC rte_eth_tap.o.pmd.o
+  LD rte_eth_tap.o
+  PMDINFO i40e_ethdev.o.pmd.c
+  CC i40e_ethdev.o.pmd.o
+  CC tap_flow.o
+  LD i40e_ethdev.o
+  CC i40e_rxtx.o
+  CC nicvf_rxtx.o
+  CC sfc_dp.o
+  CC sfc_ef10_rx.o
+  CC sfc_ef10_tx.o
+  CC bnxt_vnic.o
+  CC ecore_init_fw_funcs.o
+  CC efx_bootcfg.o
+  CC tap_netlink.o
+  CC bnxt_irq.o
+  CC efx_crc32.o
+  CC tap_tcmsgs.o
+  CC efx_ev.o
+  CC efx_filter.o
+  CC nicvf_hw.o
+  CC rte_pmd_bnxt.o
+  CC efx_hash.o
+  CC ecore_spq.o
+  AR librte_pmd_tap.a
+  INSTALL-LIB librte_pmd_tap.a
+== Build drivers/net/virtio
+  CC efx_intr.o
+  CC efx_lic.o
+  CC nicvf_mbox.o
+  CC virtqueue.o
+  CC efx_mac.o
+  SYMLINK-FILE include/rte_pmd_bnxt.h
+  CC efx_mcdi.o
+  AR librte_pmd_bnxt.a
+  INSTALL-LIB librte_pmd_bnxt.a
+  CC efx_mon.o
+== Build drivers/net/vmxnet3
+  CC nicvf_ethdev.o
+  CC virtio_pci.o
+  CC ecore_init_ops.o
+  CC vmxnet3_rxtx.o
+  CC i40e_rxtx_vec_sse.o
+  CC efx_nic.o
+  CC efx_nvram.o
+  PMDINFO nicvf_ethdev.o.pmd.c
+  CC nicvf_ethdev.o.pmd.o
+  LD nicvf_ethdev.o
+  CC virtio_rxtx.o
+  CC nicvf_bsvf.o
+  CC ecore_mcp.o
+  CC efx_phy.o
+  CC efx_port.o
+  CC efx_rx.o
+  CC nicvf_svf.o
+  AR librte_pmd_thunderx_nicvf.a
+  INSTALL-LIB librte_pmd_thunderx_nicvf.a
+== Build drivers/net/kni
+  CC efx_sram.o
+  CC efx_tx.o
+  CC efx_vpd.o
+  CC rte_eth_kni.o
+  CC mcdi_mon.o
+  CC siena_mac.o
+  CC i40e_ethdev_vf.o
+  CC siena_mcdi.o
+  CC vmxnet3_ethdev.o
+  CC siena_nic.o
+  CC siena_nvram.o
+  PMDINFO rte_eth_kni.o.pmd.c
+  CC rte_eth_kni.o.pmd.o
+  CC siena_phy.o
+  LD rte_eth_kni.o
+  AR librte_pmd_kni.a
+  INSTALL-LIB librte_pmd_kni.a
+== Build drivers/net/vhost
+  CC ecore_int.o
+  CC siena_sram.o
+  CC rte_eth_vhost.o
+  CC virtio_ethdev.o
+  CC siena_vpd.o
+  CC ef10_ev.o
+  PMDINFO vmxnet3_ethdev.o.pmd.c
+  CC vmxnet3_ethdev.o.pmd.o
+  LD vmxnet3_ethdev.o
+  AR librte_pmd_vmxnet3_uio.a
+  INSTALL-LIB librte_pmd_vmxnet3_uio.a
+  CC ef10_filter.o
+  CC ef10_intr.o
+  PMDINFO i40e_ethdev_vf.o.pmd.c
+  CC ef10_mac.o
+  CC i40e_ethdev_vf.o.pmd.o
+  LD i40e_ethdev_vf.o
+  CC i40e_pf.o
+  CC ecore_dcbx.o
+  CC ef10_mcdi.o
+  CC ef10_nic.o
+  CC ef10_nvram.o
+  CC ef10_phy.o
+  PMDINFO rte_eth_vhost.o.pmd.c
+  CC rte_eth_vhost.o.pmd.o
+  LD rte_eth_vhost.o
+  SYMLINK-FILE include/rte_eth_vhost.h
+  AR librte_pmd_vhost.a
+  INSTALL-LIB librte_pmd_vhost.a
+  PMDINFO virtio_ethdev.o.pmd.c
+  CC virtio_ethdev.o.pmd.o
+  CC ef10_rx.o
+  LD virtio_ethdev.o
+  CC ef10_tx.o
+  CC virtio_rxtx_simple.o
+  CC i40e_fdir.o
+  CC ef10_vpd.o
+  CC hunt_nic.o
+  CC medford_nic.o
+  CC i40e_flow.o
+  CC rte_pmd_i40e.o
+  CC i40e_tm.o
+  SYMLINK-FILE include/rte_pmd_i40e.h
+  CC virtio_rxtx_simple_sse.o
+  AR librte_pmd_sfc_efx.a
+  INSTALL-LIB librte_pmd_sfc_efx.a
+  CC virtio_user/vhost_user.o
+  CC bcm_osal.o
+  CC ecore_sriov.o
+  CC virtio_user/vhost_kernel.o
+  CC virtio_user/vhost_kernel_tap.o
+  CC virtio_user/virtio_user_dev.o
+  CC ecore_vf.o
+  CC virtio_user_ethdev.o
+  CC qede_ethdev.o
+  CC qede_main.o
+  CC qede_rxtx.o
+  CC qede_fdir.o
+  PMDINFO virtio_user_ethdev.o.pmd.c
+  CC virtio_user_ethdev.o.pmd.o
+  LD virtio_user_ethdev.o
+  AR librte_pmd_virtio.a
+  INSTALL-LIB librte_pmd_virtio.a
+  AR librte_pmd_i40e.a
+  INSTALL-LIB librte_pmd_i40e.a
+  PMDINFO qede_ethdev.o.pmd.c
+  CC qede_ethdev.o.pmd.o
+  LD qede_ethdev.o
+  AR librte_pmd_qede.a
+  INSTALL-LIB librte_pmd_qede.a
+== Build app
+== Build app/pdump
+== Build app/proc_info
+== Build app/test-crypto-perf
+== Build app/test-eventdev
+  CC main.o
+  CC main.o
+  CC evt_main.o
+  CC evt_options.o
+  CC evt_test.o
+  CC parser.o
+  CC main.o
+  CC cperf_ops.o
+  CC test_order_common.o
+  CC test_order_queue.o
+  CC test_order_atq.o
+  CC test_perf_common.o
+  LD dpdk-procinfo
+  CC cperf_options_parsing.o
+  CC cperf_test_vectors.o
+  LD dpdk-pdump
+  CC test_perf_queue.o
+  INSTALL-APP dpdk-procinfo
+  INSTALL-MAP dpdk-procinfo.map
+  CC test_perf_atq.o
+  INSTALL-APP dpdk-pdump
+  INSTALL-MAP dpdk-pdump.map
+  CC cperf_test_throughput.o
+  CC cperf_test_latency.o
+  CC cperf_test_verify.o
+  CC cperf_test_vector_parsing.o
+  LD dpdk-test-crypto-perf
+  LD dpdk-test-eventdev
+  INSTALL-APP dpdk-test-crypto-perf
+  INSTALL-MAP dpdk-test-crypto-perf.map
+  INSTALL-APP dpdk-test-eventdev
+  INSTALL-MAP dpdk-test-eventdev.map
+Build complete [x86_64-native-linuxapp-gcc]
+make -C deps/http-parser library
+make[1]: Entering directory '/root/libmoon/lua/lib/turbo/deps/http-parser'
+gcc  -I. -fPIC -DHTTP_PARSER_STRICT=0  -O3  -Wall -Wextra -c http_parser.c -o libhttp_parser.o
+gcc  -shared -Wl,-soname=libhttp_parser.so.2.1 -o libhttp_parser.so.2.1 libhttp_parser.o
+make[1]: Leaving directory '/root/libmoon/lua/lib/turbo/deps/http-parser'
+gcc -Ideps/http-parser/ -shared -O3 -Wall -g  -fPIC deps/http-parser/libhttp_parser.o deps/turbo_ffi_wrap.c -o libtffi_wrap.so  -lcrypto -lssl
+Could not compile Turbo with TLS support, disabling TLS
+Install libssl-dev and OpenSSL to enable TLS support
+make -C deps/http-parser library
+make[1]: Entering directory '/root/libmoon/lua/lib/turbo/deps/http-parser'
+gcc  -shared -Wl,-soname=libhttp_parser.so.2.1 -o libhttp_parser.so.2.1 libhttp_parser.o
+make[1]: Leaving directory '/root/libmoon/lua/lib/turbo/deps/http-parser'
+gcc -Ideps/http-parser/ -shared -O3 -Wall -g  -fPIC -DTURBO_NO_SSL=1 deps/http-parser/libhttp_parser.o deps/turbo_ffi_wrap.c -o libtffi_wrap.so 
+set -eu; for file in highwayhash/*.cc; do \
+	target=obj/${file##*/}; target=${target%.*}.o; \
+	[ "$target" = "obj/highwayhash_target.o" ] || \
+	[ "$target" = "obj/data_parallel_benchmark.o" ] || \
+	[ "$target" = "obj/data_parallel_test.o" ] || \
+	g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread -DHH_DISABLE_TARGET_SPECIFIC -MM -MT \
+	"$target" "$file"; \
+done | sed -e ':b' -e 's-../[^./]*/--' -e 'tb' >deps.mk
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread highwayhash/profiler_example.cc -o obj/profiler_example.o
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread highwayhash/arch_specific.cc -o obj/arch_specific.o
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread highwayhash/instruction_sets.cc -o obj/instruction_sets.o
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread highwayhash/nanobenchmark.cc -o obj/nanobenchmark.o
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread highwayhash/os_specific.cc -o obj/os_specific.o
+g++ -pthread obj/profiler_example.o obj/arch_specific.o obj/instruction_sets.o obj/nanobenchmark.o obj/os_specific.o -o bin/profiler_example
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread highwayhash/nanobenchmark_example.cc -o obj/nanobenchmark_example.o
+g++ -pthread obj/nanobenchmark_example.o obj/arch_specific.o obj/instruction_sets.o obj/nanobenchmark.o obj/os_specific.o -o bin/nanobenchmark_example
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread highwayhash/vector_test.cc -o obj/vector_test.o
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread highwayhash/vector_test_portable.cc -o obj/vector_test_portable.o
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread -mavx2 highwayhash/vector_test_avx2.cc -o obj/vector_test_avx2.o
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread -msse4.1 highwayhash/vector_test_sse41.cc -o obj/vector_test_sse41.o
+g++ -pthread obj/vector_test.o obj/arch_specific.o obj/instruction_sets.o obj/nanobenchmark.o obj/os_specific.o obj/vector_test_portable.o obj/vector_test_avx2.o obj/vector_test_sse41.o -o bin/vector_test
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread highwayhash/sip_hash_test.cc -o obj/sip_hash_test.o
+g++ -pthread obj/sip_hash_test.o -o bin/sip_hash_test
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread highwayhash/highwayhash_test.cc -o obj/highwayhash_test.o
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread highwayhash/highwayhash_test_portable.cc -o obj/highwayhash_test_portable.o
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread -mavx2 highwayhash/highwayhash_test_avx2.cc -o obj/highwayhash_test_avx2.o
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread -msse4.1 highwayhash/highwayhash_test_sse41.cc -o obj/highwayhash_test_sse41.o
+g++ -pthread obj/highwayhash_test.o obj/arch_specific.o obj/instruction_sets.o obj/nanobenchmark.o obj/os_specific.o obj/highwayhash_test_portable.o obj/highwayhash_test_avx2.o obj/highwayhash_test_sse41.o -o bin/highwayhash_test
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread -mavx2 highwayhash/benchmark.cc -o obj/benchmark.o
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread highwayhash/sip_hash.cc -o obj/sip_hash.o
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread -mavx2 highwayhash/sip_tree_hash.cc -o obj/sip_tree_hash.o
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread highwayhash/scalar_sip_tree_hash.cc -o obj/scalar_sip_tree_hash.o
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread highwayhash/hh_portable.cc -o obj/hh_portable.o
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread -mavx2 highwayhash/hh_avx2.cc -o obj/hh_avx2.o
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread -msse4.1 highwayhash/hh_sse41.cc -o obj/hh_sse41.o
+g++ -pthread obj/benchmark.o obj/arch_specific.o obj/instruction_sets.o obj/nanobenchmark.o obj/os_specific.o obj/highwayhash_test_portable.o obj/highwayhash_test_avx2.o obj/highwayhash_test_sse41.o obj/sip_hash.o obj/sip_tree_hash.o obj/scalar_sip_tree_hash.o obj/hh_portable.o obj/hh_avx2.o obj/hh_sse41.o -o bin/benchmark
+g++ -c -I. -std=c++11 -Wall -O3 -fPIC -pthread highwayhash/c_bindings.cc -o obj/c_bindings.o
+ar rcs lib/libhighwayhash.a obj/sip_hash.o obj/sip_tree_hash.o obj/scalar_sip_tree_hash.o obj/arch_specific.o obj/instruction_sets.o obj/nanobenchmark.o obj/os_specific.o obj/hh_portable.o obj/hh_avx2.o obj/hh_sse41.o obj/c_bindings.o
+# Disabled due to false positives; ideally the test instead ensures
+# target-specific modules _only_ export symbols starting with a prefix.
+# ./test_exports.sh obj/sip_hash.o obj/sip_tree_hash.o obj/scalar_sip_tree_hash.o obj/arch_specific.o obj/instruction_sets.o obj/nanobenchmark.o obj/os_specific.o obj/hh_portable.o obj/hh_avx2.o obj/hh_sse41.o obj/c_bindings.o
+-- The C compiler identification is GNU 8.3.0
+-- The CXX compiler identification is GNU 8.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building Intel TBB: /usr/bin/make -j8 tbb_build_prefix=tbb_cmake_build_subdir tbb_build_dir=/root/libmoon/build/tbb_cmake_build compiler=gcc
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/libmoon/build
+Scanning dependencies of target libmoon
+[  4%] Building C object CMakeFiles/libmoon.dir/src/memory.c.o
+[  9%] Building CXX object CMakeFiles/libmoon.dir/src/task.cpp.o
+[ 14%] Building CXX object CMakeFiles/libmoon.dir/src/main.cpp.o
+[ 19%] Building C object CMakeFiles/libmoon.dir/src/device.c.o
+[ 23%] Building C object CMakeFiles/libmoon.dir/src/i40e.c.o
+[ 28%] Building CXX object CMakeFiles/libmoon.dir/src/lifecycle.cpp.o
+[ 33%] Building C object CMakeFiles/libmoon.dir/src/util.c.o
+[ 38%] Building CXX object CMakeFiles/libmoon.dir/src/barrier.cpp.o
+[ 42%] Building CXX object CMakeFiles/libmoon.dir/src/task-results.cpp.o
+[ 47%] Building CXX object CMakeFiles/libmoon.dir/src/pipe.cpp.o
+[ 52%] Building CXX object CMakeFiles/libmoon.dir/src/lock.cpp.o
+[ 57%] Building CXX object CMakeFiles/libmoon.dir/src/namespaces.cpp.o
+[ 61%] Building C object CMakeFiles/libmoon.dir/src/ring.c.o
+[ 66%] Building C object CMakeFiles/libmoon.dir/src/kni.c.o
+[ 71%] Building C object CMakeFiles/libmoon.dir/src/filter.c.o
+[ 76%] Building CXX object CMakeFiles/libmoon.dir/src/pcap.cpp.o
+[ 80%] Building C object CMakeFiles/libmoon.dir/src/timestamping.c.o
+[ 85%] Building C object CMakeFiles/libmoon.dir/src/timestamping_i40e.c.o
+[ 90%] Building C object CMakeFiles/libmoon.dir/src/timestamping_ixgbe.c.o
+[ 95%] Building C object CMakeFiles/libmoon.dir/src/timestamping_igb.c.o
+[100%] Linking CXX executable libmoon
+[100%] Built target libmoon
+Trying to bind interfaces, this will fail if you are not root
+Try sudo ./bind-interfaces.sh if this step fails
+Binding interface 0000:00:19.0 to DPDK
+Binding interface 0000:02:00.0 to DPDK
+Binding interface 0000:02:00.1 to DPDK
+Binding interface 0000:02:00.2 to DPDK
+Binding interface 0000:02:00.3 to DPDK
+setup done

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# exit on error
+set -e
+# log every command
+set -x
+
+echo $(pos_get_variable hostname)
+
+# install loadgen
+GIT_REPO=$(pos_get_variable git/repo)
+
+LOADGEN=MoonGen
+
+echo "Cloning $GIT_REPO into $LOADGEN"
+git clone --recursive $GIT_REPO $LOADGEN
+cd $LOADGEN
+# checkout a particular branch or commit
+git checkout $(pos_get_variable git/commit)
+
+# build moongen
+./build.sh
+./setup-hugetlbfs.sh
+
+echo 'setup done'

@@ -1,0 +1,13 @@
+[root] [DEBUG] pos_server: http://172.16.0.1:5555
+[root] [INFO] Start bootstrapping host: 2025-03-18 13:05:09
+[root] [DEBUG] fetching allocation data from: http://172.16.0.1:5555/allocations/get/vilnius
+[root] [INFO] Finished setting up variables: 2025-03-18 13:05:09
+[root] [DEBUG] downloading postools from: http://172.16.0.1:5555/files/pos-tools-v2.tar.gz
+[root] [INFO] pip not installed: [Errno 2] No such file or directory
+[root] [INFO] pip3 not installed: [Errno 2] No such file or directory
+[root] [INFO] Finished setting up postools: 2025-03-18 13:05:10
+[root] [INFO] Adding FQDN vilnius.baltikum.net.cit.tum.de to /etc/hosts.
+[root] [INFO] Finished adding FQDN to /etc/hosts.
+[root] [INFO] Clearing ssh public keys from authorized keys file: 2025-03-18 13:05:10
+[root] [INFO] Adding an ssh public key to authorized keys file: 2025-03-18 13:05:10
+[root] [INFO] Adding public key

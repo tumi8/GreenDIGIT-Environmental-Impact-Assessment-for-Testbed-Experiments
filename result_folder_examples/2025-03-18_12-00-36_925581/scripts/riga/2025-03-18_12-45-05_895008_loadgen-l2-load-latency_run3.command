@@ -1,0 +1,1 @@
+['./build/MoonGen', 'examples/l2-load-latency.lua', '0', '0', '-r', '1000', '-f/tmp/histogram-l2-load-latency.tar.gz.csv']

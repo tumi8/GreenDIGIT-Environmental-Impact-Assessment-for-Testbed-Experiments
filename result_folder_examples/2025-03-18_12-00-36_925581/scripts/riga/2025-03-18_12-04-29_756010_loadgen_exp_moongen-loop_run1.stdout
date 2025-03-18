@@ -1,0 +1,5 @@
+Done setting up
+Starting test l2-load-latency
+Upload histogram /tmp/histogram-l2-load-latency.tar.gz.csv
+Stopping test l2-load-latency
+All done LoadGen l2-load-latency

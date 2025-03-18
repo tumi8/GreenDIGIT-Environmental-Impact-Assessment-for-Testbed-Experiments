@@ -1,0 +1,48 @@
+{
+    "vilnius.baltikum.net.cit.tum.de": [
+        {
+            "inf_a": "enp4s0f0",
+            "inf_b": "enp2s0f0",
+            "mac_a": "90:e2:ba:1c:55:54",
+            "mac_b": "a0:36:9f:54:c1:70",
+            "type": "link",
+            "properties": {
+                "speed": "1000BaseTFD - Four-pair Category 5 UTP, full duplex mode",
+                "device_b": "server"
+            }
+        },
+        {
+            "inf_a": "enp4s0f1",
+            "inf_b": "enp2s0f1",
+            "mac_a": "90:e2:ba:1c:55:55",
+            "mac_b": "a0:36:9f:54:c1:71",
+            "type": "link",
+            "properties": {
+                "speed": "1000BaseTFD - Four-pair Category 5 UTP, full duplex mode",
+                "device_b": "server"
+            }
+        },
+        {
+            "inf_a": "enp6s0f0",
+            "inf_b": "enp2s0f2",
+            "mac_a": "90:e2:ba:1c:55:56",
+            "mac_b": "a0:36:9f:54:c1:72",
+            "type": "link",
+            "properties": {
+                "speed": "1000BaseTFD - Four-pair Category 5 UTP, full duplex mode",
+                "device_b": "server"
+            }
+        },
+        {
+            "inf_a": "enp6s0f1",
+            "inf_b": "enp2s0f3",
+            "mac_a": "90:e2:ba:1c:55:57",
+            "mac_b": "a0:36:9f:54:c1:73",
+            "type": "link",
+            "properties": {
+                "speed": "1000BaseTFD - Four-pair Category 5 UTP, full duplex mode",
+                "device_b": "server"
+            }
+        }
+    ]
+}

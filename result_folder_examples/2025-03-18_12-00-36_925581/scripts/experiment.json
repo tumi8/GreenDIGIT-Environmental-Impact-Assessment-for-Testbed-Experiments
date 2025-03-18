@@ -1,0 +1,241 @@
+[
+    {
+        "timestamp": "2025-03-18T12:00:37.034623",
+        "request": "/allocations/allocate?nodes=vilnius&nodes=riga",
+        "data": null
+    },
+    {
+        "timestamp": "2025-03-18T12:00:37.409250",
+        "request": "/allocations/set_variables/riga",
+        "data": {
+            "global": false,
+            "loop": false,
+            "variables": {
+                "git": {
+                    "repo": "https://github.com/emmericp/moongen.git",
+                    "commit": "master"
+                },
+                "port": {
+                    "tx": 0,
+                    "rx": 0
+                }
+            }
+        }
+    },
+    {
+        "timestamp": "2025-03-18T12:00:37.876551",
+        "request": "/allocations/set_variables/vilnius",
+        "data": {
+            "global": false,
+            "loop": false,
+            "variables": {
+                "git": {
+                    "repo": "https://github.com/libmoon/libmoon.git",
+                    "commit": "master"
+                },
+                "cpu-freq": 50,
+                "port": {
+                    "tx": 0,
+                    "rx": 0
+                }
+            }
+        }
+    },
+    {
+        "timestamp": "2025-03-18T12:00:38.288357",
+        "request": "/allocations/set_variables/riga",
+        "data": {
+            "global": true,
+            "loop": false,
+            "variables": {
+                "runtime": 600
+            }
+        }
+    },
+    {
+        "timestamp": "2025-03-18T12:00:38.712190",
+        "request": "/allocations/set_variables/riga",
+        "data": {
+            "global": false,
+            "loop": true,
+            "variables": {
+                "pkt_size": [
+                    64,
+                    256,
+                    512,
+                    1024
+                ],
+                "pkt_rate": [
+                    1000
+                ]
+            }
+        }
+    },
+    {
+        "timestamp": "2025-03-18T12:00:39.188259",
+        "request": "/nodes/image/riga",
+        "data": {
+            "image": "debian-buster"
+        }
+    },
+    {
+        "timestamp": "2025-03-18T12:00:39.682097",
+        "request": "/nodes/image/vilnius",
+        "data": {
+            "image": "debian-buster"
+        }
+    },
+    {
+        "timestamp": "2025-03-18T12:00:40.798753",
+        "request": "/nodes/reset/riga",
+        "data": {
+            "queued": false,
+            "access_levels": [
+                "user"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-03-18T12:00:41.171733",
+        "request": "/nodes/reset/vilnius",
+        "data": {
+            "queued": false,
+            "access_levels": [
+                "user"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-03-18T12:00:41.559263",
+        "request": "/commands/launch?nodes=riga",
+        "data": {
+            "logging": true,
+            "queued": true,
+            "loop_variables": false,
+            "loop_from": 0,
+            "loop_to": null,
+            "loop_only": [],
+            "type": "execfile",
+            "file": "BOxzhX>KoKVRL8-3L_w8cxiMXZ*CxEa&m8S3Ug(2AT4DIBOq*VXCP&EWpa5SV{dJ3VQyp!b7gcOEqDqFWn*Y>AS5VoZ*yN~WprP5VRC6<Vr*p~Xm4|LZeeX@DGCZBAZc!MbYX04AZ%}8WM^e=3P(v)Us6R-Pdy|kaBp*8XJvF>c42a9VPb4$AZKZGFLGsYZz&22Oiw{XM@3FOO>b{*M`dmb3T0zxZy+K=Y;SI9Zf77QM@dv)QbkZtAZc!NZy+R0PeDXSMNT3LXK8dGV{C73Wgsmra%E$6a&u{RWgsL+NmO4_MNm&5Bur01L`OwV3S(p-Bur01L`OwV3L_w6Xk}w-Z*_DaVIXi}a&&29b!=gBAYyW1ZewU5Z*m}GZ*6U9bP8u_bRc7BWn*h^b#x#kC~$9cUuR`>Uv^<~X<=e)Wgus1bT4CXZEb0EDGCZBAYyfCY-Av9Z*OjAWo`;CFJg6RY-BETXbLVbb7gdOa4l$cXJvG3VrFwLb7%?*Wn*Y>ASZKWbaikbWN&U|Ckg",
+            "id": "loadgen_setup_moongen-loop",
+            "files": [
+                "scripts/riga/2025-03-18_12-00-41_556360_loadgen_setup_moongen-loop.file"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-03-18T12:00:41.981434",
+        "request": "/commands/launch?nodes=vilnius",
+        "data": {
+            "logging": true,
+            "queued": true,
+            "loop_variables": false,
+            "loop_from": 0,
+            "loop_to": null,
+            "loop_only": [],
+            "type": "execfile",
+            "file": "BOxzhX>KoKVRL8-3L_w8cxiMXZ*CxEa&m8S3Ug(2AT4DIBOq*VXCP&EWpa5SV{dJ3VQyp!b7gcOEqDqFWn*Y>AS5VoZ*yN~WprP5VRC6<Vr*p~Xm4|LZeeX@DGCZBAZc!MbYX04AY^rP3P(v)Us6R-Pdy|kaBp*8XJvF>c42a9VPb4$AZKZGFLGsYZz&22L{(HhY-wU`Z*Oi23T0zxZy+K=Y;SI9Zf77QM@dv)QbkZtAZc!NZy+Q@Ra7DhXK8dGV{C73Wgsmra%E$6a&u{RWgsL+NmO4_MNm&5Bt%tI3S(p-Bt%tI3L_w6Xk}w-Z*_DaVIXi}a&&29b!=gBAYyW1ZewU5Z*m}GZ*6U9bP8u_bRc7BWn*h^b#x#kC~$9cUuR`>Uv^<~X<=e)Wgus1bT4CXZEb0EDGCZBAYyfCY-Av8X<}_}Z*B@MFJg6RY-BETXbLVbb7gdOa4l$cXJvG3VrFwLb7%?*BOqjHb75j^Wgv8Qa$;{FVsCGAbP8o-Xm21fAU+^3b9r+wWMy_~V`XzMb9r-gWo<8GaCI+fZggdAUvP7DVRU6LZf{?7b#h{F3JN12b7gcOW^!e5b!Bd2c?xA?Xm21SC~$9cUuR`>Uv^<~X<=e)Wgug4buDIcWpODWJ|Hi1d2=shWp-&}Wpgicd2@7SZ7*YRbuVddbY*N`aC3BFbY(AXVR&C~WpZX;aAR}|Wn*Y>AS5VoZ*yN~WprP5VRC6<Vr*p~V{mmXW^!e5DIh)|FLQZwFJxtQX=7z`FLQZwbY*QXV{mmZX>N37Y+rD5bYXO5FKuaVUvOn|W?yh)bP5V(V`y(6Cv#<Vb#NeLZ*FBL3I",
+            "id": "dut_setup_moongen-loop",
+            "files": [
+                "scripts/vilnius/2025-03-18_12-00-41_978379_dut_setup_moongen-loop.file"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-03-18T12:04:29.769340",
+        "request": "/commands/launch?nodes=vilnius",
+        "data": {
+            "logging": true,
+            "queued": false,
+            "loop_variables": true,
+            "loop_from": 0,
+            "loop_to": null,
+            "loop_only": [],
+            "type": "execfile",
+            "file": "BOxzhX>KoKVRL8-3L_vzcxiMXZ*CxEa&m8S3Ug(2AT4DI3L_v>Wpp4!byOf^X>w&_bZ>Hb3S@P3J#1-WZEtUG3S(p-A|zyWbRr50BOpv~V_|F{c42a9VPb4$a|(22b97&BVQpnSB5X1(Y;R#?Eo@<QWo~16A_@v4AV+0%AZTxMbZ%j7WeR9-b98QDZDl<qC~$9cUuR`>Uv^<~X<=e)Wguv8b98QDZDlD63L_v)Z((F0b8l^BAa-GLX<=e)WpfH}Z*p{Bba*`^C~$9cUuR`>Uv^<~X<=e)Wgu{Ga&#|rcpxn;a%F9AbY&?DaBp&SUvhXoBq(rib6;m=bYFI1a%o{=Y-J#DZ*p`ma(EyuEplaTZ**lT3Q$W_Us6F-MLi@aaBp*8XJvF>c42a9VPb4$AaHARUvgn|WgsmrW^!+BEo^UZa48B<OH^M|Nm@lcBq(rib6;m=bYFI1a%o{=Y-J#DYjj_8X?kTKEiGnpZ*47XZ*OoZ3JN12L}g}aZe<{2Z)|UJb0A@EWFT~DZDn(GVQp{<d1Y*DZ+AT+TxDA^J2NwFA_`(`b!9ywTxDA^J2NzGA_{V4b7gcrB3xx#Fl{0V3UF_8UvqhGV+v(sXm21VQ+aM<AY^ZDWhV*>Wn*Y>AR<$AVRCe7Zf78LWpi{OBy?qSbYE^^ZDk?~3UF_8UuAA(a%Xv8b97;HbRaD)Y;SLHAT2FsX>4U~VQpm~B4l-RUu|V!b9HiMZDnqBA_@v4AX0U1AZ%%3ZEtUGAZczObZBKDVqs%zXL4_KZe$>Jb7^j8AaHMUUvhPB3UF_8UvhPBAT2FyZ*OoQB4l-REhKbhb97&BVQpn1AT2E*A}%jtb!lv5FC=7jbRr-kWq4t2aBO9BFKjX`W^ZzLVRB?HY;|EGAY2L{ARr(jByewXbYFCMA|N6paBp&SUvhXN3JN12S7B*%AZBlJAarGObRcAJZe<{IX=iR>YzlC1b6<0LZet2%V`y(6B2#p4aByX0AarGObRZ;jWpi|2ZeeX@A_@v4AWLa%Y#?-KWgu{JZ)0V1b0BkcVRCe3WFU8GbZ8)OZ*yOAb#4kHAVY6$ZDDR?FLQKcZ*_Dpb97{7a&jPHa%CWOaBOd3WMyO^VRdwGZDDk2V_|G;c?xiEb6;y|Y-}JcEo^UZa3CUNb#yHxbY*jNUv6P-Wg-d+aBp*8Wo~71XL(<9bZ>A93T0zxZy+K;Y-}K8Z*FBEM0HdkBy?qSbYE^^ZDk?~",
+            "id": "dut_exp_moongen-loop",
+            "files": [
+                "scripts/vilnius/2025-03-18_12-04-29_756229_dut_exp_moongen-loop_run0.file",
+                "scripts/vilnius/2025-03-18_12-04-29_756229_dut_exp_moongen-loop_run1.file",
+                "scripts/vilnius/2025-03-18_12-04-29_756229_dut_exp_moongen-loop_run2.file",
+                "scripts/vilnius/2025-03-18_12-04-29_756229_dut_exp_moongen-loop_run3.file"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-03-18T12:04:29.766641",
+        "request": "/commands/launch?nodes=riga",
+        "data": {
+            "logging": true,
+            "queued": false,
+            "loop_variables": true,
+            "loop_from": 0,
+            "loop_to": null,
+            "loop_only": [],
+            "type": "execfile",
+            "file": "BOxzhX>KoKVRL8-3L_vzcxiMXZ*CxEa&m8S3Ug(2AT4DI3L_v>Wpp4+Z((FdWo{s3X>w&_bZ>Hb3T$s-WM^e=Jxy<KZbxNq3S(p-A|z~YVPt1zZXyZ_BOq*VV_|F{c42a9VPb4$a|(22b97&BVQpnSB5X1(Y;R#?Eo@<QWo~16A_{MHbY^L6Wj!J<bZu}iXlZkFZ)b90Z7n2pWpi|2ZeeX@E_7jXE@yf!V{>*Q3Uh2_WpH0)b#h^JX>V>{Vr6D;a%Eq1Wpi{rG71VKAV+0%AZTxMbZ%j7WeR9-b98QDZDl<qC~$9cUuR`>Uv^<~X<=e)Wguv8b98QDZDlD63L_v)Z((F0aBp)Uc42a9VPb4$b0B7NZ*3qhd2MVUW@&6?a|&{GZggpFWj!P)aBp*8XJvF>c42a9VPb4$AaZqXbZKp6AT2Fsa&K)dXKZg`VQeW1aBp&SUvzjqBq(rib6;m=bYFI1a%o{=Y-J#DZ*p`mba)^wEplaTZ**lT3UF_7bYF6KJtQb_Z*yN~WprP5VRC6<Vr*p~aBp&SFLHPwEiH0oZEtjCDGE?aR9{j-R7E``C~$9cUuR`>Uv^<~X<=e)Wgu{CbYF5|bY&ndEoO3WZ7pnXZ*VCJP)k%_Q%PDyJtQb_Z*yN~WprP5VRC6<Vr*p~aBFm5b7^{IAT2Fsa&K)dY;SLHDGCZBAVg(mX>Mg8V{dG4a&sVIZe$>IX>Db5bYX393VCI0Y;SixB3xx#F*`FeZ6XR{Y;|QlB3xx#F*`FfZ6XSCWpib8JtACXTQF@R3Uq00Wpi|4ZE!s#C}d%DWgsFeC0Q*cZ7n5aASFmTB~3adQz9t}3T0zxZy+K>Z*FBEb7gdNX>MmAb#NjI3L_v>d2VB9a&K;FdSxJYX>@2HZ**v7av*MRWMy*-aBp*8b9ruK3T0zxZy+L5bYXIIX>MmAbY*jNAS85Ub97&BVQpn13JP#<b6;g{WpZbEUvqR}a&#aqEo^UZa3C!$W@&6?ZeeX@AR=vLVRLnIWo>0{bRr50BOpO+Y;SiUM0HdkbZ;PYbYXIIAa!sGb8Ka0a3CTib8Ka0a9?C~a$$67Z*E^=WoB=3WnXk<b95pK3L_v=b#5R`Z((FdWo{s8ZXk4MWguc<V{2z}Z*^{DAa!$TZf78HZ*yOAb#4l9Z*yOAb#5RnEo^UZa3CUVZ((F-Wo|7bbY*jNUv6P-Wg;LgEg&K;FJg6RY-BGaY;R#?XJu|8AR=XWVQp}1WpgiVGA(RxVPq|AVRU6~V|gxYbzvePTnZo{ARr<naBp&SUvzjPAR;7iZ*p{Ba(E&jEpi|tBv4CKUs6F-MIs<AW+EhSb#!KFY-J)KBQ0|vA|y~tR9{m`T16rX3L_v*Wnpu5a%F90Zge1UWpZh6WD0X^Wo2+6A|!HkZggpFWg-d+BOps@Y-}KOXk{R9a&Kd0b8{ebbYXIIWn>_CX>@2HaBp*8a&>MBaBp*8YiVq3AT2FyZ*OoQB5ZGAWM^e=EhKbhb97&BVQpn13JN12Rd8%?VPqg^X>)XMXL4a}3T0zxZy+L7aBOd3WFTm1b98TKa$#*CByV+eW@&6?A_{PCb6<6EY;R#?AT2FyZ*OoQA|!8hbY^L6Wg-f4Z6G9Xb#!KFY-I`xBOpm`W^ZzBAarGObRcAJZe<E^Z*yOBd2VA0Wn*Y>AR<$AZ*XvFZf78LWpi{OBy?qSbYE^^ZDk?~3UF_8UuAA(a%Xv8b98TT3JPUoXm21QL2PUwWN&U|AWUyzWJhIgAS85Ub97&BVQpn1",
+            "id": "loadgen_exp_moongen-loop",
+            "files": [
+                "scripts/riga/2025-03-18_12-04-29_756010_loadgen_exp_moongen-loop_run0.file",
+                "scripts/riga/2025-03-18_12-04-29_756010_loadgen_exp_moongen-loop_run1.file",
+                "scripts/riga/2025-03-18_12-04-29_756010_loadgen_exp_moongen-loop_run2.file",
+                "scripts/riga/2025-03-18_12-04-29_756010_loadgen_exp_moongen-loop_run3.file"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-03-18T12:45:09.873067",
+        "request": "/allocations/set_variables/riga",
+        "data": {
+            "global": false,
+            "loop": true,
+            "variables": {
+                "pkt_size": [
+                    64,
+                    128,
+                    1312,
+                    1518
+                ],
+                "pkt_rate": [
+                    1001
+                ]
+            }
+        }
+    },
+    {
+        "timestamp": "2025-03-18T12:45:10.314131",
+        "request": "/commands/launch?nodes=vilnius",
+        "data": {
+            "logging": true,
+            "queued": false,
+            "loop_variables": false,
+            "loop_from": 0,
+            "loop_to": null,
+            "loop_only": [],
+            "type": "execfile",
+            "file": "BOxzhX>KoKVRL8-3L_vzcxiMXZ*CxEa&m8S3Ug(2AT4DI3L_v>Wpp4!byOf^X>w&_bZ>Hb3S@P3J#1-WZEtUG3S(p-A|zyWbRr50BOpv~V_|F{c42a9VPb4$a|(22b97&BVQpnSB5X1(Y;R#?Eo@<QWo~16EpusZXKZC63JN12M`d&%Xm4|LZeeX@3TSV0bZ%j7Wj!P)aBp*8XJvF>c42a9VPb4$AZTxMbZ%j7Whn{@BOpv~VPqh4Z*65Dc42a9VPb4$a|&>8a&%vGcs(R2aBp*8XJvF>c42a9VPb4$AaHMTbT4#xAT2F&Wo>VCWhn}9Z*p{Ba(F!?C~$9cUuR`>Uv^<~X<=e)Wgu{Ga&#|pcpxn;a%F9AbY&?DP)k%_QbANjJtQb_Z*yN~WprP5VRC6<Vr*p~aBFm5a$$63AT2Fsa&K)dY;SLHDGE?aR9{m`T17o1C~$9cUuR`>Uv^<~X<=e)Wgu{CbYF96dSxIjEoO3WZ7pnXZ*VCJ3L_vyWoBt^Wgug3Y;SUNAYpD~AarSMWpi|4ZEy;CWo&G3cReCpWm_>jGc#=>3Sw+^Wj!KXWm_>jGc;`?3UXz0Wpq6vTxDA@Z6XQ^aBp*8b9ruK3T0zxZy+aAd2VAMWN&U|CkhH>V`y(6B2#o>a&&2KXCQQCb95jibY*jNUv6P-Wg-d+BOp?BZXj%FVr_44ZXjuHAarPDAYx%-YiDwAb#7!Jb#rNMXCQEIb6;|GZVGU3b6;|GZXhCLb#yHxbY*jNUv6P-Wg;LgEg&K;FJg6RY-BGaWOZ~RAR=XWVQp}1WpgiVGA(9ra(7{JWG-xVVIm-03LqdLAR;7iZ*p{Bba)~lA|!Bca&%vEcp?f4BOq5{X>=fFZ*m}XWpi{OWN&U|AaiMFZeeT+aBp*8b9ruK3T0zxZy+L5bZ>BQWn>_9Wpi{OBy?qSbYE^^ZDk?~3L_v(X>4pDbZBKDaB^>BWpi^Nb97;HbY)~9cWHEJAaHMUUvhPB3L_vxZ*6U1Ze%ZWbYyRJbT4ysWMy)4AYpQ4Aa!tTZ((F*WFTR6bZ>28bZKK@Y;1W7aBp*8YiVq3AR=USbS)%wWpi|2ZeeX@A_@v+V`y(6B0+3yAY^ZDWgtX#R3IdDWpi|2ZeeX@A_@",
+            "id": "dut_single_moongen-loop",
+            "files": [
+                "scripts/vilnius/2025-03-18_12-45-10_259558_dut_single_moongen-loop.file"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-03-18T12:45:10.252973",
+        "request": "/commands/launch?nodes=riga",
+        "data": {
+            "logging": true,
+            "queued": false,
+            "loop_variables": false,
+            "loop_from": 0,
+            "loop_to": null,
+            "loop_only": [],
+            "type": "execfile",
+            "file": "BOxzhX>KoKVRL8-3L_vzcxiMXZ*CxEa&m8S3Ug(2AT4DI3L_v>Wpp4+Z((FdWo{s3X>w&_bZ>Hb3T$s-WM^e=Jxy<KZbxNq3S(p-A|z~YVPt1zZXyZ_BOq*VV_|F{c42a9VPb4$a|(22b97&BVQpnSB5X1(Y;R#?Eo@<QWo~16EpusZXKZC63U76EW@&6?Jt8l3ZE!DWX>)XMXL4a}EhKbhb97&BVQpnDbYXHXXL>GUb9N#Mb8Ka0a9?C~a$$67Z*E^=WoB=3WnXk<b96m23JN12M`d&%Xm4|LZeeX@3TSV0bZ%j7Wj!P)aBp*8XJvF>c42a9VPb4$AZTxMbZ%j7Whn{@BOpv~VPqh1Z*w4aVRC6<Vr*q|AZBuJZ6GdrZEPTBX>4V43UYOBbZKp6JtQb_Z*yN~WprP5VRC6<Vr*p~a&>NWX>Da7EiGnpZ*47SY;R&=Y$*zGZ*p{Bba*`^C~$9cUuR`>Uv^<~X<=e)Wgu{Ga&#|rcpxn;a%F9AbY&?DaBp&SUvhXoBq(rib6;m=bYFI1a%o{=Y-J#DZ*p`ma(EyuEplaTZ**lT3Q$W_Us6F-MLi@aaBp*8XJvF>c42a9VPb4$AaHARUvgn|WgsmrW^!+BEo^UZa48B<OH^M|Nm@lcBq(rib6;m=bYFI1a%o{=Y-J#DYjj_8X?kTKEiGnpZ*47XZ*OoZ3JN12L}g}aZe<{2Z)|UJb0A@EWFT~DZDn(GVQp{<d1Y*DZ+AT+TxDA^J2NwFA_`(`b!9ywTxDA^J2NzGA_{V4b7gcrB3xx#Fl{0VbZKp6b97;Ca6Kd_WMOn=AR;RzSuG`PEhS_iB}h6YO*$o0A}I<AWn*Y>AR<I>Ze<{IWps3DZf78Ma3Tr{BOp_GZewV2Z*FONWgvHHbZ8)NbZBLAAZ~ADWpfH}Z*yOBd2VA0Wn*Y>AR<$AVRCe7Zf78LWpi{OBy?qSbYE^^ZDk?~3L_v=b#5R`Z((FdWo{s8ZXk4MWguc<V{2z}Z*^{DAa!$TZf78HZ*yOAb#4l9Z*yOAb#5RcY;R#?XJu|JBy?qSbYE^^ZDk@LEiE7-E-zwrX>4RKBy4YCWM^e=A|N7VcwudDY-MvVY%(ouZ((FDY+-a|Zew{aY;|EGAY2L{ARr(jByewXbYFCMA|N6paBp&SUvhXNAT4qrA|y~tR9{j-R7D~nEoLGlZ*_ELX>4U83JN12O=V$ob#i5GWo~pJaAk67Z)6H{Y-MF|AR;7kb#8QNZDk?~3L_v(X>4pDbZBKDaB^>BWpi^Nb97;HbY)~9cWHEJAaHMUUvhPB3UF_8Uu$V>Y#<_RZ((F-Wo|7bbY*jNUv6P-Wg-d+BOpm`W^ZzBAarGObRcAJZe<E^Z*yOBd2VA0Wn*Y>AR<$AZ*XvFZf78LWpi{OBy?qSbYE^^ZDk?~3T0zxZy+K;Y-}K8Z*FBEOmAUiM`dmxBy?qSbYE^^ZDk?",
+            "id": "loadgen_single_moongen-loop",
+            "files": [
+                "scripts/riga/2025-03-18_12-45-10_248155_loadgen_single_moongen-loop.file"
+            ]
+        }
+    }
+]

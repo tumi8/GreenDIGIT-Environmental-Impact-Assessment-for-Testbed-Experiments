@@ -1,0 +1,51 @@
+#!/bin/bash
+
+# Exit on error
+set -e
+
+# Set LoadGen directory
+loadgen=MoonGen
+cd "$loadgen"
+
+# local variables
+test_name="l2-load-latency-single"
+outfile="/tmp/histogram-$test_name.tar.gz.csv"
+sleep_duration_before_test=2
+
+# Get hostname
+hostname=$(pos_get_variable hostname)
+
+# Load pos variables from .yml files
+runtime=$(pos_get_variable runtime --from-global)
+port_tx=$(pos_get_variable port/tx --remote)
+port_rx=$(pos_get_variable port/rx --remote)
+PKT_RATE=$(pos_get_variable pkt_rate --from-loop)
+PKT_SIZE=$(pos_get_variable pkt_size --from-loop)
+
+# Define colors and timestamp
+yellow="\e[1;33m"
+blue="\e[1;34m"
+reset="\e[0m"
+timestamp=$(date "+%Y-%m-%d %H:%M:%S")
+
+echo "Done setting up"
+
+# Synchronize with other nodes
+pos_sync
+echo "Starting test $test_name"
+
+# Run LoadGen in the background using pos_run
+pos_run "loadgen-$test_name" -- "./build/$loadgen" "examples/l2-load-latency.lua" \
+    "$port_tx" "$port_rx" -r "$PKT_RATE" -f"$outfile"
+
+# Measurement period
+sleep "$runtime"
+
+# Kill the process started with pos_run
+pos_kill "loadgen-$test_name"
+
+# Inform test done
+pos_sync
+echo "Stopping test $test_name"
+
+echo "All done LoadGen $test_name"

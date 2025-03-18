@@ -1,0 +1,15 @@
++ test_name=stress-test
++ sleep_duration_before_test=2
+++ pos_get_variable kerne --from-loop
++ kerne=8
+++ pos_get_variable runtime --from-global
++ runtime=240
++ pos_sync
++ echo 'Starting test stress-test'
++ pos_energy_start --loop --filename measurement
++ pos_run --loop loadgen-stress-test -- bash -c 'exec stress -c 8 -t 240'
++ sleep 240
++ pos_sync
++ echo 'Stopping test loadgen-stress-test'
++ pos_energy_stop
++ echo 'All done LoadGen stress-test'

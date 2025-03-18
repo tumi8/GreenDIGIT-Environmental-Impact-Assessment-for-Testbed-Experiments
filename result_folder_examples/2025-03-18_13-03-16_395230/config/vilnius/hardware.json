@@ -1,0 +1,261 @@
+{
+    "motherboard": {
+        "bios": {
+            "date": "02/20/2015",
+            "vendor": "American Megatrends",
+            "version": "2.2"
+        },
+        "model": "X9SCL/X9SCM",
+        "vendor": "Supermicro",
+        "revision": "1.11A"
+    },
+    "processor": [
+        {
+            "slot": "CPU",
+            "cores": 4,
+            "model": "Xeon E31230 @ 3.20GHz",
+            "vendor": "Intel",
+            "threads": 8,
+            "version": "6.42.7",
+            "microcode": "41",
+            "virtualized": false,
+            "architecture": "64bit"
+        }
+    ],
+    "memory": {
+        "dimms": [
+            {
+                "slot": "DIMM_1A",
+                "type": "DDR3",
+                "empty": false,
+                "model": "9965525-018.A00LF",
+                "serial": "091F6D3A",
+                "vendor": "Kingston",
+                "capacity_bytes": 4294967296,
+                "maximum_speed_val": 1333,
+                "capacity_human_val": 4,
+                "maximum_speed_unit": "MHz",
+                "capacity_human_unit": "GiB",
+                "operational_speed_val": 1333,
+                "operational_speed_unit": "MHz"
+            },
+            {
+                "slot": "DIMM_2A",
+                "type": "DDR3",
+                "empty": false,
+                "model": "9965525-018.A00LF",
+                "serial": "2F239E3B",
+                "vendor": "Kingston",
+                "capacity_bytes": 4294967296,
+                "maximum_speed_val": 1333,
+                "capacity_human_val": 4,
+                "maximum_speed_unit": "MHz",
+                "capacity_human_unit": "GiB",
+                "operational_speed_val": 1333,
+                "operational_speed_unit": "MHz"
+            },
+            {
+                "slot": "DIMM_1B",
+                "type": "DDR3",
+                "empty": false,
+                "model": "9965525-018.A00LF",
+                "serial": "1520A934",
+                "vendor": "Kingston",
+                "capacity_bytes": 4294967296,
+                "maximum_speed_val": 1333,
+                "capacity_human_val": 4,
+                "maximum_speed_unit": "MHz",
+                "capacity_human_unit": "GiB",
+                "operational_speed_val": 1333,
+                "operational_speed_unit": "MHz"
+            },
+            {
+                "slot": "DIMM_2B",
+                "type": "DDR3",
+                "empty": false,
+                "model": "9965525-018.A00LF",
+                "serial": "2E23CF3B",
+                "vendor": "Kingston",
+                "capacity_bytes": 4294967296,
+                "maximum_speed_val": 1333,
+                "capacity_human_val": 4,
+                "maximum_speed_unit": "MHz",
+                "capacity_human_unit": "GiB",
+                "operational_speed_val": 1333,
+                "operational_speed_unit": "MHz"
+            }
+        ],
+        "dimm_slots": 4,
+        "ecc_details": "Single-bit ECC",
+        "ecc_support": true,
+        "maximum_capacity_bytes": 34359738368,
+        "installed_capacity_bytes": 17179869184,
+        "maximum_capacity_human_val": 32,
+        "maximum_capacity_human_unit": "GiB",
+        "installed_capacity_human_val": 16,
+        "installed_capacity_human_unit": "GiB"
+    },
+    "storage": [],
+    "graphics": [],
+    "network": [
+        {
+            "model": "I350 Gigabit",
+            "vendor": "Intel",
+            "version": "01",
+            "firmware": "1.63, 0x80000cbc",
+            "interfaces": [
+                {
+                    "mac": "a0:36:9f:54:c1:70",
+                    "dev_name": "enp2s0f0",
+                    "bus_address": "pci@0000:02:00.0",
+                    "current_configuration": {
+                        "link_detected": true,
+                        "link_speed_val": 1,
+                        "link_speed_unit": "Gbit/s",
+                        "transceiver_type": "Internal transceiver",
+                        "transceiver_model": null,
+                        "transceiver_modes": [
+                            "10baseT/Half",
+                            "10baseT/Full",
+                            "100baseT/Half",
+                            "100baseT/Full",
+                            "1000baseT/Full"
+                        ],
+                        "transceiver_medium": "Twisted Pair Cable",
+                        "transceiver_serial": null,
+                        "transceiver_revision": null
+                    }
+                },
+                {
+                    "mac": "a0:36:9f:54:c1:71",
+                    "dev_name": "enp2s0f1",
+                    "bus_address": "pci@0000:02:00.1",
+                    "current_configuration": {
+                        "link_detected": true,
+                        "link_speed_val": 1,
+                        "link_speed_unit": "Gbit/s",
+                        "transceiver_type": "Internal transceiver",
+                        "transceiver_model": null,
+                        "transceiver_modes": [
+                            "10baseT/Half",
+                            "10baseT/Full",
+                            "100baseT/Half",
+                            "100baseT/Full",
+                            "1000baseT/Full"
+                        ],
+                        "transceiver_medium": "Twisted Pair Cable",
+                        "transceiver_serial": null,
+                        "transceiver_revision": null
+                    }
+                },
+                {
+                    "mac": "a0:36:9f:54:c1:72",
+                    "dev_name": "enp2s0f2",
+                    "bus_address": "pci@0000:02:00.2",
+                    "current_configuration": {
+                        "link_detected": true,
+                        "link_speed_val": 1,
+                        "link_speed_unit": "Gbit/s",
+                        "transceiver_type": "Internal transceiver",
+                        "transceiver_model": null,
+                        "transceiver_modes": [
+                            "10baseT/Half",
+                            "10baseT/Full",
+                            "100baseT/Half",
+                            "100baseT/Full",
+                            "1000baseT/Full"
+                        ],
+                        "transceiver_medium": "Twisted Pair Cable",
+                        "transceiver_serial": null,
+                        "transceiver_revision": null
+                    }
+                },
+                {
+                    "mac": "a0:36:9f:54:c1:73",
+                    "dev_name": "enp2s0f3",
+                    "bus_address": "pci@0000:02:00.3",
+                    "current_configuration": {
+                        "link_detected": true,
+                        "link_speed_val": 1,
+                        "link_speed_unit": "Gbit/s",
+                        "transceiver_type": "Internal transceiver",
+                        "transceiver_model": null,
+                        "transceiver_modes": [
+                            "10baseT/Half",
+                            "10baseT/Full",
+                            "100baseT/Half",
+                            "100baseT/Full",
+                            "1000baseT/Full"
+                        ],
+                        "transceiver_medium": "Twisted Pair Cable",
+                        "transceiver_serial": null,
+                        "transceiver_revision": null
+                    }
+                }
+            ],
+            "bus_address": "pci@0000:02:00.{0,1,2,3}"
+        },
+        {
+            "model": "82579LM Gigabit (Lewisville)",
+            "vendor": "Intel",
+            "version": "05",
+            "firmware": "0.13-4",
+            "interfaces": [
+                {
+                    "mac": "00:25:90:7a:cb:c9",
+                    "dev_name": "enp0s25",
+                    "bus_address": "pci@0000:00:19.0",
+                    "current_configuration": {
+                        "link_detected": false,
+                        "link_speed_val": null,
+                        "link_speed_unit": null,
+                        "transceiver_type": "Internal transceiver",
+                        "transceiver_model": null,
+                        "transceiver_modes": [
+                            "10baseT/Half",
+                            "10baseT/Full",
+                            "100baseT/Half",
+                            "100baseT/Full",
+                            "1000baseT/Full"
+                        ],
+                        "transceiver_medium": "Twisted Pair Cable",
+                        "transceiver_serial": null,
+                        "transceiver_revision": null
+                    }
+                }
+            ],
+            "bus_address": "pci@0000:00:19.0"
+        },
+        {
+            "model": "82574L Gigabit",
+            "vendor": "Intel",
+            "version": "00",
+            "firmware": "2.1-2",
+            "interfaces": [
+                {
+                    "mac": "00:25:90:7a:cb:c8",
+                    "dev_name": "eno1",
+                    "bus_address": "pci@0000:05:00.0",
+                    "current_configuration": {
+                        "link_detected": true,
+                        "link_speed_val": 1,
+                        "link_speed_unit": "Gbit/s",
+                        "transceiver_type": "Internal transceiver",
+                        "transceiver_model": null,
+                        "transceiver_modes": [
+                            "10baseT/Half",
+                            "10baseT/Full",
+                            "100baseT/Half",
+                            "100baseT/Full",
+                            "1000baseT/Full"
+                        ],
+                        "transceiver_medium": "Twisted Pair Cable",
+                        "transceiver_serial": null,
+                        "transceiver_revision": null
+                    }
+                }
+            ],
+            "bus_address": "pci@0000:05:00.0"
+        }
+    ]
+}

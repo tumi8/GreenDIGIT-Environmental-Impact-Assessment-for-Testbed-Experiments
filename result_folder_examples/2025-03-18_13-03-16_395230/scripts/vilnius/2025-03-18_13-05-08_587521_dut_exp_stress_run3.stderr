@@ -1,0 +1,14 @@
++ test_name=stress-test
+++ pos_get_variable kerne --from-loop
++ kerne=8
+++ pos_get_variable runtime --from-global
++ runtime=240
++ pos_sync
++ echo 'Starting test stress-test'
++ pos_energy_start --loop --filename measurement
++ pos_run --loop dut-stress-test -- bash -c 'exec stress -c 8 -t 240'
++ sleep 240
++ pos_sync
++ echo 'Stopping test dut-stress-test'
++ pos_energy_stop
++ echo 'All done DuT stress-test'

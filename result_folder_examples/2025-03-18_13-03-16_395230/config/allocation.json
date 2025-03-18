@@ -1,0 +1,42 @@
+{
+    "id": "warmuth_250318_130316_395230",
+    "created": "2025-03-18 13:03:16.395499",
+    "updated": "2025-03-18 13:03:18.941797",
+    "owner": "warmuth",
+    "result_folder": "warmuth/default/2025-03-18_13-03-16_395230",
+    "variables": {
+        "loop": {
+            "kerne": [
+                1,
+                2,
+                4,
+                8
+            ]
+        },
+        "riga": {},
+        "global": {
+            "runtime": 240
+        },
+        "vilnius": {}
+    },
+    "bootparameters": {
+        "riga": {
+            "iommu": "pt"
+        },
+        "vilnius": {
+            "iommu": "pt"
+        }
+    },
+    "bootstrapped": {
+        "riga": false,
+        "vilnius": false
+    },
+    "nodes": [
+        "riga",
+        "vilnius"
+    ],
+    "images": {
+        "riga": "default/debian-buster",
+        "vilnius": "default/debian-buster"
+    }
+}

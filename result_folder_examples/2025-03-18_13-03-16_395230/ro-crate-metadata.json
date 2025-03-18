@@ -1,0 +1,1514 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "dateModified": "2025-03-18T17:06:34.655570",
+            "datePublished": "2025-03-18T12:03:16+00:00",
+            "hasPart": [
+                {
+                    "@id": "config/vilnius/"
+                },
+                {
+                    "@id": "config/riga/"
+                },
+                {
+                    "@id": "scripts/vilnius/"
+                },
+                {
+                    "@id": "scripts/riga/"
+                },
+                {
+                    "@id": "config/riga/hardware.json"
+                },
+                {
+                    "@id": "config/allocation.json"
+                },
+                {
+                    "@id": "config/riga/topology.json"
+                },
+                {
+                    "@id": "config/riga/topology.pdf"
+                },
+                {
+                    "@id": "config/vilnius/hardware.json"
+                },
+                {
+                    "@id": "config/vilnius/topology.json"
+                },
+                {
+                    "@id": "config/vilnius/topology.pdf"
+                },
+                {
+                    "@id": "scripts/experiment.json"
+                },
+                {
+                    "@id": "config/2025-03-18_13-03-16_865894_variables.json"
+                },
+                {
+                    "@id": "scripts/riga/2025-03-18_13-05-02_944185_bootstrap.file"
+                },
+                {
+                    "@id": "scripts/riga/2025-03-18_13-05-02_944185_bootstrap.stdout"
+                },
+                {
+                    "@id": "scripts/riga/2025-03-18_13-05-02_944185_bootstrap.stderr"
+                },
+                {
+                    "@id": "scripts/riga/2025-03-18_13-05-02_944185_bootstrap.status"
+                },
+                {
+                    "@id": "scripts/riga/2025-03-18_13-03-19_348613_reset.stdout"
+                },
+                {
+                    "@id": "scripts/riga/2025-03-18_13-03-19_348613_reset.stderr"
+                },
+                {
+                    "@id": "scripts/riga/2025-03-18_13-03-19_348613_reset.status"
+                },
+                {
+                    "@id": "scripts/riga/2025-03-18_13-03-20_085575_loadgen_setup_stress.file"
+                },
+                {
+                    "@id": "scripts/riga/2025-03-18_13-03-20_085575_loadgen_setup_stress.stdout"
+                },
+                {
+                    "@id": "scripts/riga/2025-03-18_13-03-20_085575_loadgen_setup_stress.stderr"
+                },
+                {
+                    "@id": "scripts/riga/2025-03-18_13-03-20_085575_loadgen_setup_stress.status"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.file"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.stdout"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.stderr"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.status"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-03-19_730049_reset.stdout"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-03-19_730049_reset.stderr"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-03-19_730049_reset.status"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-03-20_480549_dut_setup_stress.file"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-03-20_480549_dut_setup_stress.stdout"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-03-20_480549_dut_setup_stress.stderr"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-03-20_480549_dut_setup_stress.status"
+                },
+                {
+                    "@id": "energy/riga/"
+                },
+                {
+                    "@id": "energy/vilnius/"
+                },
+                {
+                    "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run0.file"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.file"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.stdout"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.stderr"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.status"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.loop"
+                },
+                {
+                    "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.file"
+                },
+                {
+                    "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.stdout"
+                },
+                {
+                    "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.stderr"
+                },
+                {
+                    "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.status"
+                },
+                {
+                    "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.loop"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.file"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.stdout"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.stderr"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.status"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.loop"
+                },
+                {
+                    "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run2.file"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.file"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.stdout"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.stderr"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.status"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.loop"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.file"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.stdout"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.stderr"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.status"
+                },
+                {
+                    "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.loop"
+                }
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "config/vilnius/",
+            "@type": "Dataset",
+            "description": "Contains detailed information about node specifc configuration like topology or hardware information",
+            "name": "Config information of vilnius",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "config/riga/",
+            "@type": "Dataset",
+            "description": "Contains detailed information about node specifc configuration like topology or hardware information",
+            "name": "Config information of riga",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/",
+            "@type": "Dataset",
+            "description": "Contains executed scripts and different output logs",
+            "name": "Scripts executed on testbed node vilnius"
+        },
+        {
+            "@id": "scripts/riga/",
+            "@type": "Dataset",
+            "description": "Contains executed scripts and different output logs",
+            "name": "Scripts executed on testbed node riga"
+        },
+        {
+            "@id": "config/riga/hardware.json",
+            "@type": "File",
+            "contentSize": "10248",
+            "dateCreated": "2025-03-18T13:03:17.694232",
+            "description": "Contains information about CPU, GPU, RAM, motherboard, storage, and network",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Hardware of testbed node riga",
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/config/riga/hardware.json",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "config/allocation.json",
+            "@type": "File",
+            "contentSize": "805",
+            "dateCreated": "2025-03-18T13:03:18.141280",
+            "description": "Allocation details like booted images and experiment variables",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Allocation from 2025-03-18 13:03:16.395499",
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/config/allocation.json",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "config/riga/topology.json",
+            "@type": "File",
+            "contentSize": "1501",
+            "dateCreated": "2025-03-18T13:03:17.708675",
+            "description": "Contains network topology with neighboring nodes including link speed",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Network topology of testbed node riga",
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/config/riga/topology.json",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "config/riga/topology.pdf",
+            "@type": "File",
+            "contentSize": "41187",
+            "dateCreated": "2025-03-18T13:03:17.715014",
+            "description": "contains network topology figure with neighboring nodes including link speed",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/19"
+            },
+            "name": "network topology of testbed node riga",
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/config/riga/topology.pdf",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "config/vilnius/hardware.json",
+            "@type": "File",
+            "contentSize": "10013",
+            "dateCreated": "2025-03-18T13:03:18.134170",
+            "description": "Contains information about CPU, GPU, RAM, motherboard, storage, and network",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Hardware of testbed node vilnius",
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/config/vilnius/hardware.json",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "config/vilnius/topology.json",
+            "@type": "File",
+            "contentSize": "1498",
+            "dateCreated": "2025-03-18T13:03:18.148853",
+            "description": "Contains network topology with neighboring nodes including link speed",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Network topology of testbed node vilnius",
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/config/vilnius/topology.json",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "config/vilnius/topology.pdf",
+            "@type": "File",
+            "contentSize": "41209",
+            "dateCreated": "2025-03-18T13:03:18.154904",
+            "description": "contains network topology figure with neighboring nodes including link speed",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/19"
+            },
+            "name": "network topology of testbed node vilnius",
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/config/vilnius/topology.pdf",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/experiment.json",
+            "@type": "File",
+            "contentSize": "156",
+            "dateCreated": "2025-03-18T13:03:16.514672",
+            "description": "Experiment recording of pos daemon requests",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Experiment recording of allocation",
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/experiment.json"
+        },
+        {
+            "@id": "config/2025-03-18_13-03-16_865894_variables.json",
+            "@type": "File",
+            "contentSize": "99",
+            "dateCreated": "2025-03-18_13-03-16_865894",
+            "description": "Contains a variable set for the allocation",
+            "encodingFormat": "application/json",
+            "keywords": [
+                "variables"
+            ],
+            "name": "Variable set as of 2025-03-18_13-03-16_865894",
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/config/2025-03-18_13-03-16_865894_variables.json"
+        },
+        {
+            "@id": "scripts/riga/2025-03-18_13-05-02_944185_bootstrap.file",
+            "@type": "File",
+            "contentSize": "10561",
+            "dateCreated": "2025-03-18T13:05:02.944230",
+            "description": "Script executed to set up the environment and install pos tools on node riga",
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "name": "Bootstrap script used for node riga",
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/riga/2025-03-18_13-05-02_944185_bootstrap.file",
+            "status": {
+                "@id": "scripts/riga/2025-03-18_13-05-02_944185_bootstrap.status"
+            },
+            "stderr": {
+                "@id": "scripts/riga/2025-03-18_13-05-02_944185_bootstrap.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/riga/2025-03-18_13-05-02_944185_bootstrap.stdout"
+            },
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/riga/2025-03-18_13-05-02_944185_bootstrap.stdout",
+            "@type": "File",
+            "contentSize": "11071",
+            "dateCreated": "2025-03-18T13:05:02.944230",
+            "description": "Output from bootstrap script executed on riga",
+            "exampleOfWork": {
+                "@id": "scripts/riga/2025-03-18_13-05-02_944185_bootstrap.file"
+            },
+            "keywords": [
+                "command"
+            ],
+            "name": "Bootstrap.stdout for riga",
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/riga/2025-03-18_13-05-02_944185_bootstrap.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/riga/2025-03-18_13-05-02_944185_bootstrap.stderr",
+            "@type": "File",
+            "contentSize": "880",
+            "dateCreated": "2025-03-18T13:05:02.944230",
+            "description": "Output from bootstrap script executed on riga",
+            "exampleOfWork": {
+                "@id": "scripts/riga/2025-03-18_13-05-02_944185_bootstrap.file"
+            },
+            "keywords": [
+                "command"
+            ],
+            "name": "Bootstrap.stderr for riga",
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/riga/2025-03-18_13-05-02_944185_bootstrap.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/riga/2025-03-18_13-05-02_944185_bootstrap.status",
+            "@type": "File",
+            "contentSize": "1",
+            "dateCreated": "2025-03-18T13:05:02.944230",
+            "description": "Output from bootstrap script executed on riga",
+            "exampleOfWork": {
+                "@id": "scripts/riga/2025-03-18_13-05-02_944185_bootstrap.file"
+            },
+            "keywords": [
+                "command"
+            ],
+            "name": "Bootstrap.status for riga",
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/riga/2025-03-18_13-05-02_944185_bootstrap.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/riga/2025-03-18_13-03-19_348613_reset.stdout",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2025-03-18T13:03:19.348613",
+            "exampleOfWork": {
+                "@id": "2025-03-18_13-03-19_348613_reset"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/riga/2025-03-18_13-03-19_348613_reset.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/riga/2025-03-18_13-03-19_348613_reset.stderr",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2025-03-18T13:03:19.348613",
+            "exampleOfWork": {
+                "@id": "2025-03-18_13-03-19_348613_reset"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/riga/2025-03-18_13-03-19_348613_reset.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/riga/2025-03-18_13-03-19_348613_reset.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-03-18T13:03:19.348613",
+            "exampleOfWork": {
+                "@id": "2025-03-18_13-03-19_348613_reset"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/riga/2025-03-18_13-03-19_348613_reset.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/riga/2025-03-18_13-03-20_085575_loadgen_setup_stress.file",
+            "@type": "File",
+            "contentSize": "138",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-03-18T13:03:20.085575",
+            "executedOn": {
+                "@id": "riga"
+            },
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/riga/2025-03-18_13-03-20_085575_loadgen_setup_stress.file",
+            "status": {
+                "@id": "scripts/riga/2025-03-18_13-03-20_085575_loadgen_setup_stress.status"
+            },
+            "stderr": {
+                "@id": "scripts/riga/2025-03-18_13-03-20_085575_loadgen_setup_stress.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/riga/2025-03-18_13-03-20_085575_loadgen_setup_stress.stdout"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/riga/2025-03-18_13-03-20_085575_loadgen_setup_stress.stdout",
+            "@type": "File",
+            "contentSize": "1258",
+            "dateCreated": "2025-03-18T13:03:20.085575",
+            "exampleOfWork": {
+                "@id": "scripts/riga/2025-03-18_13-03-20_085575_loadgen_setup_stress.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/riga/2025-03-18_13-03-20_085575_loadgen_setup_stress.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/riga/2025-03-18_13-03-20_085575_loadgen_setup_stress.stderr",
+            "@type": "File",
+            "contentSize": "512",
+            "dateCreated": "2025-03-18T13:03:20.085575",
+            "exampleOfWork": {
+                "@id": "scripts/riga/2025-03-18_13-03-20_085575_loadgen_setup_stress.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/riga/2025-03-18_13-03-20_085575_loadgen_setup_stress.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/riga/2025-03-18_13-03-20_085575_loadgen_setup_stress.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-03-18T13:03:20.085575",
+            "exampleOfWork": {
+                "@id": "scripts/riga/2025-03-18_13-03-20_085575_loadgen_setup_stress.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/riga/2025-03-18_13-03-20_085575_loadgen_setup_stress.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.file",
+            "@type": "File",
+            "contentSize": "10561",
+            "dateCreated": "2025-03-18T13:05:09.312874",
+            "description": "Script executed to set up the environment and install pos tools on node vilnius",
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "name": "Bootstrap script used for node vilnius",
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.file",
+            "status": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.status"
+            },
+            "stderr": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.stdout"
+            },
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.stdout",
+            "@type": "File",
+            "contentSize": "11071",
+            "dateCreated": "2025-03-18T13:05:09.312874",
+            "description": "Output from bootstrap script executed on vilnius",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.file"
+            },
+            "keywords": [
+                "command"
+            ],
+            "name": "Bootstrap.stdout for vilnius",
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.stderr",
+            "@type": "File",
+            "contentSize": "886",
+            "dateCreated": "2025-03-18T13:05:09.312874",
+            "description": "Output from bootstrap script executed on vilnius",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.file"
+            },
+            "keywords": [
+                "command"
+            ],
+            "name": "Bootstrap.stderr for vilnius",
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.status",
+            "@type": "File",
+            "contentSize": "1",
+            "dateCreated": "2025-03-18T13:05:09.312874",
+            "description": "Output from bootstrap script executed on vilnius",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.file"
+            },
+            "keywords": [
+                "command"
+            ],
+            "name": "Bootstrap.status for vilnius",
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-03-19_730049_reset.stdout",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2025-03-18T13:03:19.730049",
+            "exampleOfWork": {
+                "@id": "2025-03-18_13-03-19_730049_reset"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-03-19_730049_reset.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-03-19_730049_reset.stderr",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2025-03-18T13:03:19.730049",
+            "exampleOfWork": {
+                "@id": "2025-03-18_13-03-19_730049_reset"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-03-19_730049_reset.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-03-19_730049_reset.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-03-18T13:03:19.730049",
+            "exampleOfWork": {
+                "@id": "2025-03-18_13-03-19_730049_reset"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-03-19_730049_reset.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-03-20_480549_dut_setup_stress.file",
+            "@type": "File",
+            "contentSize": "148",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-03-18T13:03:20.480549",
+            "executedOn": {
+                "@id": "vilnius"
+            },
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-03-20_480549_dut_setup_stress.file",
+            "status": {
+                "@id": "scripts/vilnius/2025-03-18_13-03-20_480549_dut_setup_stress.status"
+            },
+            "stderr": {
+                "@id": "scripts/vilnius/2025-03-18_13-03-20_480549_dut_setup_stress.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/vilnius/2025-03-18_13-03-20_480549_dut_setup_stress.stdout"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-03-20_480549_dut_setup_stress.stdout",
+            "@type": "File",
+            "contentSize": "1258",
+            "dateCreated": "2025-03-18T13:03:20.480549",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-03-20_480549_dut_setup_stress.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-03-20_480549_dut_setup_stress.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-03-20_480549_dut_setup_stress.stderr",
+            "@type": "File",
+            "contentSize": "515",
+            "dateCreated": "2025-03-18T13:03:20.480549",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-03-20_480549_dut_setup_stress.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-03-20_480549_dut_setup_stress.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-03-20_480549_dut_setup_stress.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-03-18T13:03:20.480549",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-03-20_480549_dut_setup_stress.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-03-20_480549_dut_setup_stress.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "energy/riga/",
+            "@type": "Dataset",
+            "description": "Contains measured values of the energy consumption during an experiment",
+            "name": "Energy data for testbed node riga"
+        },
+        {
+            "@id": "energy/vilnius/",
+            "@type": "Dataset",
+            "description": "Contains measured values of the energy consumption during an experiment",
+            "name": "Energy data for testbed node vilnius"
+        },
+        {
+            "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run0.file",
+            "@type": "File",
+            "contentSize": "923",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-03-18T13:05:08.521497",
+            "executedOn": {
+                "@id": "riga"
+            },
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run0.file",
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.file",
+            "@type": "File",
+            "contentSize": "850",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-03-18T13:05:08.587521",
+            "executedOn": {
+                "@id": "vilnius"
+            },
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "loopFile": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.loop"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.file",
+            "status": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.status"
+            },
+            "stderr": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.stdout"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.stdout",
+            "@type": "File",
+            "contentSize": "81",
+            "dateCreated": "2025-03-18T13:05:08.587521",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.stderr",
+            "@type": "File",
+            "contentSize": "407",
+            "dateCreated": "2025-03-18T13:05:08.587521",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-03-18T13:05:08.587521",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.loop",
+            "@type": "File",
+            "contentSize": "12",
+            "dateCreated": "2025-03-18T13:05:08.587521",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.file"
+            },
+            "keywords": [
+                "variables"
+            ],
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.loop",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.file",
+            "@type": "File",
+            "contentSize": "923",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-03-18T13:05:08.521497",
+            "executedOn": {
+                "@id": "riga"
+            },
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "loopFile": {
+                "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.loop"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.file",
+            "status": {
+                "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.status"
+            },
+            "stderr": {
+                "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.stdout"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.stdout",
+            "@type": "File",
+            "contentSize": "89",
+            "dateCreated": "2025-03-18T13:05:08.521497",
+            "exampleOfWork": {
+                "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.stderr",
+            "@type": "File",
+            "contentSize": "450",
+            "dateCreated": "2025-03-18T13:05:08.521497",
+            "exampleOfWork": {
+                "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-03-18T13:05:08.521497",
+            "exampleOfWork": {
+                "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.loop",
+            "@type": "File",
+            "contentSize": "12",
+            "dateCreated": "2025-03-18T13:05:08.521497",
+            "exampleOfWork": {
+                "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.file"
+            },
+            "keywords": [
+                "variables"
+            ],
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.loop",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.file",
+            "@type": "File",
+            "contentSize": "850",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-03-18T13:05:08.587521",
+            "executedOn": {
+                "@id": "vilnius"
+            },
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "loopFile": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.loop"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.file",
+            "status": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.status"
+            },
+            "stderr": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.stdout"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.stdout",
+            "@type": "File",
+            "contentSize": "81",
+            "dateCreated": "2025-03-18T13:05:08.587521",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.stderr",
+            "@type": "File",
+            "contentSize": "407",
+            "dateCreated": "2025-03-18T13:05:08.587521",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-03-18T13:05:08.587521",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.loop",
+            "@type": "File",
+            "contentSize": "12",
+            "dateCreated": "2025-03-18T13:05:08.587521",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.file"
+            },
+            "keywords": [
+                "variables"
+            ],
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.loop",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run2.file",
+            "@type": "File",
+            "contentSize": "923",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-03-18T13:05:08.521497",
+            "executedOn": {
+                "@id": "riga"
+            },
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run2.file",
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.file",
+            "@type": "File",
+            "contentSize": "850",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-03-18T13:05:08.587521",
+            "executedOn": {
+                "@id": "vilnius"
+            },
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "loopFile": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.loop"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.file",
+            "status": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.status"
+            },
+            "stderr": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.stdout"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.stdout",
+            "@type": "File",
+            "contentSize": "81",
+            "dateCreated": "2025-03-18T13:05:08.587521",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.stderr",
+            "@type": "File",
+            "contentSize": "407",
+            "dateCreated": "2025-03-18T13:05:08.587521",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-03-18T13:05:08.587521",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.loop",
+            "@type": "File",
+            "contentSize": "12",
+            "dateCreated": "2025-03-18T13:05:08.587521",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.file"
+            },
+            "keywords": [
+                "variables"
+            ],
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.loop",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.file",
+            "@type": "File",
+            "contentSize": "850",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-03-18T13:05:08.587521",
+            "executedOn": {
+                "@id": "vilnius"
+            },
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "loopFile": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.loop"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.file",
+            "status": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.status"
+            },
+            "stderr": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.stdout"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.stdout",
+            "@type": "File",
+            "contentSize": "81",
+            "dateCreated": "2025-03-18T13:05:08.587521",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.stderr",
+            "@type": "File",
+            "contentSize": "407",
+            "dateCreated": "2025-03-18T13:05:08.587521",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-03-18T13:05:08.587521",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.loop",
+            "@type": "File",
+            "contentSize": "12",
+            "dateCreated": "2025-03-18T13:05:08.587521",
+            "exampleOfWork": {
+                "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.file"
+            },
+            "keywords": [
+                "variables"
+            ],
+            "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.loop",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-03-18_13-03-16_865894_variables.json"
+            }
+        },
+        {
+            "@id": "http://doi.org/10.1145/3485983.3494841",
+            "@type": "CreativeWork",
+            "alternateName": "pos",
+            "citation": "http://doi.org/10.1145/3485983.3494841",
+            "description": "The pos Framework: A Methodology and Toolchain for Reproducible Network Experiments",
+            "keywords": [
+                "version"
+            ],
+            "name": "Plain Orchestrating Service",
+            "version": "2.4.79"
+        },
+        {
+            "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/19",
+            "@type": "WebSite",
+            "name": "Acrobat PDF 1.5"
+        },
+        {
+            "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817",
+            "@type": "WebSite",
+            "name": "JSON Data Format"
+        },
+        {
+            "@id": "https://orcid.org/0000-0001-6328-1047",
+            "@type": "Person",
+            "affiliation": {
+                "@id": "https://ror.org/02kkvpp62"
+            },
+            "keywords": [
+                "creator"
+            ],
+            "name": "Kilian Warmuth"
+        },
+        {
+            "@id": "https://ror.org/02kkvpp62",
+            "@type": "Organization",
+            "location": "https://www.geonames.org/2867714",
+            "name": "Technical University of Munich",
+            "url": "https://www.tum.de/"
+        },
+        {
+            "@id": "riga",
+            "@type": "Thing",
+            "allocation": {
+                "@id": "config/allocation.json"
+            },
+            "dateCreated": "2025-03-18T13:03:17.681446",
+            "description": "Metadata for testbed node riga.baltikum.net.cit.tum.de",
+            "fqdn": "riga.baltikum.net.cit.tum.de",
+            "hardware": {
+                "@id": "config/riga/hardware.json"
+            },
+            "keywords": [
+                "node"
+            ],
+            "name": "Testbed Node riga",
+            "topology": {
+                "@id": "config/riga/topology.json"
+            },
+            "visualizedTopology": {
+                "@id": "config/riga/topology.pdf"
+            }
+        },
+        {
+            "@id": "vilnius",
+            "@type": "Thing",
+            "allocation": {
+                "@id": "config/allocation.json"
+            },
+            "dateCreated": "2025-03-18T13:03:18.118221",
+            "description": "Metadata for testbed node vilnius.baltikum.net.cit.tum.de",
+            "fqdn": "vilnius.baltikum.net.cit.tum.de",
+            "hardware": {
+                "@id": "config/vilnius/hardware.json"
+            },
+            "keywords": [
+                "node"
+            ],
+            "name": "Testbed Node vilnius",
+            "topology": {
+                "@id": "config/vilnius/topology.json"
+            },
+            "visualizedTopology": {
+                "@id": "config/vilnius/topology.pdf"
+            }
+        },
+        {
+            "@id": "default/debian-buster",
+            "@type": "Thing",
+            "description": "This image was generated automatically by mandelstamm on 2023-10-22T14:04:31+00:00 using the modules/debian-buster.sh module. Please see the GitLab project for more information: https://gitlab.lrz.de/I8-testbeds/mandelstamm/",
+            "keywords": [
+                "image"
+            ],
+            "name": "Booted image default/debian-buster",
+            "path": "/srv/testbed/images/default/debian-buster@2023-10-22T14:04:31+00:00",
+            "size": "428M"
+        },
+        {
+            "@id": "2025-03-18_13-03-19_348613_reset",
+            "@type": "Thing",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-03-18T13:03:19.348613",
+            "description": "Resets a node and automatically bootstraps it. This reset command does not have a .file.",
+            "executedOn": {
+                "@id": "riga"
+            },
+            "image": {
+                "@id": "default/debian-buster"
+            },
+            "keywords": [
+                "command",
+                "reset"
+            ],
+            "name": "Reset Command for Node riga",
+            "status": {
+                "@id": "scripts/riga/2025-03-18_13-03-19_348613_reset.status"
+            },
+            "stderr": {
+                "@id": "scripts/riga/2025-03-18_13-03-19_348613_reset.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/riga/2025-03-18_13-03-19_348613_reset.stdout"
+            }
+        },
+        {
+            "@id": "2025-03-18_13-03-19_730049_reset",
+            "@type": "Thing",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-03-18T13:03:19.730049",
+            "description": "Resets a node and automatically bootstraps it. This reset command does not have a .file.",
+            "executedOn": {
+                "@id": "vilnius"
+            },
+            "image": {
+                "@id": "default/debian-buster"
+            },
+            "keywords": [
+                "command",
+                "reset"
+            ],
+            "name": "Reset Command for Node vilnius",
+            "status": {
+                "@id": "scripts/vilnius/2025-03-18_13-03-19_730049_reset.status"
+            },
+            "stderr": {
+                "@id": "scripts/vilnius/2025-03-18_13-03-19_730049_reset.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/vilnius/2025-03-18_13-03-19_730049_reset.stdout"
+            }
+        },
+        {
+            "@id": "https://orcid.org/0000-0002-5378-3905",
+            "@type": "Person",
+            "affiliation": {
+                "@id": "https://ror.org/02kkvpp62"
+            },
+            "keywords": [
+                "creator"
+            ],
+            "name": "Eric Hauser"
+        },
+        {
+            "@id": "https://orcid.org/0000-0002-3456-7890",
+            "@type": "Person",
+            "affiliation": {
+                "@id": "https://ror.org/056z5bx32"
+            },
+            "keywords": [
+                "creator"
+            ],
+            "name": "Sepp Meier"
+        },
+        {
+            "@id": "https://ror.org/056z5bx32",
+            "@type": "Organization",
+            "location": "https://www.geonames.org/2881485",
+            "name": "University of Applied Sciences Landshut",
+            "url": "https://www.haw-landshut.de/en"
+        }
+    ]
+}

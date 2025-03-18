@@ -1,0 +1,15 @@
+{
+    "loop": {
+        "kerne": [
+            1,
+            2,
+            4,
+            8
+        ]
+    },
+    "riga": {},
+    "global": {
+        "runtime": 240
+    },
+    "vilnius": {}
+}

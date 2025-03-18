@@ -1,0 +1,37 @@
+{
+    "loop": {
+        "pkt_size": [
+            64,
+            256,
+            512,
+            1024
+        ],
+        "pkt_rate": [
+            1000
+        ]
+    },
+    "riga": {
+        "git": {
+            "repo": "https://github.com/emmericp/moongen.git",
+            "commit": "master"
+        },
+        "port": {
+            "tx": 0,
+            "rx": 0
+        }
+    },
+    "global": {
+        "runtime": 600
+    },
+    "vilnius": {
+        "git": {
+            "repo": "https://github.com/libmoon/libmoon.git",
+            "commit": "master"
+        },
+        "cpu-freq": 50,
+        "port": {
+            "tx": 0,
+            "rx": 0
+        }
+    }
+}

@@ -1,0 +1,91 @@
+++ pos_get_variable hostname
++ echo vilnius
+++ pos_get_variable git/repo
++ GIT_REPO=https://github.com/libmoon/libmoon.git
++ DUT=libmoon
++ echo 'Cloning https://github.com/libmoon/libmoon.git into libmoon'
++ git clone --recursive https://github.com/libmoon/libmoon.git libmoon
+Cloning into 'libmoon'...
+Submodule 'deps/dpdk' (https://github.com/emmericp/dpdk) registered for path 'deps/dpdk'
+Submodule 'deps/highwayhash' (https://github.com/google/highwayhash.git) registered for path 'deps/highwayhash'
+Submodule 'deps/luajit' (https://github.com/emmericp/LuaJIT) registered for path 'deps/luajit'
+Submodule 'deps/pciids' (https://github.com/emmericp/pciids) registered for path 'deps/pciids'
+Submodule 'deps/tbb' (https://github.com/01org/tbb.git) registered for path 'deps/tbb'
+Submodule 'lua/lib/pf' (https://github.com/emmericp/pflua) registered for path 'lua/lib/pf'
+Submodule 'lua/lib/syscall' (https://github.com/emmericp/ljsyscall) registered for path 'lua/lib/syscall'
+Submodule 'lua/lib/turbo' (https://github.com/emmericp/turbo) registered for path 'lua/lib/turbo'
+Cloning into '/root/libmoon/deps/dpdk'...
+Cloning into '/root/libmoon/deps/highwayhash'...
+Cloning into '/root/libmoon/deps/pciids'...
+Cloning into '/root/libmoon/lua/lib/turbo'...
+Cloning into '/root/libmoon/deps/luajit'...
+Cloning into '/root/libmoon/lua/lib/pf'...
+Cloning into '/root/libmoon/lua/lib/syscall'...
+Cloning into '/root/libmoon/deps/tbb'...
++ cd libmoon
+++ pos_get_variable git/commit
++ git checkout master
+Already on 'master'
++ ./build.sh
+In function ‘pci_get_kernel_driver_by_path’,
+    inlined from ‘pci_scan_one.isra.1’ at /root/libmoon/deps/dpdk/lib/librte_eal/linuxapp/eal/eal_pci.c:338:8:
+/root/libmoon/deps/dpdk/lib/librte_eal/linuxapp/eal/eal_pci.c:82:3: warning: ‘strncpy’ specified bound depends on the length of the source argument [-Wstringop-overflow=]
+   strncpy(dri_name, name + 1, strlen(name + 1) + 1);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/root/libmoon/deps/dpdk/lib/librte_eal/linuxapp/eal/eal_pci.c: In function ‘pci_scan_one.isra.1’:
+/root/libmoon/deps/dpdk/lib/librte_eal/linuxapp/eal/eal_pci.c:82:31: note: length computed here
+   strncpy(dri_name, name + 1, strlen(name + 1) + 1);
+                               ^~~~~~~~~~~~~~~~
+/root/libmoon/deps/dpdk/lib/librte_table/rte_table_hash_cuckoo.c: In function ‘rte_table_hash_cuckoo_create’:
+/root/libmoon/deps/dpdk/lib/librte_table/rte_table_hash_cuckoo.c:151:16: warning: cast between incompatible function types from ‘rte_table_hash_op_hash’ {aka ‘long unsigned int (*)(void *, unsigned int,  long unsigned int)’} to ‘uint32_t (*)(const void *, uint32_t,  uint32_t)’ {aka ‘unsigned int (*)(const void *, unsigned int,  unsigned int)’} [-Wcast-function-type]
+   .hash_func = (rte_hash_function)(p->f_hash),
+                ^
+In function ‘nfp_net_read_mac’,
+    inlined from ‘nfp_net_init’ at /root/libmoon/deps/dpdk/drivers/net/nfp/nfp_net.c:2540:2:
+/root/libmoon/deps/dpdk/drivers/net/nfp/nfp_net.c:600:2: warning: ‘memcpy’ forming offset [5, 6] is out of the bounds [0, 4] of object ‘tmp’ with type ‘uint32_t’ {aka ‘unsigned int’} [-Warray-bounds]
+  memcpy(&hw->mac_addr[0], &tmp, sizeof(struct ether_addr));
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/root/libmoon/deps/dpdk/drivers/net/nfp/nfp_net.c: In function ‘nfp_net_init’:
+/root/libmoon/deps/dpdk/drivers/net/nfp/nfp_net.c:597:11: note: ‘tmp’ declared here
+  uint32_t tmp;
+           ^~~
+In file included from /root/libmoon/deps/dpdk/drivers/net/qede/base/ecore_int.c:9:
+In function ‘ecore_int_deassertion’,
+    inlined from ‘ecore_int_attentions’ at /root/libmoon/deps/dpdk/drivers/net/qede/base/ecore_int.c:1085:8,
+    inlined from ‘ecore_int_sp_dpc’ at /root/libmoon/deps/dpdk/drivers/net/qede/base/ecore_int.c:1191:3:
+/root/libmoon/deps/dpdk/drivers/net/qede/base/bcm_osal.h:409:40: warning: ‘strncpy’ specified bound 30 equals destination size [-Wstringop-truncation]
+ #define OSAL_STRNCPY(dst, string, len) strncpy(dst, string, len)
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+/root/libmoon/deps/dpdk/drivers/net/qede/base/ecore_int.c:997:7: note: in expansion of macro ‘OSAL_STRNCPY’
+       OSAL_STRNCPY(bit_name,
+       ^~~~~~~~~~~~
+/root/libmoon/deps/dpdk/drivers/net/virtio/virtio_user/vhost_kernel_tap.c: In function ‘vhost_kernel_open_tap’:
+/root/libmoon/deps/dpdk/drivers/net/virtio/virtio_user/vhost_kernel_tap.c:98:3: warning: ‘strncpy’ specified bound 16 equals destination size [-Wstringop-truncation]
+   strncpy(ifr.ifr_name, *p_ifname, IFNAMSIZ);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/root/libmoon/deps/dpdk/drivers/net/qede/qede_main.c: In function ‘qed_slowpath_start’:
+/root/libmoon/deps/dpdk/drivers/net/qede/qede_main.c:299:3: warning: ‘strncpy’ output may be truncated copying 12 bytes from a string of length 127 [-Wstringop-truncation]
+   strncpy((char *)drv_version.name, (const char *)params->name,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MCP_DRV_VER_STR_SIZE - 4);
+    ~~~~~~~~~~~~~~~~~~~~~~~~~
+/root/libmoon/deps/dpdk/app/proc_info/main.c: In function ‘nic_xstats_display’:
+/root/libmoon/deps/dpdk/app/proc_info/main.c:524:45: warning: ‘%s’ directive writing up to 255 bytes into a region of size between 167 and 232 [-Wformat-overflow=]
+    sprintf(buf, "PUTVAL %s/dpdkstat-port.%u/%s-%s N:%"
+                                             ^~
+     PRIu64"\n", host_id, port_id, counter_type,
+                                   ~~~~~~~~~~~~
+/root/libmoon/deps/dpdk/app/proc_info/main.c:524:4: note: ‘sprintf’ output between 31 and 433 bytes into a destination of size 256
+    sprintf(buf, "PUTVAL %s/dpdkstat-port.%u/%s-%s N:%"
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     PRIu64"\n", host_id, port_id, counter_type,
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     xstats_names[i].name, values[i]);
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++ ./setup-hugetlbfs.sh
++ echo 1
+++ pos_get_variable cpu-freq
++ echo 50
+++ pos_get_variable cpu-freq
++ echo 50
++ echo 'setup done'

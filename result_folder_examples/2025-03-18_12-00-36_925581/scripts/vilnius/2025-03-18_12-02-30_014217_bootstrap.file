@@ -1,0 +1,345 @@
+#!/usr/bin/env python
+# pytype: skip-file
+# pylint: disable=consider-using-f-string,unspecified-encoding
+
+'''
+Bootstrap the host for the experiment scripts.
+Sets environment variables and deploys postools.
+The resulting variables in /etc/environment are all double quoted strings.
+
+This file is executed on the experiment node.
+Therefore, it must be written in Python-2.7 compatible code.
+'''
+
+import sys
+import logging
+import json
+import socket
+from time import time
+from datetime import datetime
+import argparse
+import csv
+import subprocess
+import tarfile
+import ssl
+import os
+
+try:
+    # For Python 3.0 and later
+    from urllib.request import urlopen
+except ImportError:
+    # Fall back to Python 2's urllib2
+    from urllib2 import urlopen
+
+# ensure compatibility with Python2
+try:
+    FileNotFoundError  # pylint: disable=used-before-assignment
+except NameError:
+    FileNotFoundError = OSError  # pylint: disable=redefined-builtin
+
+logging.basicConfig(level='DEBUG',
+                    format='[%(name)s] [%(levelname)s] %(message)s')
+
+# posd uses self-signed certificate, so don't verify it
+SSL_CONTEXT = ssl._create_unverified_context()
+
+
+def get_time():
+    '''
+    current time
+    '''
+
+    return datetime.fromtimestamp(time()).strftime('%Y-%m-%d %H:%M:%S')
+
+
+def get_allocation_data(pos_server, hostname):
+    '''
+    retrieve the allocation data for this node
+    '''
+
+    url = '{}/allocations/get/{}'.format(pos_server, hostname)
+    logging.debug('fetching allocation data from: %s', url)
+    text = urlopen(url, context=SSL_CONTEXT).read().decode('utf-8')
+    return json.loads(text)
+
+
+def write_variables(alloc, pos_server, hostname, auth_token):
+    '''
+    store pos variables locally
+    '''
+
+    # save json data
+    alloc.update({'hostname': hostname})
+    alloc.update({'pos_server': pos_server})
+    alloc.update({'token': auth_token})
+    with open('/tmp/pos_variables.json', 'w') as handle:
+        json.dump(alloc, handle, indent=2, sort_keys=True)
+
+
+def source_os_release():
+    '''
+    read known os-release paths and populate os.environ with their values
+    '''
+    os_release_paths = ['/etc/os-release', '/usr/lib/os-release']
+    for os_release_path in os_release_paths:
+        if not os.path.exists(os_release_path):
+            continue
+        with open(os_release_path, 'r') as os_release:
+            os_release_reader = csv.reader(
+                os_release,
+                delimiter='=',
+                quotechar='"',
+            )
+            for line in os_release_reader:
+                try:
+                    name, value = line  # expect: name="value"
+                    os.environ[name] = value
+                except ValueError:  # unexpected format
+                    continue
+
+
+def is_nixos():
+    '''
+    use os-release ID to determine if host runs NixOS
+    '''
+    source_os_release()
+    return os.environ.get('ID', '').lower() == 'nixos'
+
+
+def deploy_postools(pos_server, postools_archive):
+    '''
+    download and install postools
+    '''
+
+    postools_url = '{}/files/{}'.format(pos_server, postools_archive)
+    logging.debug('downloading postools from: %s', postools_url)
+    postools_data = urlopen(postools_url,
+                            context=SSL_CONTEXT)
+    postools_tar = postools_data.read()
+    postools_file = '/tmp/' + postools_archive
+
+    with open(postools_file, 'wb') as handle:
+        handle.write(postools_tar)
+
+    pwd = '/usr/local/postools'
+
+    with tarfile.open(postools_file) as postools:
+        postools.extractall(path=pwd)
+
+    if not is_nixos():
+        # at least one version of postools for python2/3 must be installed
+        installed_any = False
+        if not installed_any:
+            for version in ['python', 'python3']:
+                try:
+                    subprocess.check_call(
+                        ['/usr/bin/{}'.format(version), 'setup.py', 'build',
+                         '--force'], cwd=pwd, stderr=subprocess.PIPE)
+                    subprocess.check_call(
+                        ['/usr/bin/{}'.format(version), 'setup.py', 'install',
+                         '--force'], cwd=pwd, stderr=subprocess.PIPE)
+                    installed_any = True
+                except subprocess.CalledProcessError as exce:
+                    logging.warning(
+                        'Unable to install postools (via %s): %s', version,
+                        exce)
+            for version in ['pip', 'pip3']:
+                # try installation via pip/pip3
+                # however, not every image has installed pip
+                try:
+                    subprocess.check_call(
+                        ['{}'.format(version), 'install',
+                         '--force', '.'], cwd=pwd, stderr=subprocess.PIPE)
+                    installed_any = True
+                except subprocess.CalledProcessError as exce:
+                    logging.warning(
+                        'Unable to install postools (via %s): %s', version,
+                        exce)
+                except FileNotFoundError as fnfe:
+                    logging.info('%s not installed: %s', version, fnfe)
+        if not installed_any:
+            logging.fatal('Unable to deploy postools')
+            sys.exit(1)
+    else:
+        default_nix_data = urlopen(
+            '{}/files/luz/default.nix'.format(pos_server), context=SSL_CONTEXT
+        ).read()
+
+        path_of_default_nix = pwd + '/default.nix'
+
+        with open(path_of_default_nix, 'wb') as f:
+            f.write(default_nix_data)
+
+        subprocess.check_call(
+            ['/usr/bin/env', 'nix-env', '-f', './default.nix', '-i', '.*'],
+            cwd=pwd,
+        )
+
+
+def bootstrap(pos_server, postools_archive, hostname, auth_token):
+    '''
+    perform a pos bootstrap
+    '''
+
+    logging.debug('pos_server: %s', pos_server)
+
+    logging.info('Start bootstrapping host: %s', get_time())
+
+    alloc = get_allocation_data(pos_server, hostname)
+
+    write_variables(alloc, pos_server, hostname, auth_token)
+
+    logging.info('Finished setting up variables: %s', get_time())
+
+    deploy_postools(pos_server, postools_archive)
+
+    logging.info('Finished setting up postools: %s', get_time())
+
+
+def add_fqdn_to_hosts(fqdn, hostname):
+    '''
+    add FQDN and hostname to /etc/hosts as defined by 'man hostname'
+    see #162
+    '''
+
+    logging.info('Adding FQDN %s to /etc/hosts.', fqdn)
+
+    search_str = '127.0.1.1'
+    insert_line = '{}\t{} {}'.format(search_str, fqdn, hostname)
+
+    lines = []
+    # if the search string is in line, delete it
+    with open('/etc/hosts', 'r') as fh:
+        for line in fh:
+            if search_str not in line:
+                lines.append(line.strip('\n'))
+
+    # append line to be inserted and write file from scratch
+    lines.append(insert_line)
+    with open('/etc/hosts', 'w') as fh:
+        fh.write('\n'.join(lines))
+        fh.write('\n')
+
+    logging.info('Finished adding FQDN to /etc/hosts.')
+
+
+def set_hostname(hostname):
+    '''
+    change the node's hostname to the passed hostname
+
+    see https://gitlab.lrz.de/I8-testbeds/pos/daemon/-/issues/303
+    see https://www.freedesktop.org/software/systemd/man/hostnamectl.html
+    '''
+
+    logging.info('Setting hostname to %s.', hostname)
+
+    result = subprocess.check_call(['hostnamectl', 'set-hostname', hostname])
+    add_fqdn_to_hosts("", hostname)
+
+    logging.info('Finished setting hostname: %i.', result)
+
+
+def clear_authorized_keys():
+    '''
+    clear all added ssh public keys from authorized keys file
+    '''
+
+    logging.info('Clearing ssh public keys from authorized keys file: %s',
+                 get_time())
+
+    # check that folder exists
+    ssh_path = os.path.join(os.path.expanduser('~'), '.ssh')
+    if not os.path.exists(ssh_path):
+        os.mkdir(ssh_path)
+
+    path = [os.path.expanduser('~'), '.ssh', 'authorized_keys']
+    p = os.path.join(*path)
+
+    # make sure that file exists
+    if not os.path.exists(p):
+        # create file
+        with open(p, 'w') as fh:
+            pass
+        return
+
+    keys = []
+    with open(p, 'r') as fh:
+        for line in fh:
+            if 'POS_SSH_KEY' not in line:
+                keys.append(line)
+    with open(p, 'w') as fh:
+        for key in keys:
+            fh.write(key)
+
+
+def add_authorized_key(pubkey):
+    '''
+    add an ssh public key to authorized keys file
+    '''
+
+    logging.info('Adding an ssh public key to authorized keys file: %s',
+                 get_time())
+
+    path = [os.path.expanduser('~'), '.ssh', 'authorized_keys']
+    p = os.path.join(*path)
+
+    with open(p, 'r+') as fh:
+        for line in fh:
+            if line.startswith(pubkey):
+                logging.info('Public key already included, doing nothing')
+                break
+        else:
+            logging.info('Adding public key')
+            fh.write(pubkey)
+            fh.write('\n')
+
+
+def main():
+    '''
+    Main function: argparser and bootstrap invocation
+    '''
+
+    parser = argparse.ArgumentParser(description='Bootstrap a host.')
+    parser.add_argument('pos_server', help='address of the pos server')
+    parser.add_argument('postools_archive', help='postools archive to deploy')
+    parser.add_argument('auth_token', help='authentication token for pos')
+    parser.add_argument('--hostname', help='set hostname of node')
+    parser.add_argument('--fqdn', type=str, help='add a FQDN to /etc/hosts')
+    parser.add_argument('--authorized-keys', type=str, nargs='*', default=[],
+                        help='add a list of ssh public keys to authorized '
+                             'keys file')
+    args = parser.parse_args()
+
+    # some arguments do not work on NixOS
+    if is_nixos():
+        if args.hostname:
+            logging.error(
+                'Setting a hostname has not yet been implemented for NixOS.')
+        if args.fqdn:
+            logging.error(
+                'Setting a FQDN has not yet been implemented for NixOS.')
+        if args.authorized_keys:
+            logging.error(
+                'Adding ssh keys has not yet been implemented for NixOS.')
+
+    if args.hostname:
+        hostname = args.hostname
+        set_hostname(hostname)
+    else:
+        hostname = socket.gethostname()
+        if is_nixos():
+            hostname = hostname.split('.', 1)[0]
+
+    bootstrap(args.pos_server, args.postools_archive, hostname,
+              args.auth_token)
+
+    if args.fqdn and not is_nixos():
+        add_fqdn_to_hosts(args.fqdn, hostname)
+
+    clear_authorized_keys()
+    for pubkey in args.authorized_keys:
+        add_authorized_key(pubkey)
+
+
+if __name__ == '__main__':
+    main()
