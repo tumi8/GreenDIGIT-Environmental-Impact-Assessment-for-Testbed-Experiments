@@ -27,11 +27,11 @@ This Jupyter Notebook processes and visualizes **energy measurement data** from 
 ## **File Structure**
 - **Energy CSV files** are stored inside:
 ```
-/srv/testbed/results/warmuth/default/energy/
+<path_to_result_folder>/energy/
 ```
 - **RO-Crate metadata** is stored in:
 ```
-/srv/testbed/results/warmuth/default/ro-crate-metadata.json
+<path_to_result_folder>/ro-crate-metadata.json
 ```
 - **Topology files** are referenced inside `ro-crate-metadata.json` and extracted dynamically.
 
@@ -39,15 +39,20 @@ This Jupyter Notebook processes and visualizes **energy measurement data** from 
 
 ## **Requirements**
 Install required Python libraries:
+For local execution of Juypter Notebook you need the jupyter kernel as well.
 ```
 pip install pandas matplotlib seaborn
+```
+Or use the `requirements.txt` for all needed packages at once:
+```
+pip install -r requirements.txt
 ```
 
 ---
 
 ## **Usage**
 Run the Jupyter Notebook and **specify the experiment folder** when prompted.
-If only the **timestamp (`YYYY-MM-DD_HH-MM-SS_xxxxxx`)** is provided, the script automatically **prepends the base path**.
+If only the **timestamp (`YYYY-MM-DD_HH-MM-SS_xxxxxx`)** is provided, the script automatically **prepends the base path**. This only works if executed from the management host of the testbed. Otherwise just provide the full path to the result folder.
 
 ---
 
