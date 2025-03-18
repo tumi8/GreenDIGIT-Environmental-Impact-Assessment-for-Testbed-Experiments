@@ -125,10 +125,11 @@ Then set up the Git filter:
 git config filter.jupyter.clean nbstripout
 git config filter.jupyter.smudge cat
 ```
-Apply the filter to existing files:
+Apply the filter to existing files (each time after execution the notebook):
 ```
 git add --renormalize .
 ```
+To automate it use pre-commit hooks.
 
 ### Alternative: Strip Metadata Manually
 If you prefer a manual approach, you can clear metadata using `nbconvert` before committing:
