@@ -92,3 +92,47 @@ If only the **timestamp (`YYYY-MM-DD_HH-MM-SS_xxxxxx`)** is provided, the script
 |-------|--------------|--------------------------------|---------------------------|-------|---------|------------|--------------------------------|
 | Node1 | node1.testbed | [Open PDF](path/to/topology1.pdf) | Xeon E31230 @ 3.20GHz      | 4     | 8       | RAM: 16 GiB | Intel 82574L, Broadcom NetXtreme |
 | Node2 | node2.testbed | No topology available          | Xeon E31230 @ 3.20GHz                 | Unknown | Unknown | Unknown      | No NICs detected               |
+
+
+## Preventing Unwanted Git Changes in Jupyter Notebooks
+
+Jupyter notebooks track metadata such as `execution_count`, which can cause unnecessary changes in Git. To prevent Git from detecting these changes after each run, follow these steps:
+
+### 1. Install `nbstripout`
+`nbstripout` removes unnecessary metadata before committing:
+```
+pip install nbstripout
+```
+
+### 2. Enable `nbstripout` for Your Repository
+Run the following command inside your Git repository:
+```
+nbstripout --install
+```
+
+### 3. Verify Installation
+Check that `nbstripout` is active:
+```
+nbstripout --status
+```
+### 4. Configure Git to Ignore Execution Counts
+Add the following rule to `.gitattributes` in your repository:
+```
+*.ipynb filter=jupyter
+```
+Then set up the Git filter:
+```
+git config filter.jupyter.clean nbstripout
+git config filter.jupyter.smudge cat
+```
+Apply the filter to existing files:
+```
+git add --renormalize .
+```
+
+### Alternative: Strip Metadata Manually
+If you prefer a manual approach, you can clear metadata using `nbconvert` before committing:
+```
+jupyter nbconvert --ClearMetadataPreprocessor.enabled=True --to notebook --inplace my_notebook.ipynb
+```
+This ensures that execution counts and other unnecessary metadata do not clutter your Git history.
