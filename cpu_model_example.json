@@ -1,8 +1,11 @@
 {
-  "p_base": 58.0,
-  "p_core": 17.294,
-  "fitted_intercept": 71.69500000000001,
-  "timestamp": "2025-04-25T15:17:26.647418",
+  "model_type": "linear_free_fit",
+  "linear_model": {
+    "p_base": 63.0,
+    "p_core": 17.294,
+    "fitted_intercept": 71.69500000000001
+  },
+  "timestamp": "2025-04-28T13:15:56.770358",
   "node_name": "riga",
   "source_files": {
     "measurement_run0.csv": 1,
@@ -10,9 +13,13 @@
     "measurement_run2.csv": 3,
     "measurement_run3.csv": 4
   },
-  "model_type": "linear_free_fit",
   "cpu_info": {
     "cores": 4,
     "model": "Xeon E31230 @ 3.20GHz"
+  },
+  "polynomial_model": {
+    "a": -2.33499999999999,
+    "b": 28.968999999999937,
+    "c": 60.02000000000009
   }
 }
