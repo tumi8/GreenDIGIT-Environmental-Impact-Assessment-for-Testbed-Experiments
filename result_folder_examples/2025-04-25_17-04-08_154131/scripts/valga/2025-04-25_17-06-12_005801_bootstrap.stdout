@@ -1,0 +1,191 @@
+running build
+running build_py
+creating build
+creating build/lib.linux-x86_64-2.7
+creating build/lib.linux-x86_64-2.7/postools
+copying postools/postools.py -> build/lib.linux-x86_64-2.7/postools
+copying postools/__init__.py -> build/lib.linux-x86_64-2.7/postools
+copying postools/__version__.py -> build/lib.linux-x86_64-2.7/postools
+creating build/lib.linux-x86_64-2.7/postools/cli
+copying postools/cli/tools.py -> build/lib.linux-x86_64-2.7/postools/cli
+copying postools/cli/__init__.py -> build/lib.linux-x86_64-2.7/postools/cli
+creating build/lib.linux-x86_64-2.7/postools/lib
+copying postools/lib/configuration.py -> build/lib.linux-x86_64-2.7/postools/lib
+copying postools/lib/default_configuration.py -> build/lib.linux-x86_64-2.7/postools/lib
+copying postools/lib/variable.py -> build/lib.linux-x86_64-2.7/postools/lib
+copying postools/lib/rest_api.py -> build/lib.linux-x86_64-2.7/postools/lib
+copying postools/lib/__init__.py -> build/lib.linux-x86_64-2.7/postools/lib
+running install
+running bdist_egg
+running egg_info
+creating postools.egg-info
+writing requirements to postools.egg-info/requires.txt
+writing postools.egg-info/PKG-INFO
+writing top-level names to postools.egg-info/top_level.txt
+writing dependency_links to postools.egg-info/dependency_links.txt
+writing entry points to postools.egg-info/entry_points.txt
+writing manifest file 'postools.egg-info/SOURCES.txt'
+reading manifest file 'postools.egg-info/SOURCES.txt'
+writing manifest file 'postools.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_py
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/postools
+creating build/bdist.linux-x86_64/egg/postools/lib
+copying build/lib.linux-x86_64-2.7/postools/lib/__init__.py -> build/bdist.linux-x86_64/egg/postools/lib
+copying build/lib.linux-x86_64-2.7/postools/lib/rest_api.py -> build/bdist.linux-x86_64/egg/postools/lib
+copying build/lib.linux-x86_64-2.7/postools/lib/variable.py -> build/bdist.linux-x86_64/egg/postools/lib
+copying build/lib.linux-x86_64-2.7/postools/lib/default_configuration.py -> build/bdist.linux-x86_64/egg/postools/lib
+copying build/lib.linux-x86_64-2.7/postools/lib/configuration.py -> build/bdist.linux-x86_64/egg/postools/lib
+creating build/bdist.linux-x86_64/egg/postools/cli
+copying build/lib.linux-x86_64-2.7/postools/cli/__init__.py -> build/bdist.linux-x86_64/egg/postools/cli
+copying build/lib.linux-x86_64-2.7/postools/cli/tools.py -> build/bdist.linux-x86_64/egg/postools/cli
+copying build/lib.linux-x86_64-2.7/postools/__version__.py -> build/bdist.linux-x86_64/egg/postools
+copying build/lib.linux-x86_64-2.7/postools/__init__.py -> build/bdist.linux-x86_64/egg/postools
+copying build/lib.linux-x86_64-2.7/postools/postools.py -> build/bdist.linux-x86_64/egg/postools
+byte-compiling build/bdist.linux-x86_64/egg/postools/lib/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/postools/lib/rest_api.py to rest_api.pyc
+byte-compiling build/bdist.linux-x86_64/egg/postools/lib/variable.py to variable.pyc
+byte-compiling build/bdist.linux-x86_64/egg/postools/lib/default_configuration.py to default_configuration.pyc
+byte-compiling build/bdist.linux-x86_64/egg/postools/lib/configuration.py to configuration.pyc
+byte-compiling build/bdist.linux-x86_64/egg/postools/cli/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/postools/cli/tools.py to tools.pyc
+byte-compiling build/bdist.linux-x86_64/egg/postools/__version__.py to __version__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/postools/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/postools/postools.py to postools.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying postools.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying postools.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying postools.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying postools.egg-info/entry_points.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying postools.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying postools.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+creating dist
+creating 'dist/postools-2.1.12-py2.7.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+Processing postools-2.1.12-py2.7.egg
+Copying postools-2.1.12-py2.7.egg to /usr/local/lib/python2.7/dist-packages
+Adding postools 2.1.12 to easy-install.pth file
+Installing pos_sync script to /usr/local/bin
+Installing pos_energy_stop script to /usr/local/bin
+Installing pos_wait script to /usr/local/bin
+Installing pos_run_rest_blocking script to /usr/local/bin
+Installing pos_upload script to /usr/local/bin
+Installing pos_energy_start script to /usr/local/bin
+Installing pos_get_variable script to /usr/local/bin
+Installing pos_timesync script to /usr/local/bin
+Installing pos_download script to /usr/local/bin
+Installing pos_heartbeat script to /usr/local/bin
+Installing pos_kill script to /usr/local/bin
+Installing pos_set_variable script to /usr/local/bin
+Installing pos_run script to /usr/local/bin
+
+Installed /usr/local/lib/python2.7/dist-packages/postools-2.1.12-py2.7.egg
+Processing dependencies for postools==2.1.12
+Searching for setuptools==40.8.0
+Best match: setuptools 40.8.0
+Adding setuptools 40.8.0 to easy-install.pth file
+Installing easy_install script to /usr/local/bin
+
+Using /usr/lib/python2.7/dist-packages
+Searching for requests==2.21.0
+Best match: requests 2.21.0
+Adding requests 2.21.0 to easy-install.pth file
+
+Using /usr/lib/python2.7/dist-packages
+Finished processing dependencies for postools==2.1.12
+running build
+running build_py
+creating build/lib
+creating build/lib/postools
+copying postools/postools.py -> build/lib/postools
+copying postools/__init__.py -> build/lib/postools
+copying postools/__version__.py -> build/lib/postools
+creating build/lib/postools/cli
+copying postools/cli/tools.py -> build/lib/postools/cli
+copying postools/cli/__init__.py -> build/lib/postools/cli
+creating build/lib/postools/lib
+copying postools/lib/configuration.py -> build/lib/postools/lib
+copying postools/lib/default_configuration.py -> build/lib/postools/lib
+copying postools/lib/variable.py -> build/lib/postools/lib
+copying postools/lib/rest_api.py -> build/lib/postools/lib
+copying postools/lib/__init__.py -> build/lib/postools/lib
+running install
+running bdist_egg
+running egg_info
+writing postools.egg-info/PKG-INFO
+writing dependency_links to postools.egg-info/dependency_links.txt
+writing entry points to postools.egg-info/entry_points.txt
+writing requirements to postools.egg-info/requires.txt
+writing top-level names to postools.egg-info/top_level.txt
+reading manifest file 'postools.egg-info/SOURCES.txt'
+writing manifest file 'postools.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_py
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/postools
+creating build/bdist.linux-x86_64/egg/postools/lib
+copying build/lib/postools/lib/__init__.py -> build/bdist.linux-x86_64/egg/postools/lib
+copying build/lib/postools/lib/rest_api.py -> build/bdist.linux-x86_64/egg/postools/lib
+copying build/lib/postools/lib/variable.py -> build/bdist.linux-x86_64/egg/postools/lib
+copying build/lib/postools/lib/default_configuration.py -> build/bdist.linux-x86_64/egg/postools/lib
+copying build/lib/postools/lib/configuration.py -> build/bdist.linux-x86_64/egg/postools/lib
+creating build/bdist.linux-x86_64/egg/postools/cli
+copying build/lib/postools/cli/__init__.py -> build/bdist.linux-x86_64/egg/postools/cli
+copying build/lib/postools/cli/tools.py -> build/bdist.linux-x86_64/egg/postools/cli
+copying build/lib/postools/__version__.py -> build/bdist.linux-x86_64/egg/postools
+copying build/lib/postools/__init__.py -> build/bdist.linux-x86_64/egg/postools
+copying build/lib/postools/postools.py -> build/bdist.linux-x86_64/egg/postools
+byte-compiling build/bdist.linux-x86_64/egg/postools/lib/__init__.py to __init__.cpython-37.pyc
+byte-compiling build/bdist.linux-x86_64/egg/postools/lib/rest_api.py to rest_api.cpython-37.pyc
+byte-compiling build/bdist.linux-x86_64/egg/postools/lib/variable.py to variable.cpython-37.pyc
+byte-compiling build/bdist.linux-x86_64/egg/postools/lib/default_configuration.py to default_configuration.cpython-37.pyc
+byte-compiling build/bdist.linux-x86_64/egg/postools/lib/configuration.py to configuration.cpython-37.pyc
+byte-compiling build/bdist.linux-x86_64/egg/postools/cli/__init__.py to __init__.cpython-37.pyc
+byte-compiling build/bdist.linux-x86_64/egg/postools/cli/tools.py to tools.cpython-37.pyc
+byte-compiling build/bdist.linux-x86_64/egg/postools/__version__.py to __version__.cpython-37.pyc
+byte-compiling build/bdist.linux-x86_64/egg/postools/__init__.py to __init__.cpython-37.pyc
+byte-compiling build/bdist.linux-x86_64/egg/postools/postools.py to postools.cpython-37.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying postools.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying postools.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying postools.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying postools.egg-info/entry_points.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying postools.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying postools.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+creating 'dist/postools-2.1.12-py3.7.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+Processing postools-2.1.12-py3.7.egg
+Copying postools-2.1.12-py3.7.egg to /usr/local/lib/python3.7/dist-packages
+Adding postools 2.1.12 to easy-install.pth file
+Installing pos_download script to /usr/local/bin
+Installing pos_energy_start script to /usr/local/bin
+Installing pos_energy_stop script to /usr/local/bin
+Installing pos_get_variable script to /usr/local/bin
+Installing pos_heartbeat script to /usr/local/bin
+Installing pos_kill script to /usr/local/bin
+Installing pos_run script to /usr/local/bin
+Installing pos_run_rest_blocking script to /usr/local/bin
+Installing pos_set_variable script to /usr/local/bin
+Installing pos_sync script to /usr/local/bin
+Installing pos_timesync script to /usr/local/bin
+Installing pos_upload script to /usr/local/bin
+Installing pos_wait script to /usr/local/bin
+
+Installed /usr/local/lib/python3.7/dist-packages/postools-2.1.12-py3.7.egg
+Processing dependencies for postools==2.1.12
+Searching for setuptools==40.8.0
+Best match: setuptools 40.8.0
+Adding setuptools 40.8.0 to easy-install.pth file
+Installing easy_install script to /usr/local/bin
+
+Using /usr/lib/python3/dist-packages
+Searching for requests==2.21.0
+Best match: requests 2.21.0
+Adding requests 2.21.0 to easy-install.pth file
+
+Using /usr/lib/python3/dist-packages
+Finished processing dependencies for postools==2.1.12
