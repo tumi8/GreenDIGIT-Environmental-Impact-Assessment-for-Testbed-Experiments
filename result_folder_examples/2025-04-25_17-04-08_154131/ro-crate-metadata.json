@@ -1,0 +1,1637 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "dateModified": "2025-04-25T17:16:37.843064",
+            "datePublished": "2025-04-25T15:04:08+00:00",
+            "hasPart": [
+                {
+                    "@id": "config/valga/"
+                },
+                {
+                    "@id": "scripts/valga/"
+                },
+                {
+                    "@id": "config/valga/hardware.json"
+                },
+                {
+                    "@id": "config/allocation.json"
+                },
+                {
+                    "@id": "config/valga/topology.json"
+                },
+                {
+                    "@id": "config/valga/topology.pdf"
+                },
+                {
+                    "@id": "experiment_recording.json"
+                },
+                {
+                    "@id": "config/2025-04-25_17-04-08_588085_variables.json"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-12_005801_bootstrap.file"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-12_005801_bootstrap.stdout"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-12_005801_bootstrap.stderr"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-12_005801_bootstrap.status"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-04-10_148339_reset.stdout"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-04-10_148339_reset.stderr"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-04-10_148339_reset.status"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-04-10_513072_loadgen_setup_stress.file"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-04-10_513072_loadgen_setup_stress.stdout"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-04-10_513072_loadgen_setup_stress.stderr"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-04-10_513072_loadgen_setup_stress.status"
+                },
+                {
+                    "@id": "energy/valga/"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.file"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.stdout"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.stderr"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.status"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.loop"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.file"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.stdout"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.stderr"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.status"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.loop"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.file"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.stdout"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.stderr"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.status"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.loop"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.file"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.stdout"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.stderr"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.status"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.loop"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.file"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.stdout"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.stderr"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.status"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.loop"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.file"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.stdout"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.stderr"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.status"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.loop"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.file"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.stdout"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.stderr"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.status"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.loop"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.file"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.stdout"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.stderr"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.status"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.loop"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.file"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.stdout"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.stderr"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.status"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.loop"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.file"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.stdout"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.stderr"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.status"
+                },
+                {
+                    "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.loop"
+                }
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "config/valga/",
+            "@type": "Dataset",
+            "description": "Contains detailed information about node specifc configuration like topology or hardware information",
+            "name": "Config information of valga",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/valga/",
+            "@type": "Dataset",
+            "description": "Contains executed scripts and different output logs",
+            "name": "Scripts executed on testbed node valga"
+        },
+        {
+            "@id": "config/valga/hardware.json",
+            "@type": "File",
+            "contentSize": "24376",
+            "dateCreated": "2025-04-25T17:04:09.395960",
+            "description": "Contains information about CPU, GPU, RAM, motherboard, storage, and network",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Hardware of testbed node valga",
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/config/valga/hardware.json",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "config/allocation.json",
+            "@type": "File",
+            "contentSize": "789",
+            "dateCreated": "2025-04-25T17:04:09.400019",
+            "description": "Allocation details like booted images and experiment variables",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Allocation from 2025-04-25 17:04:08.154254",
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/config/allocation.json",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "config/valga/topology.json",
+            "@type": "File",
+            "contentSize": "2905",
+            "dateCreated": "2025-04-25T17:04:09.404719",
+            "description": "Contains network topology with neighboring nodes including link speed",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Network topology of testbed node valga",
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/config/valga/topology.json",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "config/valga/topology.pdf",
+            "@type": "File",
+            "contentSize": "78526",
+            "dateCreated": "2025-04-25T17:04:09.407979",
+            "description": "contains network topology figure with neighboring nodes including link speed",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/19"
+            },
+            "name": "network topology of testbed node valga",
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/config/valga/topology.pdf",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "experiment_recording.json",
+            "@type": "File",
+            "contentSize": "143",
+            "dateCreated": "2025-04-25T17:04:08.234442",
+            "description": "Experiment recording of pos daemon requests",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Experiment recording of allocation",
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/experiment_recording.json"
+        },
+        {
+            "@id": "config/2025-04-25_17-04-08_588085_variables.json",
+            "@type": "File",
+            "contentSize": "80",
+            "dateCreated": "2025-04-25_17-04-08_588085",
+            "description": "Contains a variable set for the allocation",
+            "encodingFormat": "application/json",
+            "name": "Variable set as of 2025-04-25_17-04-08_588085",
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/config/2025-04-25_17-04-08_588085_variables.json",
+            "tags": [
+                "variables"
+            ]
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-12_005801_bootstrap.file",
+            "@type": "File",
+            "contentSize": "10561",
+            "dateCreated": "2025-04-25T17:06:12.005839",
+            "description": "Script executed to set up the environment and install pos tools on node valga",
+            "name": "Bootstrap script used for node valga",
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-12_005801_bootstrap.file",
+            "status": {
+                "@id": "scripts/valga/2025-04-25_17-06-12_005801_bootstrap.status"
+            },
+            "stderr": {
+                "@id": "scripts/valga/2025-04-25_17-06-12_005801_bootstrap.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/valga/2025-04-25_17-06-12_005801_bootstrap.stdout"
+            },
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "tags": [
+                "command",
+                "script"
+            ]
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-12_005801_bootstrap.stdout",
+            "@type": "File",
+            "contentSize": "11071",
+            "dateCreated": "2025-04-25T17:06:12.005839",
+            "description": "Output from bootstrap script executed on valga",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-12_005801_bootstrap.file"
+            },
+            "name": "Bootstrap.stdout for valga",
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-12_005801_bootstrap.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "tags": [
+                "command"
+            ]
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-12_005801_bootstrap.stderr",
+            "@type": "File",
+            "contentSize": "882",
+            "dateCreated": "2025-04-25T17:06:12.005839",
+            "description": "Output from bootstrap script executed on valga",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-12_005801_bootstrap.file"
+            },
+            "name": "Bootstrap.stderr for valga",
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-12_005801_bootstrap.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "tags": [
+                "command"
+            ]
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-12_005801_bootstrap.status",
+            "@type": "File",
+            "contentSize": "1",
+            "dateCreated": "2025-04-25T17:06:12.005839",
+            "description": "Output from bootstrap script executed on valga",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-12_005801_bootstrap.file"
+            },
+            "name": "Bootstrap.status for valga",
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-12_005801_bootstrap.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "tags": [
+                "command"
+            ]
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-04-10_148339_reset.stdout",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2025-04-25T17:04:10.148339",
+            "exampleOfWork": {
+                "@id": "2025-04-25_17-04-10_148339_reset"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-04-10_148339_reset.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-04-10_148339_reset.stderr",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2025-04-25T17:04:10.148339",
+            "exampleOfWork": {
+                "@id": "2025-04-25_17-04-10_148339_reset"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-04-10_148339_reset.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-04-10_148339_reset.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-04-25T17:04:10.148339",
+            "exampleOfWork": {
+                "@id": "2025-04-25_17-04-10_148339_reset"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-04-10_148339_reset.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-04-10_513072_loadgen_setup_stress.file",
+            "@type": "File",
+            "contentSize": "112",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-04-25T17:04:10.513072",
+            "executedOn": {
+                "@id": "valga"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-04-10_513072_loadgen_setup_stress.file",
+            "status": {
+                "@id": "scripts/valga/2025-04-25_17-04-10_513072_loadgen_setup_stress.status"
+            },
+            "stderr": {
+                "@id": "scripts/valga/2025-04-25_17-04-10_513072_loadgen_setup_stress.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/valga/2025-04-25_17-04-10_513072_loadgen_setup_stress.stdout"
+            },
+            "tags": [
+                "command",
+                "script"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-04-10_513072_loadgen_setup_stress.stdout",
+            "@type": "File",
+            "contentSize": "1256",
+            "dateCreated": "2025-04-25T17:04:10.513072",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-04-10_513072_loadgen_setup_stress.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-04-10_513072_loadgen_setup_stress.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-04-10_513072_loadgen_setup_stress.stderr",
+            "@type": "File",
+            "contentSize": "430",
+            "dateCreated": "2025-04-25T17:04:10.513072",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-04-10_513072_loadgen_setup_stress.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-04-10_513072_loadgen_setup_stress.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-04-10_513072_loadgen_setup_stress.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-04-25T17:04:10.513072",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-04-10_513072_loadgen_setup_stress.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-04-10_513072_loadgen_setup_stress.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "energy/valga/",
+            "@type": "Dataset",
+            "description": "Contains measured values of the energy consumption during an experiment",
+            "name": "Energy data for testbed node valga"
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.file",
+            "@type": "File",
+            "contentSize": "897",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "executedOn": {
+                "@id": "valga"
+            },
+            "loopFile": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.loop"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.file",
+            "status": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.status"
+            },
+            "stderr": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.stdout"
+            },
+            "tags": [
+                "command",
+                "script"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.stdout",
+            "@type": "File",
+            "contentSize": "89",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.loop",
+            "@type": "File",
+            "contentSize": "12",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run00.loop",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "tags": [
+                "variables"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.file",
+            "@type": "File",
+            "contentSize": "897",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "executedOn": {
+                "@id": "valga"
+            },
+            "loopFile": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.loop"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.file",
+            "status": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.status"
+            },
+            "stderr": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.stdout"
+            },
+            "tags": [
+                "command",
+                "script"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.stdout",
+            "@type": "File",
+            "contentSize": "89",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.loop",
+            "@type": "File",
+            "contentSize": "12",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run01.loop",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "tags": [
+                "variables"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.file",
+            "@type": "File",
+            "contentSize": "897",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "executedOn": {
+                "@id": "valga"
+            },
+            "loopFile": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.loop"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.file",
+            "status": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.status"
+            },
+            "stderr": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.stdout"
+            },
+            "tags": [
+                "command",
+                "script"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.stdout",
+            "@type": "File",
+            "contentSize": "89",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.loop",
+            "@type": "File",
+            "contentSize": "12",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run02.loop",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "tags": [
+                "variables"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.file",
+            "@type": "File",
+            "contentSize": "897",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "executedOn": {
+                "@id": "valga"
+            },
+            "loopFile": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.loop"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.file",
+            "status": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.status"
+            },
+            "stderr": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.stdout"
+            },
+            "tags": [
+                "command",
+                "script"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.stdout",
+            "@type": "File",
+            "contentSize": "89",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.loop",
+            "@type": "File",
+            "contentSize": "12",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run03.loop",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "tags": [
+                "variables"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.file",
+            "@type": "File",
+            "contentSize": "897",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "executedOn": {
+                "@id": "valga"
+            },
+            "loopFile": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.loop"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.file",
+            "status": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.status"
+            },
+            "stderr": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.stdout"
+            },
+            "tags": [
+                "command",
+                "script"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.stdout",
+            "@type": "File",
+            "contentSize": "89",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.loop",
+            "@type": "File",
+            "contentSize": "12",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run04.loop",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "tags": [
+                "variables"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.file",
+            "@type": "File",
+            "contentSize": "897",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "executedOn": {
+                "@id": "valga"
+            },
+            "loopFile": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.loop"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.file",
+            "status": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.status"
+            },
+            "stderr": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.stdout"
+            },
+            "tags": [
+                "command",
+                "script"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.stdout",
+            "@type": "File",
+            "contentSize": "89",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.loop",
+            "@type": "File",
+            "contentSize": "12",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run05.loop",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "tags": [
+                "variables"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.file",
+            "@type": "File",
+            "contentSize": "897",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "executedOn": {
+                "@id": "valga"
+            },
+            "loopFile": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.loop"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.file",
+            "status": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.status"
+            },
+            "stderr": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.stdout"
+            },
+            "tags": [
+                "command",
+                "script"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.stdout",
+            "@type": "File",
+            "contentSize": "89",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.loop",
+            "@type": "File",
+            "contentSize": "12",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run06.loop",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "tags": [
+                "variables"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.file",
+            "@type": "File",
+            "contentSize": "897",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "executedOn": {
+                "@id": "valga"
+            },
+            "loopFile": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.loop"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.file",
+            "status": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.status"
+            },
+            "stderr": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.stdout"
+            },
+            "tags": [
+                "command",
+                "script"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.stdout",
+            "@type": "File",
+            "contentSize": "89",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.loop",
+            "@type": "File",
+            "contentSize": "12",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run07.loop",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "tags": [
+                "variables"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.file",
+            "@type": "File",
+            "contentSize": "897",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "executedOn": {
+                "@id": "valga"
+            },
+            "loopFile": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.loop"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.file",
+            "status": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.status"
+            },
+            "stderr": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.stdout"
+            },
+            "tags": [
+                "command",
+                "script"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.stdout",
+            "@type": "File",
+            "contentSize": "89",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.loop",
+            "@type": "File",
+            "contentSize": "12",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run08.loop",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "tags": [
+                "variables"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "http://doi.org/10.1145/3485983.3494841",
+            "@type": "CreativeWork",
+            "alternateName": "pos",
+            "citation": "http://doi.org/10.1145/3485983.3494841",
+            "description": "The pos Framework: A Methodology and Toolchain for Reproducible Network Experiments",
+            "name": "Plain Orchestrating Service",
+            "tags": [
+                "version"
+            ],
+            "version": "2.4.79"
+        },
+        {
+            "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/19",
+            "@type": "WebSite",
+            "name": "Acrobat PDF 1.5"
+        },
+        {
+            "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817",
+            "@type": "WebSite",
+            "name": "JSON Data Format"
+        },
+        {
+            "@id": "https://orcid.org/0000-0001-6328-1047",
+            "@type": "Person",
+            "affiliation": {
+                "@id": "https://ror.org/02kkvpp62"
+            },
+            "name": "Kilian Warmuth",
+            "description": "Software, Methodology",
+            "tags": [
+                "creator"
+            ]
+        },
+        {
+            "@id": "https://ror.org/02kkvpp62",
+            "@type": "Organization",
+            "location": "https://www.geonames.org/2867714",
+            "name": "Technical University of Munich",
+            "url": "https://www.tum.de/"
+        },
+        {
+            "@id": "valga",
+            "@type": "Thing",
+            "allocation": {
+                "@id": "config/allocation.json"
+            },
+            "dateCreated": "2025-04-25T17:04:09.385056",
+            "description": "Metadata for testbed node valga.baltikum.net.cit.tum.de",
+            "fqdn": "valga.baltikum.net.cit.tum.de",
+            "hardware": {
+                "@id": "config/valga/hardware.json"
+            },
+            "name": "Testbed Node valga",
+            "tags": [
+                "node"
+            ],
+            "topology": {
+                "@id": "config/valga/topology.json"
+            },
+            "visualizedTopology": {
+                "@id": "config/valga/topology.pdf"
+            }
+        },
+        {
+            "@id": "default/debian-buster",
+            "@type": "Thing",
+            "description": "This image was generated automatically by mandelstamm on 2023-10-22T14:04:31+00:00 using the modules/debian-buster.sh module. Please see the GitLab project for more information: https://gitlab.lrz.de/I8-testbeds/mandelstamm/",
+            "name": "Booted image default/debian-buster",
+            "path": "/srv/testbed/images/default/debian-buster@2023-10-22T14:04:31+00:00",
+            "size": "428M",
+            "tags": [
+                "image"
+            ]
+        },
+        {
+            "@id": "2025-04-25_17-04-10_148339_reset",
+            "@type": "Thing",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-04-25T17:04:10.148339",
+            "description": "Resets a node and automatically bootstraps it. This reset command does not have a .file.",
+            "executedOn": {
+                "@id": "valga"
+            },
+            "image": {
+                "@id": "default/debian-buster"
+            },
+            "name": "Reset Command for Node valga",
+            "status": {
+                "@id": "scripts/valga/2025-04-25_17-04-10_148339_reset.status"
+            },
+            "stderr": {
+                "@id": "scripts/valga/2025-04-25_17-04-10_148339_reset.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/valga/2025-04-25_17-04-10_148339_reset.stdout"
+            },
+            "tags": [
+                "command",
+                "reset"
+            ]
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.file",
+            "@type": "File",
+            "contentSize": "897",
+            "creator": {
+                "@id": "https://orcid.org/0000-0001-6328-1047"
+            },
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "executedOn": {
+                "@id": "valga"
+            },
+            "loopFile": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.loop"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.file",
+            "status": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.status"
+            },
+            "stderr": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.stdout"
+            },
+            "tags": [
+                "command",
+                "script"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.stdout",
+            "@type": "File",
+            "contentSize": "89",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.loop",
+            "@type": "File",
+            "contentSize": "13",
+            "dateCreated": "2025-04-25T17:06:18.670272",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.file"
+            },
+            "path": "/srv/testbed/results/warmuth/default/2025-04-25_17-04-08_154131/scripts/valga/2025-04-25_17-06-18_670272_loadgen_exp_stress_run09.loop",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "tags": [
+                "variables"
+            ],
+            "variables": {
+                "@id": "2025-04-25_17-04-08_588085_variables.json"
+            }
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "valga.baltikum.net.cit.tum.de": [
+        {
+            "inf_a": "enp133s0",
+            "inf_b": "enp136s0",
+            "mac_a": "24:5e:be:84:32:ab",
+            "mac_b": "24:5e:be:84:32:aa",
+            "type": "loop_link_full_duplex",
+            "properties": {
+                "speed": "2p5GigT - 2.5GBASE-T Four-pair twisted-pair balanced copper cabling PHY",
+                "device_b": "server"
+            }
+        }
+    ],
+    "rapla.baltikum.net.cit.tum.de": [
+        {
+            "inf_a": "ens2f0",
+            "inf_b": "enp2s0f1",
+            "mac_a": "50:7c:6f:54:ac:1c",
+            "mac_b": "50:7c:6f:52:19:bf",
+            "type": "splitter_link",
+            "properties": {
+                "speed": "10GigBaseLR - R fiber over 1310 nm optics",
+                "device_b": "server",
+                "endpoint": "sniffer",
+                "splitter_tx": {
+                    "fqdn": "rapla.baltikum.net.cit.tum.de",
+                    "inf": "enp2s0f1",
+                    "mac": "50:7c:6f:52:19:bf"
+                },
+                "splitter_rx": {
+                    "fqdn": "palanga.baltikum.net.cit.tum.de",
+                    "inf": "enp2s0f0np0",
+                    "mac": "58:a2:e1:27:9f:f2"
+                }
+            }
+        },
+        {
+            "inf_a": "ens5f1",
+            "inf_b": "enp130s0f0",
+            "mac_a": "90:e2:ba:92:c1:2d",
+            "mac_b": "00:1b:21:bc:b4:50",
+            "type": "link",
+            "properties": {
+                "speed": "10GigBaseCX4 - X copper over 8 pair 100-Ohm balanced cable",
+                "device_b": "server"
+            }
+        }
+    ],
+    "tapa.baltikum.net.cit.tum.de": [
+        {
+            "inf_a": "ens5f0",
+            "inf_b": "enp130s0f0",
+            "mac_a": "90:e2:ba:92:c1:2c",
+            "mac_b": "00:1b:21:bc:b1:e0",
+            "type": "link",
+            "properties": {
+                "speed": "10GigBaseCX4 - X copper over 8 pair 100-Ohm balanced cable",
+                "device_b": "server"
+            }
+        }
+    ],
+    "palanga.baltikum.net.cit.tum.de": [
+        {
+            "inf_a": "ens2f1",
+            "inf_b": "enp2s0f1np1",
+            "mac_a": "50:7c:6f:54:ac:1d",
+            "mac_b": "58:a2:e1:27:9f:f3",
+            "type": "splitter_link",
+            "properties": {
+                "speed": "10GigBaseLR - R fiber over 1310 nm optics",
+                "device_b": "server",
+                "endpoint": "sniffer",
+                "splitter_tx": {
+                    "fqdn": "palanga.baltikum.net.cit.tum.de",
+                    "inf": "enp2s0f1np1",
+                    "mac": "58:a2:e1:27:9f:f3"
+                },
+                "splitter_rx": {
+                    "fqdn": "rapla.baltikum.net.cit.tum.de",
+                    "inf": "enp2s0f0",
+                    "mac": "50:7c:6f:52:19:be"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "id": "warmuth_250425_170408_154131",
+    "created": "2025-04-25 17:04:08.154254",
+    "updated": "2025-04-25 17:04:09.778620",
+    "owner": "warmuth",
+    "result_folder": "warmuth/default/2025-04-25_17-04-08_154131",
+    "variables": {
+        "loop": {
+            "kerne": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            ]
+        },
+        "valga": {},
+        "global": {
+            "runtime": 59
+        }
+    },
+    "bootparameters": {
+        "valga": {
+            "iommu": "pt"
+        }
+    },
+    "bootstrapped": {
+        "valga": false
+    },
+    "nodes": [
+        "valga"
+    ],
+    "images": {
+        "valga": "default/debian-buster"
+    }
+}

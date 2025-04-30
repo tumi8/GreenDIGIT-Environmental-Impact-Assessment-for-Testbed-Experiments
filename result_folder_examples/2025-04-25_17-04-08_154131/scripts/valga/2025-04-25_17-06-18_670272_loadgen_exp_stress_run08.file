@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# exit on error
+set -e
+
+# local variables
+test_name="stress-test"
+sleep_duration_before_test=2
+# loop variables
+kerne=$(pos_get_variable kerne --from-loop)
+# global variables
+runtime=$(pos_get_variable runtime --from-global)
+
+# Synchronize with other nodes
+pos_sync
+echo "Starting test $test_name"
+
+pos_energy_start --loop --filename "measurement"
+
+# Run LoadGen in the background using pos_run
+# pos_run --loop "loadgen-$test_name" -- "stress" "-c" "$kerne"
+pos_run --loop "loadgen-$test_name" -- bash -c "exec stress -c $kerne -t $runtime"
+# pos_run "loadgen-$test_name" -- "stress" "-c" "4"
+
+# Measurement period
+sleep "$runtime"
+
+# killall stress
+
+# Kill the process started with pos_run
+# pos_kill --loop "loadgen-$test_name"
+# pos_kill "loadgen-$test_name"
+
+# Inform test done
+pos_sync
+echo "Stopping test loadgen-$test_name"
+
+pos_energy_stop
+
+echo "All done LoadGen $test_name"

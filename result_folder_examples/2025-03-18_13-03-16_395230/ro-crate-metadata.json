@@ -365,7 +365,7 @@
             "dateCreated": "2025-03-18_13-03-16_865894",
             "description": "Contains a variable set for the allocation",
             "encodingFormat": "application/json",
-            "keywords": [
+            "tags": [
                 "variables"
             ],
             "name": "Variable set as of 2025-03-18_13-03-16_865894",
@@ -377,7 +377,7 @@
             "contentSize": "10561",
             "dateCreated": "2025-03-18T13:05:02.944230",
             "description": "Script executed to set up the environment and install pos tools on node riga",
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -405,7 +405,7 @@
             "exampleOfWork": {
                 "@id": "scripts/riga/2025-03-18_13-05-02_944185_bootstrap.file"
             },
-            "keywords": [
+            "tags": [
                 "command"
             ],
             "name": "Bootstrap.stdout for riga",
@@ -423,7 +423,7 @@
             "exampleOfWork": {
                 "@id": "scripts/riga/2025-03-18_13-05-02_944185_bootstrap.file"
             },
-            "keywords": [
+            "tags": [
                 "command"
             ],
             "name": "Bootstrap.stderr for riga",
@@ -441,7 +441,7 @@
             "exampleOfWork": {
                 "@id": "scripts/riga/2025-03-18_13-05-02_944185_bootstrap.file"
             },
-            "keywords": [
+            "tags": [
                 "command"
             ],
             "name": "Bootstrap.status for riga",
@@ -509,7 +509,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -581,7 +581,7 @@
             "contentSize": "10561",
             "dateCreated": "2025-03-18T13:05:09.312874",
             "description": "Script executed to set up the environment and install pos tools on node vilnius",
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -609,7 +609,7 @@
             "exampleOfWork": {
                 "@id": "scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.file"
             },
-            "keywords": [
+            "tags": [
                 "command"
             ],
             "name": "Bootstrap.stdout for vilnius",
@@ -627,7 +627,7 @@
             "exampleOfWork": {
                 "@id": "scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.file"
             },
-            "keywords": [
+            "tags": [
                 "command"
             ],
             "name": "Bootstrap.stderr for vilnius",
@@ -645,7 +645,7 @@
             "exampleOfWork": {
                 "@id": "scripts/vilnius/2025-03-18_13-05-09_312831_bootstrap.file"
             },
-            "keywords": [
+            "tags": [
                 "command"
             ],
             "name": "Bootstrap.status for vilnius",
@@ -713,7 +713,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -802,7 +802,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -822,7 +822,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -899,7 +899,7 @@
             "exampleOfWork": {
                 "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.file"
             },
-            "keywords": [
+            "tags": [
                 "variables"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run0.loop",
@@ -921,7 +921,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -998,7 +998,7 @@
             "exampleOfWork": {
                 "@id": "scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.file"
             },
-            "keywords": [
+            "tags": [
                 "variables"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/riga/2025-03-18_13-05-08_521497_loadgen_exp_stress_run1.loop",
@@ -1020,7 +1020,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -1097,7 +1097,7 @@
             "exampleOfWork": {
                 "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.file"
             },
-            "keywords": [
+            "tags": [
                 "variables"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run1.loop",
@@ -1119,7 +1119,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -1139,7 +1139,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -1216,7 +1216,7 @@
             "exampleOfWork": {
                 "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.file"
             },
-            "keywords": [
+            "tags": [
                 "variables"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run2.loop",
@@ -1238,7 +1238,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -1315,7 +1315,7 @@
             "exampleOfWork": {
                 "@id": "scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.file"
             },
-            "keywords": [
+            "tags": [
                 "variables"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_13-03-16_395230/scripts/vilnius/2025-03-18_13-05-08_587521_dut_exp_stress_run3.loop",
@@ -1332,7 +1332,7 @@
             "alternateName": "pos",
             "citation": "http://doi.org/10.1145/3485983.3494841",
             "description": "The pos Framework: A Methodology and Toolchain for Reproducible Network Experiments",
-            "keywords": [
+            "tags": [
                 "version"
             ],
             "name": "Plain Orchestrating Service",
@@ -1354,10 +1354,11 @@
             "affiliation": {
                 "@id": "https://ror.org/02kkvpp62"
             },
-            "keywords": [
+            "tags": [
                 "creator"
             ],
-            "name": "Kilian Warmuth"
+            "name": "Kilian Warmuth",
+            "description": "Software, Methodology"
         },
         {
             "@id": "https://ror.org/02kkvpp62",
@@ -1378,7 +1379,7 @@
             "hardware": {
                 "@id": "config/riga/hardware.json"
             },
-            "keywords": [
+            "tags": [
                 "node"
             ],
             "name": "Testbed Node riga",
@@ -1401,7 +1402,7 @@
             "hardware": {
                 "@id": "config/vilnius/hardware.json"
             },
-            "keywords": [
+            "tags": [
                 "node"
             ],
             "name": "Testbed Node vilnius",
@@ -1416,7 +1417,7 @@
             "@id": "default/debian-buster",
             "@type": "Thing",
             "description": "This image was generated automatically by mandelstamm on 2023-10-22T14:04:31+00:00 using the modules/debian-buster.sh module. Please see the GitLab project for more information: https://gitlab.lrz.de/I8-testbeds/mandelstamm/",
-            "keywords": [
+            "tags": [
                 "image"
             ],
             "name": "Booted image default/debian-buster",
@@ -1437,7 +1438,7 @@
             "image": {
                 "@id": "default/debian-buster"
             },
-            "keywords": [
+            "tags": [
                 "command",
                 "reset"
             ],
@@ -1466,7 +1467,7 @@
             "image": {
                 "@id": "default/debian-buster"
             },
-            "keywords": [
+            "tags": [
                 "command",
                 "reset"
             ],
@@ -1487,7 +1488,7 @@
             "affiliation": {
                 "@id": "https://ror.org/02kkvpp62"
             },
-            "keywords": [
+            "tags": [
                 "creator"
             ],
             "name": "Eric Hauser"
@@ -1498,7 +1499,7 @@
             "affiliation": {
                 "@id": "https://ror.org/056z5bx32"
             },
-            "keywords": [
+            "tags": [
                 "creator"
             ],
             "name": "Sepp Meier"

@@ -1,112 +1,106 @@
-# **Energy Data Visualization**
+# Energy Analysis & Prediction Notebooks
 
-This Jupyter Notebook processes and visualizes **energy measurement data** from testbed experiments. It extracts **energy metrics** from CSV files and retrieves **detailed node metadata** from RO-Crate JSON files, including CPU, memory, NICs, and topology information.
+This Jupyter-based toolset supports **energy analysis, modeling, and prediction** for network experiment testbeds. It utilizes RO-Crate metadata and CSV energy logs to generate rich visualizations, create machine learning models, and simulate power draw under configurable load conditions.
 
----
 
-## **Features**
+## Notebooks Overview
 
-- **Loads energy measurement data** from multiple experiment runs.
-- **Parses timestamps** and associates data with respective nodes.
-- **Extracts node metadata** (FQDN, topology, CPU, memory, and NICs) from `ro-crate-metadata.json`.
-- **Automatically detects available experiment runs** and processes them dynamically.
-- **Handles missing data gracefully**, ensuring smooth execution.
-- **Generates multiple visualizations** for energy analysis:
-  - **Power consumption trends over time**.
-  - **Cumulative energy counter trends for total energy usage**.
-  - **Energy consumption rate (mW/s) to detect workload changes**.
-  - **Power vs. CPU Load (if CPU usage data is available)**.
-  - **Current and voltage trends to analyze stability**.
-  - **Total energy used per node for quick comparison**.
-- **Formats node metadata output**, including:
-  - **Clickable topology links (if available)**.
-  - **Structured hardware details (CPU, RAM, NICs)**.
-  - **Automatic summary of system-wide specs**.
+### 1. `evaluation.ipynb` — **Energy Data Visualization**
 
----
+Analyzes raw energy CSV files for multiple nodes and runs.
 
-## **File Structure**
+#### Key Features
 
-- **Energy CSV files** are stored inside:
+- Loads and processes CSV energy data dynamically.
+- Extracts node-level metadata from `ro-crate-metadata.json`.
+- Provides in-depth visualizations:
+  - Power over time
+  - Cumulative energy usage
+  - Energy rate (mW/s)
+  - Power vs. CPU load (if CPU data available)
+  - Current and voltage trends
+  - Per-node energy bar charts
+- Generates formatted metadata summaries and clickable topology links.
 
-```bash
-<path_to_result_folder>/energy/
+> Input: `energy/` folder & `ro-crate-metadata.json`
+> Output: Visual plots + metadata tables
+
+
+### 2. energy_model.ipynb — **CPU Energy Modeling**
+
+Fits regression models (linear/polynomial) to stress test results.
+
+#### Key Features
+
+- Uses stress-run outputs from previous testbed executions.
+- Fits two model types:
+  - **Linear (with or without idle intercept)**
+  - **Polynomial (quadratic)**
+- Stores each trained model as a `.json` file for later prediction.
+
+> Input: CPU-only energy runs (per node)
+> Output: Model file `cpu_model_<node>.json` stored in `data/cpu_models/`
+
+
+### 3. `prediction.ipynb` — **Interactive Power Prediction**
+
+Predicts server power draw using trained models and user-defined configurations.
+
+#### Key Features
+
+- Select multiple nodes to simulate total or individual power draw.
+- For each node:
+  - Choose active NICs
+  - Set number of active CPU cores
+  - Select target CPU load (0–100%)
+- Visual prediction modes:
+  - **Per-node stacked plots**
+  - **System-wide stacked summary**
+- Fully interactive and updates live on input change.
+
+> 📁 Input: CPU model files (`cpu_model_<node>.json`)
+> 📊 Output: Live power prediction visualizations
+
+
+## Setup & Requirements
+
+### Dependencies
+
 ```
-
-- **RO-Crate metadata** is stored in:
-
-```bash
-<path_to_result_folder>/ro-crate-metadata.json
-```
-
-- **Topology files** are referenced inside `ro-crate-metadata.json` and extracted dynamically.
-
----
-
-## **Requirements**
-
-Install required Python libraries:
-For local execution of Juypter Notebook you need the jupyter kernel as well.
-
-```bash
 pip install pandas matplotlib seaborn
 ```
 
-Or use the `requirements.txt` for all needed packages at once to install inisde virtual environment:
+Or use the virtual environment setup:
 
-```bash
+```
 python3 -m venv .venv_energy
 source .venv_energy/bin/activate
 pip install -r requirements.txt
 ```
 
----
 
-## **Usage**
+## 📂 Folder Structure
 
-Run the Jupyter Notebook and **specify the experiment folder** when prompted.
-If only the **timestamp (`YYYY-MM-DD_HH-MM-SS_xxxxxx`)** is provided, the script automatically **prepends the base path**. This only works if executed from the management host of the testbed. Otherwise just provide the full path to the result folder.
+```
+results/
+  └── <timestamped_result_folder>/
+        ├── energy/                    # CSV measurements per node
+        ├── ro-crate-metadata.json    # RO-Crate metadata
+        └── config/                   # Optional extra info (e.g., variable sets)
 
----
+data/
+  └── cpu_models/                     # Fitted model files for prediction
+```
 
-## **Output**
 
-### **Creator Information**
+## 📁 Notebook Outputs
 
-- **Name**
-- **ORCID (clickable link to researcher profile)**
-- **Affiliation (clickable link to organization)**
+| Notebook         | Input                              | Output                                |
+|------------------|-------------------------------------|----------------------------------------|
+| `evaluation`     | CSV + RO-Crate metadata             | Energy trend plots & hardware summary |
+| `energy_model`   | Energy runs from stress tests       | Fitted model `.json` files             |
+| `prediction`     | Model files + interactive inputs    | Live power prediction per scenario     |
 
-### **Plots & Their Purpose**
-
-| **Plot Name**                                | **Description** |
-|---------------------------------------------|---------------|
-| **Power Consumption Over Time**             | Shows how power draw (W) changes over time for each node and experiment run. |
-| **Cumulative Energy Consumption (mWh)**     | Tracks how much total energy has been used over time. |
-| **Energy Consumption Rate (mW/s)**    | Shows the rate at which energy is being consumed per second. |
-| **Power vs. CPU Load [If CPU data available]** | Compares power draw against CPU utilization, useful for efficiency analysis. |
-| **Current Trend Over Time**                 | Shows how much electrical current (mA) was drawn over time. |
-| **Voltage Trend Over Time**                 | Displays voltage variations, usually stable unless there is a power issue. |
-| **Total Energy Used Per Node**        | A bar chart comparing the total energy consumption of different test setups. |
-
----
-
-## **Node Metadata**
-
-- Extracted and formatted **node details** (FQDN, CPU, RAM, NICs).
-- **Clickable links** to topology PDFs (if available).
-- **Summary table** with system-wide specs (**total cores, RAM, unique CPUs**).
-
----
-
-## **Example Output**
-
-### **Extracted Node Metadata Table**
-
-| Name  | FQDN           | Topology                          | CPU                        | Cores | Threads | Memory      | NICs                           |
-|-------|--------------|--------------------------------|---------------------------|-------|---------|------------|--------------------------------|
-| Node1 | node1.testbed | [Open PDF](path/to/topology1.pdf) | Xeon E31230 @ 3.20GHz      | 4     | 8       | RAM: 16 GiB | Intel 82574L, Broadcom NetXtreme |
-| Node2 | node2.testbed | No topology available          | Xeon E31230 @ 3.20GHz                 | Unknown | Unknown | Unknown      | No NICs detected               |
 
 ## Preventing Unwanted Git Changes in Jupyter Notebooks
 

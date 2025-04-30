@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# exit on error
+set -e
+
+
+echo $(pos_get_variable hostname)
+
+apt install stress
+
+
+echo 'setup done'
