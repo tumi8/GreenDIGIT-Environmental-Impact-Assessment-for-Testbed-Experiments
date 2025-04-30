@@ -1,0 +1,27 @@
+{
+  "model_type": "linear_free_fit",
+  "linear_model": {
+    "p_base": 102.0,
+    "p_core": 5.039714285714289,
+    "fitted_intercept": 115.166
+  },
+  "timestamp": "2025-04-28T13:19:15.406485",
+  "node_name": "tapa",
+  "source_files": {
+    "measurement_run0.csv": 1,
+    "measurement_run1.csv": 2,
+    "measurement_run2.csv": 3,
+    "measurement_run3.csv": 4,
+    "measurement_run4.csv": 5,
+    "measurement_run5.csv": 6
+  },
+  "cpu_info": {
+    "cores": 6,
+    "model": "Xeon E5-2620 v2 @ 2.10GHz"
+  },
+  "polynomial_model": {
+    "a": -0.7639285714285684,
+    "b": 10.387214285714272,
+    "c": 108.036
+  }
+}

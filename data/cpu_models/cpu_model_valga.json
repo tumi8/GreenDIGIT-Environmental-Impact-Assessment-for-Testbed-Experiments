@@ -1,0 +1,31 @@
+{
+  "model_type": "linear_free_fit",
+  "linear_model": {
+    "p_base": 81.0,
+    "p_core": 5.240121212121213,
+    "fitted_intercept": 136.13333333333333
+  },
+  "timestamp": "2025-04-29T12:49:04.389715",
+  "node_name": "valga",
+  "source_files": {
+    "measurement_run00.csv": 1,
+    "measurement_run01.csv": 2,
+    "measurement_run02.csv": 3,
+    "measurement_run03.csv": 4,
+    "measurement_run04.csv": 5,
+    "measurement_run05.csv": 6,
+    "measurement_run06.csv": 7,
+    "measurement_run07.csv": 8,
+    "measurement_run08.csv": 9,
+    "measurement_run09.csv": 10
+  },
+  "cpu_info": {
+    "cores": 10,
+    "model": "Xeon E5-2630 v4 @ 2.20GHz"
+  },
+  "polynomial_model": {
+    "a": -0.38799242424242486,
+    "b": 9.508037878787881,
+    "c": 127.59750000000003
+  }
+}

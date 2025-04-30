@@ -1,0 +1,25 @@
+{
+  "model_type": "linear_free_fit",
+  "linear_model": {
+    "p_base": 64.0,
+    "p_core": 10.945,
+    "fitted_intercept": 74.39
+  },
+  "timestamp": "2025-04-28T13:20:07.799296",
+  "node_name": "narva",
+  "source_files": {
+    "measurement_run0.csv": 1,
+    "measurement_run1.csv": 2,
+    "measurement_run2.csv": 3,
+    "measurement_run3.csv": 4
+  },
+  "cpu_info": {
+    "cores": 4,
+    "model": "Xeon E3-1230 V2 @ 3.30GHz"
+  },
+  "polynomial_model": {
+    "a": -1.462499999999995,
+    "b": 18.257499999999965,
+    "c": 67.07750000000004
+  }
+}

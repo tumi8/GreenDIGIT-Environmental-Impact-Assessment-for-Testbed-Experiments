@@ -1,0 +1,25 @@
+{
+  "model_type": "linear_free_fit",
+  "linear_model": {
+    "p_base": 51.0,
+    "p_core": 11.774999999999997,
+    "fitted_intercept": 69.76000000000002
+  },
+  "timestamp": "2025-04-28T14:47:46.135370",
+  "node_name": "vilnius",
+  "source_files": {
+    "measurement_run0.csv": 1,
+    "measurement_run1.csv": 2,
+    "measurement_run2.csv": 3,
+    "measurement_run3.csv": 4
+  },
+  "cpu_info": {
+    "cores": 4,
+    "model": "Xeon E31230 @ 3.20GHz"
+  },
+  "polynomial_model": {
+    "a": -7.162499999999987,
+    "b": 47.58749999999989,
+    "c": 33.947500000000176
+  }
+}

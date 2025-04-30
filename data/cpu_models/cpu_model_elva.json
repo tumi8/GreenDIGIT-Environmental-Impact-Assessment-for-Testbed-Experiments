@@ -1,0 +1,27 @@
+{
+  "model_type": "linear_free_fit",
+  "linear_model": {
+    "p_base": 78.0,
+    "p_core": 5.918,
+    "fitted_intercept": 99.98533333333333
+  },
+  "timestamp": "2025-04-28T13:26:28.930332",
+  "node_name": "elva",
+  "source_files": {
+    "measurement_run0.csv": 1,
+    "measurement_run1.csv": 2,
+    "measurement_run2.csv": 3,
+    "measurement_run3.csv": 4,
+    "measurement_run4.csv": 5,
+    "measurement_run5.csv": 6
+  },
+  "cpu_info": {
+    "cores": 6,
+    "model": "Xeon E5-2620 v3 @ 2.40GHz"
+  },
+  "polynomial_model": {
+    "a": -0.6008928571428562,
+    "b": 10.124250000000004,
+    "c": 94.37699999999998
+  }
+}
