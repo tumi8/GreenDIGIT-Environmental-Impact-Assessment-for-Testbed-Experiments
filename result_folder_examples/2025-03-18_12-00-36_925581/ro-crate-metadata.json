@@ -527,7 +527,7 @@
             "dateCreated": "2025-03-18_12-00-37_399529",
             "description": "Contains a variable set for the allocation",
             "encodingFormat": "application/json",
-            "keywords": [
+            "tags": [
                 "variables"
             ],
             "name": "Variable set as of 2025-03-18_12-00-37_399529",
@@ -539,7 +539,7 @@
             "contentSize": "10561",
             "dateCreated": "2025-03-18T12:02:28.635234",
             "description": "Script executed to set up the environment and install pos tools on node riga",
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -567,7 +567,7 @@
             "exampleOfWork": {
                 "@id": "scripts/riga/2025-03-18_12-02-28_635208_bootstrap.file"
             },
-            "keywords": [
+            "tags": [
                 "command"
             ],
             "name": "Bootstrap.stdout for riga",
@@ -585,7 +585,7 @@
             "exampleOfWork": {
                 "@id": "scripts/riga/2025-03-18_12-02-28_635208_bootstrap.file"
             },
-            "keywords": [
+            "tags": [
                 "command"
             ],
             "name": "Bootstrap.stderr for riga",
@@ -603,7 +603,7 @@
             "exampleOfWork": {
                 "@id": "scripts/riga/2025-03-18_12-02-28_635208_bootstrap.file"
             },
-            "keywords": [
+            "tags": [
                 "command"
             ],
             "name": "Bootstrap.status for riga",
@@ -618,7 +618,7 @@
             "contentSize": "10561",
             "dateCreated": "2025-03-18T12:02:30.014243",
             "description": "Script executed to set up the environment and install pos tools on node vilnius",
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -646,7 +646,7 @@
             "exampleOfWork": {
                 "@id": "scripts/vilnius/2025-03-18_12-02-30_014217_bootstrap.file"
             },
-            "keywords": [
+            "tags": [
                 "command"
             ],
             "name": "Bootstrap.stdout for vilnius",
@@ -664,7 +664,7 @@
             "exampleOfWork": {
                 "@id": "scripts/vilnius/2025-03-18_12-02-30_014217_bootstrap.file"
             },
-            "keywords": [
+            "tags": [
                 "command"
             ],
             "name": "Bootstrap.stderr for vilnius",
@@ -682,7 +682,7 @@
             "exampleOfWork": {
                 "@id": "scripts/vilnius/2025-03-18_12-02-30_014217_bootstrap.file"
             },
-            "keywords": [
+            "tags": [
                 "command"
             ],
             "name": "Bootstrap.status for vilnius",
@@ -750,7 +750,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -827,7 +827,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -919,7 +919,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/riga/2025-03-18_12-14-37_954254_loadgen-l2-load-latency_run0.command",
@@ -941,7 +941,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/riga/2025-03-18_12-14-38_033163_loadgen-l2-load-latency_run0.stdout",
@@ -963,7 +963,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/riga/2025-03-18_12-14-38_059059_loadgen-l2-load-latency_run0.stderr",
@@ -994,7 +994,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "pos_run",
                 "upload"
             ],
@@ -1028,7 +1028,7 @@
                     "@id": "files/riga/histogram-l2-load-latency_run0.tar.gz.csv"
                 }
             ],
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -1105,7 +1105,7 @@
             "exampleOfWork": {
                 "@id": "scripts/riga/2025-03-18_12-04-29_756010_loadgen_exp_moongen-loop_run0.file"
             },
-            "keywords": [
+            "tags": [
                 "variables"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/riga/2025-03-18_12-04-29_756010_loadgen_exp_moongen-loop_run0.loop",
@@ -1130,7 +1130,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/vilnius/2025-03-18_12-14-39_610396_dut-l2-load-latency_run0.command",
@@ -1152,7 +1152,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/vilnius/2025-03-18_12-14-39_672181_dut-l2-load-latency_run0.stdout",
@@ -1174,7 +1174,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/vilnius/2025-03-18_12-14-39_704987_dut-l2-load-latency_run0.stderr",
@@ -1204,7 +1204,7 @@
                     "@id": "scripts/vilnius/2025-03-18_12-14-39_704987_dut-l2-load-latency_run0.stderr"
                 }
             ],
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -1281,7 +1281,7 @@
             "exampleOfWork": {
                 "@id": "scripts/vilnius/2025-03-18_12-04-29_756229_dut_exp_moongen-loop_run0.file"
             },
-            "keywords": [
+            "tags": [
                 "variables"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/vilnius/2025-03-18_12-04-29_756229_dut_exp_moongen-loop_run0.loop",
@@ -1306,7 +1306,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/riga/2025-03-18_12-24-47_123562_loadgen-l2-load-latency_run1.command",
@@ -1328,7 +1328,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/riga/2025-03-18_12-24-47_178979_loadgen-l2-load-latency_run1.stdout",
@@ -1350,7 +1350,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/riga/2025-03-18_12-24-47_216113_loadgen-l2-load-latency_run1.stderr",
@@ -1372,7 +1372,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "pos_run",
                 "upload"
             ],
@@ -1406,7 +1406,7 @@
                     "@id": "files/riga/histogram-l2-load-latency_run1.tar.gz.csv"
                 }
             ],
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -1483,7 +1483,7 @@
             "exampleOfWork": {
                 "@id": "scripts/riga/2025-03-18_12-04-29_756010_loadgen_exp_moongen-loop_run1.file"
             },
-            "keywords": [
+            "tags": [
                 "variables"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/riga/2025-03-18_12-04-29_756010_loadgen_exp_moongen-loop_run1.loop",
@@ -1508,7 +1508,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/vilnius/2025-03-18_12-24-48_766693_dut-l2-load-latency_run1.command",
@@ -1530,7 +1530,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/vilnius/2025-03-18_12-24-48_833649_dut-l2-load-latency_run1.stdout",
@@ -1552,7 +1552,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/vilnius/2025-03-18_12-24-48_885596_dut-l2-load-latency_run1.stderr",
@@ -1582,7 +1582,7 @@
                     "@id": "scripts/vilnius/2025-03-18_12-24-48_885596_dut-l2-load-latency_run1.stderr"
                 }
             ],
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -1659,7 +1659,7 @@
             "exampleOfWork": {
                 "@id": "scripts/vilnius/2025-03-18_12-04-29_756229_dut_exp_moongen-loop_run1.file"
             },
-            "keywords": [
+            "tags": [
                 "variables"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/vilnius/2025-03-18_12-04-29_756229_dut_exp_moongen-loop_run1.loop",
@@ -1684,7 +1684,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/riga/2025-03-18_12-34-56_403487_loadgen-l2-load-latency_run2.command",
@@ -1706,7 +1706,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/riga/2025-03-18_12-34-56_494795_loadgen-l2-load-latency_run2.stdout",
@@ -1728,7 +1728,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/riga/2025-03-18_12-34-56_544962_loadgen-l2-load-latency_run2.stderr",
@@ -1750,7 +1750,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "pos_run",
                 "upload"
             ],
@@ -1784,7 +1784,7 @@
                     "@id": "files/riga/histogram-l2-load-latency_run2.tar.gz.csv"
                 }
             ],
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -1861,7 +1861,7 @@
             "exampleOfWork": {
                 "@id": "scripts/riga/2025-03-18_12-04-29_756010_loadgen_exp_moongen-loop_run2.file"
             },
-            "keywords": [
+            "tags": [
                 "variables"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/riga/2025-03-18_12-04-29_756010_loadgen_exp_moongen-loop_run2.loop",
@@ -1886,7 +1886,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/vilnius/2025-03-18_12-34-58_140675_dut-l2-load-latency_run2.command",
@@ -1908,7 +1908,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/vilnius/2025-03-18_12-34-58_247260_dut-l2-load-latency_run2.stdout",
@@ -1930,7 +1930,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/vilnius/2025-03-18_12-34-58_305473_dut-l2-load-latency_run2.stderr",
@@ -1960,7 +1960,7 @@
                     "@id": "scripts/vilnius/2025-03-18_12-34-58_305473_dut-l2-load-latency_run2.stderr"
                 }
             ],
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -2037,7 +2037,7 @@
             "exampleOfWork": {
                 "@id": "scripts/vilnius/2025-03-18_12-04-29_756229_dut_exp_moongen-loop_run2.file"
             },
-            "keywords": [
+            "tags": [
                 "variables"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/vilnius/2025-03-18_12-04-29_756229_dut_exp_moongen-loop_run2.loop",
@@ -2062,7 +2062,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/riga/2025-03-18_12-45-05_895008_loadgen-l2-load-latency_run3.command",
@@ -2084,7 +2084,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/riga/2025-03-18_12-45-05_973695_loadgen-l2-load-latency_run3.stdout",
@@ -2106,7 +2106,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/riga/2025-03-18_12-45-06_020106_loadgen-l2-load-latency_run3.stderr",
@@ -2128,7 +2128,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "pos_run",
                 "upload"
             ],
@@ -2162,7 +2162,7 @@
                     "@id": "files/riga/histogram-l2-load-latency_run3.tar.gz.csv"
                 }
             ],
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -2239,7 +2239,7 @@
             "exampleOfWork": {
                 "@id": "scripts/riga/2025-03-18_12-04-29_756010_loadgen_exp_moongen-loop_run3.file"
             },
-            "keywords": [
+            "tags": [
                 "variables"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/riga/2025-03-18_12-04-29_756010_loadgen_exp_moongen-loop_run3.loop",
@@ -2264,7 +2264,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/vilnius/2025-03-18_12-45-07_581945_dut-l2-load-latency_run3.command",
@@ -2286,7 +2286,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/vilnius/2025-03-18_12-45-07_651751_dut-l2-load-latency_run3.stdout",
@@ -2308,7 +2308,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/vilnius/2025-03-18_12-45-07_706315_dut-l2-load-latency_run3.stderr",
@@ -2338,7 +2338,7 @@
                     "@id": "scripts/vilnius/2025-03-18_12-45-07_706315_dut-l2-load-latency_run3.stderr"
                 }
             ],
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -2415,7 +2415,7 @@
             "exampleOfWork": {
                 "@id": "scripts/vilnius/2025-03-18_12-04-29_756229_dut_exp_moongen-loop_run3.file"
             },
-            "keywords": [
+            "tags": [
                 "variables"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/vilnius/2025-03-18_12-04-29_756229_dut_exp_moongen-loop_run3.loop",
@@ -2433,7 +2433,7 @@
             "dateCreated": "2025-03-18_12-45-09_843261",
             "description": "Contains a variable set for the allocation",
             "encodingFormat": "application/json",
-            "keywords": [
+            "tags": [
                 "variables"
             ],
             "name": "Variable set as of 2025-03-18_12-45-09_843261",
@@ -2453,7 +2453,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/riga/2025-03-18_12-55-14_746920_loadgen-l2-load-latency-single.command",
@@ -2475,7 +2475,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/riga/2025-03-18_12-55-14_866053_loadgen-l2-load-latency-single.stdout",
@@ -2497,7 +2497,7 @@
             "executedOn": {
                 "@id": "riga"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/riga/2025-03-18_12-55-14_934330_loadgen-l2-load-latency-single.stderr",
@@ -2527,7 +2527,7 @@
                     "@id": "scripts/riga/2025-03-18_12-55-14_934330_loadgen-l2-load-latency-single.stderr"
                 }
             ],
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -2607,7 +2607,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/vilnius/2025-03-18_12-55-16_267777_dut-l2-load-latency-single.command",
@@ -2629,7 +2629,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/vilnius/2025-03-18_12-55-16_338354_dut-l2-load-latency-single.stdout",
@@ -2651,7 +2651,7 @@
             "executedOn": {
                 "@id": "vilnius"
             },
-            "keywords": [
+            "tags": [
                 "pos_run"
             ],
             "path": "/srv/testbed/results/warmuth/default/2025-03-18_12-00-36_925581/scripts/vilnius/2025-03-18_12-55-16_396140_dut-l2-load-latency-single.stderr",
@@ -2681,7 +2681,7 @@
                     "@id": "scripts/vilnius/2025-03-18_12-55-16_396140_dut-l2-load-latency-single.stderr"
                 }
             ],
-            "keywords": [
+            "tags": [
                 "command",
                 "script"
             ],
@@ -2753,7 +2753,7 @@
             "alternateName": "pos",
             "citation": "http://doi.org/10.1145/3485983.3494841",
             "description": "The pos Framework: A Methodology and Toolchain for Reproducible Network Experiments",
-            "keywords": [
+            "tags": [
                 "version"
             ],
             "name": "Plain Orchestrating Service",
@@ -2775,10 +2775,11 @@
             "affiliation": {
                 "@id": "https://ror.org/02kkvpp62"
             },
-            "keywords": [
+            "tags": [
                 "creator"
             ],
-            "name": "Kilian Warmuth"
+            "name": "Kilian Warmuth",
+            "description": "Software, Methodology"
         },
         {
             "@id": "https://ror.org/02kkvpp62",
@@ -2799,7 +2800,7 @@
             "hardware": {
                 "@id": "config/riga/hardware.json"
             },
-            "keywords": [
+            "tags": [
                 "node"
             ],
             "name": "Testbed Node riga",
@@ -2822,7 +2823,7 @@
             "hardware": {
                 "@id": "config/vilnius/hardware.json"
             },
-            "keywords": [
+            "tags": [
                 "node"
             ],
             "name": "Testbed Node vilnius",
@@ -2837,7 +2838,7 @@
             "@id": "default/debian-buster",
             "@type": "Thing",
             "description": "This image was generated automatically by mandelstamm on 2023-10-22T14:04:31+00:00 using the modules/debian-buster.sh module. Please see the GitLab project for more information: https://gitlab.lrz.de/I8-testbeds/mandelstamm/",
-            "keywords": [
+            "tags": [
                 "image"
             ],
             "name": "Booted image default/debian-buster",
@@ -2858,7 +2859,7 @@
             "image": {
                 "@id": "default/debian-buster"
             },
-            "keywords": [
+            "tags": [
                 "command",
                 "reset"
             ],
@@ -2879,7 +2880,7 @@
             "affiliation": {
                 "@id": "https://ror.org/02kkvpp62"
             },
-            "keywords": [
+            "tags": [
                 "creator"
             ],
             "name": "Eric Hauser"
@@ -2890,7 +2891,7 @@
             "affiliation": {
                 "@id": "https://ror.org/056z5bx32"
             },
-            "keywords": [
+            "tags": [
                 "creator"
             ],
             "name": "Sepp Meier"

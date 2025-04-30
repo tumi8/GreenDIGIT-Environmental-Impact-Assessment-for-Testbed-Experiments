@@ -1357,7 +1357,8 @@
             "tags": [
                 "creator"
             ],
-            "name": "Kilian Warmuth"
+            "name": "Kilian Warmuth",
+            "description": "Software, Methodology"
         },
         {
             "@id": "https://ror.org/02kkvpp62",
