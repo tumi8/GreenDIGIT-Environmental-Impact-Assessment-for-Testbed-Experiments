@@ -1,4 +1,4 @@
-# Energy Analysis & Prediction Notebooks
+# 🌱🌍♻️ Energy Analysis & Prediction Notebooks
 
 This Jupyter-based toolset supports **energy analysis, modeling, and prediction** for network experiment testbeds. It utilizes RO-Crate metadata and CSV energy logs to generate rich visualizations, create machine learning models, and simulate power draw under configurable load conditions.
 
@@ -26,7 +26,7 @@ Analyzes raw energy CSV files for multiple nodes and runs.
 > Output: Visual plots + metadata tables
 
 
-### 2. energy_model.ipynb — **CPU Energy Modeling**
+### 2. `energy_model.ipynb` — **CPU Energy Modeling**
 
 Fits regression models (linear/polynomial) to stress test results.
 
@@ -58,8 +58,9 @@ Predicts server power draw using trained models and user-defined configurations.
   - **System-wide stacked summary**
 - Fully interactive and updates live on input change.
 
-> 📁 Input: CPU model files (`cpu_model_<node>.json`)
-> 📊 Output: Live power prediction visualizations
+> Input: CPU model files (`cpu_model_<node>.json`)
+
+> Output: Live power prediction visualizations
 
 
 ## Setup & Requirements
@@ -79,7 +80,7 @@ pip install -r requirements.txt
 ```
 
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```
 results/
@@ -93,7 +94,7 @@ data/
 ```
 
 
-## 📁 Notebook Outputs
+## Notebook Outputs
 
 | Notebook         | Input                              | Output                                |
 |------------------|-------------------------------------|----------------------------------------|
