@@ -7,7 +7,7 @@ from rocrate.rocrate import ROCrate
 # === CONFIG ===
 BEARER_TOKEN = os.environ["SO_BIG_DATA"]
 GCAT_PUBLISH_URL = "https://api.d4science.org/gcat/items"
-PUBLIC_ZIP_URL = "https://sobigdata.d4science.org/group/greendigit/workspace?itemid=e668f911-9e91-4ebb-b869-e15c1b3f0776&operation=gotofolder"
+PUBLIC_ZIP_URL = "https://data.d4science.net/2WMA"
 TIMEOUT = 10
 
 
