@@ -6,8 +6,8 @@
             "@type": "Dataset",
             "dateModified": "2025-04-25T17:16:37.843064",
             "datePublished": "2025-04-25T15:04:08+00:00",
-            "name": "MoonGen example experiment",
-            "description": "Example experiment executed in SLICES-RI infrastructure. MoonGen generating load packets in different sizes and sending them to a device under test.",
+            "name": "MoonGen example experiment with energy measurement",
+            "description": "Example MoonGen experiment executed in SLICES-RI infrastructure. MoonGen generating load packets in different sizes and sending them to a device under test. Consumed energy was measured per node and stored in the energy folder.",
             "keywords": [
                 "reproducibility",
                 "energy measurements"
