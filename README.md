@@ -2,7 +2,6 @@
 
 This Jupyter-based toolset supports **energy analysis, modeling, and prediction** for network experiment testbeds. It utilizes RO-Crate metadata and CSV energy logs to generate rich visualizations, create machine learning models, and simulate power draw under configurable load conditions.
 
-
 ## Notebooks Overview
 
 ### 1. `evaluation.ipynb` — **Energy Data Visualization**
@@ -25,7 +24,6 @@ Analyzes raw energy CSV files for multiple nodes and runs.
 > Input: `energy/` folder & `ro-crate-metadata.json`
 > Output: Visual plots + metadata tables
 
-
 ### 2. `energy_model.ipynb` — **CPU Energy Modeling**
 
 Fits regression models (linear/polynomial) to stress test results.
@@ -40,7 +38,6 @@ Fits regression models (linear/polynomial) to stress test results.
 
 > Input: CPU-only energy runs (per node)
 > Output: Model file `cpu_model_<node>.json` stored in `data/cpu_models/`
-
 
 ### 3. `prediction.ipynb` — **Interactive Power Prediction**
 
@@ -62,6 +59,20 @@ Predicts server power draw using trained models and user-defined configurations.
 
 > Output: Live power prediction visualizations
 
+### 4. `api_integration.ipynb` — Publish RO-Crates to GreenDIGIT Catalogue
+
+Extracts metadata from a local RO-Crate and publishes it to the GreenDIGIT catalogue using the gCat API.
+
+#### Key Features
+
+- Extracts title, description, keywords, and authors from ro-crate-metadata.json
+- Prompts user to upload the zipped RO-Crate to their D4Science Workspace and input the public link
+- Builds and submits a package_create-compatible metadata entry
+- Automatically detects and prints the final dataset URL in the catalogue
+
+> Input: RO-Crate folder (e.g. `./result_folder_examples/...`)
+
+> Output: Published dataset visible at <<https://data.d4science.org/ctlg/GreenDIGIT/>...
 
 ## Setup & Requirements
 
@@ -79,7 +90,6 @@ source .venv_energy/bin/activate
 pip install -r requirements.txt
 ```
 
-
 ## Folder Structure
 
 ```
@@ -93,15 +103,14 @@ data/
   └── cpu_models/                     # Fitted model files for prediction
 ```
 
-
 ## Notebook Outputs
 
-| Notebook         | Input                              | Output                                |
-|------------------|-------------------------------------|----------------------------------------|
-| `evaluation`     | CSV + RO-Crate metadata             | Energy trend plots & hardware summary |
-| `energy_model`   | Energy runs from stress tests       | Fitted model `.json` files             |
-| `prediction`     | Model files + interactive inputs    | Live power prediction per scenario     |
-
+| Notebook           | Input                                | Output                                      |
+|--------------------|---------------------------------------|---------------------------------------------|
+| `evaluation`       | CSV + RO-Crate metadata               | Energy trend plots & hardware summary       |
+| `energy_model`     | Energy runs from stress tests         | Fitted model `.json` files                  |
+| `prediction`       | Model files + interactive inputs      | Live power prediction per scenario          |
+| `api_integration`  | Local RO-Crate + public ZIP URL       | Dataset published to GreenDIGIT catalogue   |
 
 ## Preventing Unwanted Git Changes in Jupyter Notebooks
 
