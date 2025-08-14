@@ -24,6 +24,10 @@ Analyzes raw energy CSV files for multiple nodes and runs.
 > Input: `energy/` folder & `ro-crate-metadata.json`
 > Output: Visual plots + metadata tables
 
+Exemplary energy consumption plot:
+
+![Evaluation — power consumption for two nodes](pics/evaluation.png)
+
 ### 2. `energy_model.ipynb` — **CPU Energy Modeling**
 
 Fits regression models (linear/polynomial) to stress test results.
@@ -38,6 +42,10 @@ Fits regression models (linear/polynomial) to stress test results.
 
 > Input: CPU-only energy runs (per node)
 > Output: Model file `cpu_model_<node>.json` stored in `data/cpu_models/`
+
+Exemplary `cpu_model.json`:
+
+![Model — example cpu_model.json](pics/model.png)
 
 ### 3. `prediction.ipynb` — **Interactive Power Prediction**
 
@@ -56,8 +64,11 @@ Predicts server power draw using trained models and user-defined configurations.
 - Fully interactive and updates live on input change.
 
 > Input: CPU model files (`cpu_model_<node>.json`)
-
 > Output: Live power prediction visualizations
+
+Exemplary prediction plot:
+
+![Prediction — interactive power prediction](pics/prediction.png)
 
 ### 4. `api_integration.ipynb` — Publish RO-Crates to GreenDIGIT Catalogue
 
