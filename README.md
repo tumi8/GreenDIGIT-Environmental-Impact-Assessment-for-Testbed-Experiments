@@ -1,6 +1,6 @@
-# 🌱🌍♻️ Energy Analysis & Prediction Notebooks
+# 🌱🌍♻️ Energy Analysis & Prediction Tools
 
-This Jupyter-based toolset supports **energy analysis, modeling, and prediction** for network experiment testbeds. It utilizes RO-Crate metadata and CSV energy logs to generate rich visualizations, create machine learning models, and simulate power draw under configurable load conditions.
+This Jupyter-based toolset supports **energy analysis, modeling, and prediction** for network experiment testbeds. It utilizes [RO-Crate](https://www.researchobject.org/ro-crate/) metadata and CSV energy logs to generate rich visualizations, create machine learning models, and simulate power draw under configurable load conditions.
 
 ## Notebooks Overview
 
@@ -78,13 +78,13 @@ Extracts metadata from a local RO-Crate and publishes it to the GreenDIGIT catal
 
 ### Dependencies
 
-```
+```bash
 pip install pandas matplotlib seaborn
 ```
 
 Or use the virtual environment setup:
 
-```
+```bash
 python3 -m venv .venv_energy
 source .venv_energy/bin/activate
 pip install -r requirements.txt
@@ -92,7 +92,7 @@ pip install -r requirements.txt
 
 ## Folder Structure
 
-```
+```text
 results/
   └── <timestamped_result_folder>/
         ├── energy/                    # CSV measurements per node
