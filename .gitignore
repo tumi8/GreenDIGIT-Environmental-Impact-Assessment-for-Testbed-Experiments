@@ -1,3 +1,5 @@
 .venv_energy/
-data/
+data/cpu_models
+data/gpu_models
 .env
+settings.json
