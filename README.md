@@ -24,6 +24,7 @@ Analyzes raw energy CSV files for multiple nodes and runs.
 - Generates formatted metadata summaries and clickable topology links.
 
 **Input:** `energy/` folder & `ro-crate-metadata.json`
+
 **Output:** Visual plots + metadata tables
 
 Exemplary energy consumption plot:
@@ -32,7 +33,7 @@ Exemplary energy consumption plot:
 
 ---
 
-### 2. `energy_model.ipynb` — **CPU & GPU Energy Modeling**
+### 2. `energy_model.ipynb` - **CPU & GPU Energy Modeling**
 
 Fits regression models (linear / polynomial) to controlled stress test results.
 
@@ -45,6 +46,7 @@ Fits regression models (linear / polynomial) to controlled stress test results.
 - Stores each trained model as a `.json` file for later prediction.
 
 **Input:** CPU-only energy runs (per node)
+
 **Output:** Model file `cpu_model_<node>.json` stored in `data/cpu_models/`
 
 Exemplary `cpu_model.json`:
@@ -64,6 +66,7 @@ GPU models are created using **gpu-burn**
 - Stores each trained model as a `.json` file for later prediction.
 
 **Input:** GPU energy runs (per node / GPU-enabled node)
+
 **Output:** Model file `gpu_model_<node>.json` stored in `data/gpu_models/`
 
 Exemplary `gpu_model.json`:
@@ -72,7 +75,7 @@ Exemplary `gpu_model.json`:
 
 ---
 
-### 3. `prediction.ipynb` — **Interactive Power Prediction (CPU + GPU + NIC)**
+### 3. `prediction.ipynb` - **Interactive Power Prediction (CPU + GPU + NIC)**
 
 Predicts server power draw using trained models and user-defined configurations.
 
@@ -105,7 +108,7 @@ Exemplary prediction plots:
 
 ---
 
-### 4. `api_integration.ipynb` — **Publish RO-Crates to GreenDIGIT Catalogue**
+### 4. `api_integration.ipynb` - **Publish RO-Crates to GreenDIGIT Catalogue**
 
 Extracts metadata from a local RO-Crate and publishes it to the GreenDIGIT catalogue using the gCat API.
 
@@ -117,6 +120,7 @@ Extracts metadata from a local RO-Crate and publishes it to the GreenDIGIT catal
 - Automatically detects and prints the final dataset URL in the catalogue
 
 **Input:** RO-Crate folder (e.g. `./result_folder_examples/...`)
+
 **Output:** Published dataset visible at
 `https://data.d4science.org/ctlg/GreenDIGIT/...`
 
