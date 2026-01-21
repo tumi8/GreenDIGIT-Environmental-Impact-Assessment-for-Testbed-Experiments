@@ -49,7 +49,7 @@ Fits regression models (linear / polynomial) to controlled stress test results.
 
 Exemplary `cpu_model.json`:
 
-![Model — example cpu_model.json](pics/cpu-model.png)
+![Model - example cpu_model.json](pics/cpu_model.png)
 
 ---
 
@@ -68,7 +68,7 @@ GPU models are created using **gpu-burn**
 
 Exemplary `gpu_model.json`:
 
-![Model — example gpu_model.json](pics/gpu-model.png)
+![Model - example gpu_model.json](pics/gpu_model.png)
 
 ---
 
