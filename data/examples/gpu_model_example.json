@@ -1,0 +1,33 @@
+{
+    "model_kind": "gpu",
+    "model_type": "linear_free_fit",
+    "linear_model": {
+        "p_base": 134.0,
+        "p_unit": 133.45599999999996,
+        "fitted_intercept": 195.28500000000003
+    },
+    "x_col": "gpu_load",
+    "timestamp": "2026-01-20T12:06:20.200692",
+    "node_name": "smartcash",
+    "source_files": {
+        "measurement_run0.csv": 0.25,
+        "measurement_run1.csv": 0.5,
+        "measurement_run2.csv": 0.75,
+        "measurement_run3.csv": 1.0
+    },
+    "cpu_info": {
+        "cores": 12,
+        "model": "Xeon Silver 4214 @ 2.20GHz"
+    },
+    "gpu_info": {
+        "count": 1,
+        "by_model": {
+            "NVIDIA TU104 [GeForce RTX 2080 SUPER]": 1
+        }
+    },
+    "polynomial_model": {
+        "a": -125.5200000000001,
+        "b": 290.35600000000005,
+        "c": 156.06
+    }
+}
