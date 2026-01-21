@@ -2,6 +2,8 @@
 
 This Jupyter-based toolset supports **energy analysis, modeling, and prediction** for network experiment testbeds. It utilizes [RO-Crate](https://www.researchobject.org/ro-crate/) metadata and CSV energy logs to generate rich visualizations, create machine learning models, and simulate power draw under configurable load conditions.
 
+---
+
 ## Notebooks Overview
 
 ### 1. `evaluation.ipynb` — **Energy Data Visualization**
@@ -21,33 +23,56 @@ Analyzes raw energy CSV files for multiple nodes and runs.
   - Per-node energy bar charts
 - Generates formatted metadata summaries and clickable topology links.
 
-> Input: `energy/` folder & `ro-crate-metadata.json`
-> Output: Visual plots + metadata tables
+**Input:** `energy/` folder & `ro-crate-metadata.json`
+**Output:** Visual plots + metadata tables
 
 Exemplary energy consumption plot:
 
 ![Evaluation — power consumption for two nodes](pics/evaluation.png)
 
-### 2. `energy_model.ipynb` — **CPU Energy Modeling**
+---
 
-Fits regression models (linear/polynomial) to stress test results.
+### 2. `energy_model.ipynb` — **CPU & GPU Energy Modeling**
 
-#### Key Features
+Fits regression models (linear / polynomial) to controlled stress test results.
 
-- Uses stress-run outputs from previous testbed executions.
+#### CPU Modeling (stress-based)
+
+- Uses CPU stress-run outputs from previous testbed executions.
 - Fits two model types:
   - **Linear (with or without idle intercept)**
   - **Polynomial (quadratic)**
 - Stores each trained model as a `.json` file for later prediction.
 
-> Input: CPU-only energy runs (per node)
-> Output: Model file `cpu_model_<node>.json` stored in `data/cpu_models/`
+**Input:** CPU-only energy runs (per node)
+**Output:** Model file `cpu_model_<node>.json` stored in `data/cpu_models/`
 
 Exemplary `cpu_model.json`:
 
-![Model — example cpu_model.json](pics/model.png)
+![Model — example cpu_model.json](pics/cpu-model.png)
 
-### 3. `prediction.ipynb` — **Interactive Power Prediction**
+---
+
+#### GPU Modeling (gpu-burn-based)
+
+GPU models are created using **gpu-burn**
+<https://github.com/wilicc/gpu-burn>
+
+- Runs `gpu_burn` in a controlled test setup to generate reproducible GPU load steps:
+  - **25% / 50% / 75% / 100% effective load**
+- Fits regression models (linear / quadratic) analogous to the CPU workflow.
+- Stores each trained model as a `.json` file for later prediction.
+
+**Input:** GPU energy runs (per node / GPU-enabled node)
+**Output:** Model file `gpu_model_<node>.json` stored in `data/gpu_models/`
+
+Exemplary `gpu_model.json`:
+
+![Model — example gpu_model.json](pics/gpu-model.png)
+
+---
+
+### 3. `prediction.ipynb` — **Interactive Power Prediction (CPU + GPU + NIC)**
 
 Predicts server power draw using trained models and user-defined configurations.
 
@@ -58,32 +83,44 @@ Predicts server power draw using trained models and user-defined configurations.
   - Choose active NICs
   - Set number of active CPU cores
   - Select target CPU load (0–100%)
+  - **(If available) Select GPU load (0–100%) using GPU model**
 - Visual prediction modes:
   - **Per-node stacked plots**
   - **System-wide stacked summary**
 - Fully interactive and updates live on input change.
 
-> Input: CPU model files (`cpu_model_<node>.json`)
-> Output: Live power prediction visualizations
+**Input:**
+- CPU model files (`cpu_model_<node>.json`)
+- Optional GPU model files (`gpu_model_<node>.json`)
 
-Exemplary prediction plot:
+**Output:** Live power prediction visualizations
+
+Exemplary prediction plots:
 
 ![Prediction — interactive power prediction](pics/prediction.png)
 
-### 4. `api_integration.ipynb` — Publish RO-Crates to GreenDIGIT Catalogue
+![Prediction — total system prediction](pics/prediction-total.png)
+
+> **Note:** Most nodes do not have a GPU installed. GPU configuration and GPU power contribution are only enabled for nodes with an available `gpu_model_<node>.json`.
+
+---
+
+### 4. `api_integration.ipynb` — **Publish RO-Crates to GreenDIGIT Catalogue**
 
 Extracts metadata from a local RO-Crate and publishes it to the GreenDIGIT catalogue using the gCat API.
 
 #### Key Features
 
-- Extracts title, description, keywords, and authors from ro-crate-metadata.json
+- Extracts title, description, keywords, and authors from `ro-crate-metadata.json`
 - Prompts user to upload the zipped RO-Crate to their D4Science Workspace and input the public link
-- Builds and submits a package_create-compatible metadata entry
+- Builds and submits a `package_create`-compatible metadata entry
 - Automatically detects and prints the final dataset URL in the catalogue
 
-> Input: RO-Crate folder (e.g. `./result_folder_examples/...`)
+**Input:** RO-Crate folder (e.g. `./result_folder_examples/...`)
+**Output:** Published dataset visible at
+`https://data.d4science.org/ctlg/GreenDIGIT/...`
 
-> Output: Published dataset visible at <<https://data.d4science.org/ctlg/GreenDIGIT/>...
+---
 
 ## Setup & Requirements
 
@@ -111,7 +148,8 @@ results/
         └── config/                   # Optional extra info (e.g., variable sets)
 
 data/
-  └── cpu_models/                     # Fitted model files for prediction
+  └── cpu_models/                     # Fitted cpu model files per node for prediction
+  └── gpu_models/                     # Fitted model files per node for prediction
 ```
 
 ## Notebook Outputs
