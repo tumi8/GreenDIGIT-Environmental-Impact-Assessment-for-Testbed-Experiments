@@ -1,0 +1,978 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "author": [
+                {
+                    "@id": "https://orcid.org/0000-0001-6328-1047"
+                }
+            ],
+            "dateCreated": "2026-01-20T12:29:40.316899",
+            "dateModified": "2026-01-20T13:00:06.887315",
+            "datePublished": "2026-01-20T11:29:40+00:00",
+            "description": "Results of an experiment executed using the pos (plain orchestrating service) controller.",
+            "hasPart": [
+                {
+                    "@id": "config/smartcash/"
+                },
+                {
+                    "@id": "scripts/smartcash/"
+                },
+                {
+                    "@id": "config/smartcash/hardware.json"
+                },
+                {
+                    "@id": "config/allocation.json"
+                },
+                {
+                    "@id": "config/smartcash/topology.pdf"
+                },
+                {
+                    "@id": "experiment_recording.json"
+                },
+                {
+                    "@id": "config/2026-01-20_12-29-41_154877_variables.json"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-32-44_815514_bootstrap.file"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-32-44_815514_bootstrap.stdout"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-32-44_815514_bootstrap.stderr"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-32-44_815514_bootstrap.status"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-29-43_268178_reset.stdout"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-29-43_268178_reset.stderr"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-29-43_268178_reset.status"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-29-43_828117_loadgen_setup_gpu-stress.file"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-29-43_828117_loadgen_setup_gpu-stress.stdout"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-29-43_828117_loadgen_setup_gpu-stress.stderr"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-29-43_828117_loadgen_setup_gpu-stress.status"
+                },
+                {
+                    "@id": "malleable_reproduction/"
+                },
+                {
+                    "@id": "CITATION.cff"
+                },
+                {
+                    "@id": "energy/smartcash/"
+                },
+                {
+                    "@id": "energy/smartcash/measurement_run0.csv"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run.file"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run0.loop"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run0.stdout"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run0.stderr"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run0.status"
+                },
+                {
+                    "@id": "energy/smartcash/measurement_run1.csv"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run1.loop"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run1.stdout"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run1.stderr"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run1.status"
+                },
+                {
+                    "@id": "energy/smartcash/measurement_run2.csv"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run2.loop"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run2.stdout"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run2.stderr"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run2.status"
+                },
+                {
+                    "@id": "energy/smartcash/measurement_run3.csv"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run3.loop"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run3.stdout"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run3.stderr"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run3.status"
+                }
+            ],
+            "keywords": [
+                "experiment",
+                "reproducibility"
+            ],
+            "name": "pos experiment"
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "http://doi.org/10.1145/3485983.3494841",
+            "@type": "CreativeWork",
+            "alternateName": "pos",
+            "citation": "http://doi.org/10.1145/3485983.3494841",
+            "description": "The pos Framework: A Methodology and Toolchain for Reproducible Network Experiments",
+            "name": "Plain Orchestrating Service",
+            "tags": [
+                "version"
+            ],
+            "version": "2.4.90"
+        },
+        {
+            "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/19",
+            "@type": "WebSite",
+            "name": "Acrobat PDF 1.5"
+        },
+        {
+            "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817",
+            "@type": "WebSite",
+            "name": "JSON Data Format"
+        },
+        {
+            "@id": "https://orcid.org/0000-0001-6328-1047",
+            "@type": "Person",
+            "affiliation": {
+                "@id": "https://ror.org/02kkvpp62"
+            },
+            "alternateName": "warmuth",
+            "familyName": "Warmuth",
+            "givenName": "Kilian",
+            "name": "Kilian Warmuth",
+            "roles": [
+                "Investigation"
+            ],
+            "tags": [
+                "author",
+                "main_author"
+            ]
+        },
+        {
+            "@id": "https://ror.org/02kkvpp62",
+            "@type": "Organization",
+            "location": "Munich, Germany",
+            "name": "Technical University of Munich",
+            "url": "https://www.tum.de"
+        },
+        {
+            "@id": "config/smartcash/",
+            "@type": "Dataset",
+            "description": "Contains detailed information about node specifc configuration like topology or hardware information",
+            "name": "Config information of smartcash",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/",
+            "@type": "Dataset",
+            "description": "Contains executed scripts and different output logs",
+            "name": "Scripts executed on testbed node smartcash"
+        },
+        {
+            "@id": "config/smartcash/hardware.json",
+            "@type": "File",
+            "contentSize": "9037",
+            "dateCreated": "2026-01-20T12:29:42.297538",
+            "description": "Contains information about CPU, GPU, RAM, motherboard, storage, and network",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Hardware of testbed node smartcash",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/config/smartcash/hardware.json",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "config/allocation.json",
+            "@type": "File",
+            "contentSize": "267",
+            "dateCreated": "2026-01-20T12:29:42.300598",
+            "description": "Allocation details including owner, result folder, and last updated timestamp.",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "warmuth_260120_122940_302478",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/config/allocation.json",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "tags": [
+                "allocation"
+            ]
+        },
+        {
+            "@id": "config/smartcash/topology.pdf",
+            "@type": "File",
+            "contentSize": "23130",
+            "dateCreated": "2026-01-20T12:29:42.303034",
+            "description": "contains network topology figure with neighboring nodes including link speed",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/19"
+            },
+            "name": "Network topology of testbed node smartcash",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/config/smartcash/topology.pdf",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "smartcash",
+            "@type": "Thing",
+            "allocation": {
+                "@id": "config/allocation.json"
+            },
+            "dateCreated": "2026-01-20T12:29:42.263063",
+            "description": "Metadata for testbed node smartcash.blockchain.net.cit.tum.de",
+            "fqdn": "smartcash.blockchain.net.cit.tum.de",
+            "hardware": {
+                "@id": "config/smartcash/hardware.json"
+            },
+            "name": "Testbed Node smartcash",
+            "tags": [
+                "node"
+            ],
+            "visualizedTopology": {
+                "@id": "config/smartcash/topology.pdf"
+            }
+        },
+        {
+            "@id": "experiment_recording.json",
+            "@type": "File",
+            "contentSize": "5950",
+            "dateCreated": "2026-01-20T12:29:40.665491",
+            "description": "Experiment recording of pos daemon requests",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Experiment recording of allocation",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/experiment_recording.json"
+        },
+        {
+            "@id": "config/2026-01-20_12-29-41_154877_variables.json",
+            "@type": "File",
+            "contentSize": "240",
+            "dateCreated": "2026-01-20_12-29-41_154877",
+            "description": "Contains a variable set for the allocation as of 2026-01-20_12-29-41_154877.",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "VariableSet",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/config/2026-01-20_12-29-41_154877_variables.json",
+            "tags": [
+                "variables"
+            ]
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-32-44_815514_bootstrap.file",
+            "@type": "File",
+            "contentSize": "10561",
+            "dateCreated": "2026-01-20T12:32:44.815572",
+            "description": "Script executed to set up the environment and install pos tools on node smartcash",
+            "executedOn": {
+                "@id": "smartcash"
+            },
+            "name": "bootstrap",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-32-44_815514_bootstrap.file",
+            "status": {
+                "@id": "scripts/smartcash/2026-01-20_12-32-44_815514_bootstrap.status"
+            },
+            "stderr": {
+                "@id": "scripts/smartcash/2026-01-20_12-32-44_815514_bootstrap.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/smartcash/2026-01-20_12-32-44_815514_bootstrap.stdout"
+            },
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "tags": [
+                "command",
+                "script"
+            ],
+            "variables": {
+                "@id": "config/2026-01-20_12-29-41_154877_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-32-44_815514_bootstrap.stdout",
+            "@type": "File",
+            "contentSize": "13057",
+            "dateCreated": "2026-01-20T12:32:44.815572",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-32-44_815514_bootstrap.file"
+            },
+            "name": "bootstrap",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-32-44_815514_bootstrap.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-32-44_815514_bootstrap.stderr",
+            "@type": "File",
+            "contentSize": "1213",
+            "dateCreated": "2026-01-20T12:32:44.815572",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-32-44_815514_bootstrap.file"
+            },
+            "name": "bootstrap",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-32-44_815514_bootstrap.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-32-44_815514_bootstrap.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-01-20T12:32:44.815572",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-32-44_815514_bootstrap.file"
+            },
+            "name": "bootstrap",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-32-44_815514_bootstrap.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "staging/debian-trixie-nvidia-cuda-toolkit@2025-09-05T08:34:48+00:00",
+            "@type": "Thing",
+            "description": "This image was generated automatically by mandelstamm on 2025-09-05T08:34:48+00:00 using the modules/debian-trixie-nvidia-cuda-toolkit.sh module. Please see the GitLab project for more information: https://gitlab.lrz.de/I8-testbeds/mandelstamm/",
+            "imageSize": "4867489792",
+            "name": "debian-trixie-nvidia-cuda-toolkit@2025-09-05T08:34:48+00:00",
+            "path": "/srv/testbed/images/staging/debian-trixie-nvidia-cuda-toolkit@2025-09-05T08:34:48+00:00",
+            "tags": [
+                "image"
+            ]
+        },
+        {
+            "@id": "2026-01-20_12-29-43_268178_reset",
+            "@type": "Thing",
+            "bootparameters": [
+                "iommu=pt"
+            ],
+            "dateCreated": "2026-01-20T12:29:43.268178",
+            "description": "Shuts down the node and restarts it from the specified live image to ensure a clean system state.",
+            "duration": "191",
+            "executedOn": {
+                "@id": "smartcash"
+            },
+            "image": {
+                "@id": "staging/debian-trixie-nvidia-cuda-toolkit@2025-09-05T08:34:48+00:00"
+            },
+            "name": "reset",
+            "status": {
+                "@id": "scripts/smartcash/2026-01-20_12-29-43_268178_reset.status"
+            },
+            "stderr": {
+                "@id": "scripts/smartcash/2026-01-20_12-29-43_268178_reset.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/smartcash/2026-01-20_12-29-43_268178_reset.stdout"
+            },
+            "tags": [
+                "command",
+                "reset"
+            ]
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-29-43_268178_reset.stdout",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-01-20T12:29:43.268178",
+            "exampleOfWork": {
+                "@id": "2026-01-20_12-29-43_268178_reset"
+            },
+            "name": "reset",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-29-43_268178_reset.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-29-43_268178_reset.stderr",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-01-20T12:29:43.268178",
+            "exampleOfWork": {
+                "@id": "2026-01-20_12-29-43_268178_reset"
+            },
+            "name": "reset",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-29-43_268178_reset.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-29-43_268178_reset.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-01-20T12:29:43.268178",
+            "exampleOfWork": {
+                "@id": "2026-01-20_12-29-43_268178_reset"
+            },
+            "name": "reset",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-29-43_268178_reset.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-29-43_828117_loadgen_setup_gpu-stress.file",
+            "@type": "File",
+            "contentSize": "231",
+            "dateCreated": "2026-01-20T12:29:43.828117",
+            "duration": "197",
+            "executedOn": {
+                "@id": "smartcash"
+            },
+            "name": "loadgen_setup_gpu-stress",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-29-43_828117_loadgen_setup_gpu-stress.file",
+            "status": {
+                "@id": "scripts/smartcash/2026-01-20_12-29-43_828117_loadgen_setup_gpu-stress.status"
+            },
+            "stderr": {
+                "@id": "scripts/smartcash/2026-01-20_12-29-43_828117_loadgen_setup_gpu-stress.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/smartcash/2026-01-20_12-29-43_828117_loadgen_setup_gpu-stress.stdout"
+            },
+            "tags": [
+                "command",
+                "script"
+            ],
+            "variables": {
+                "@id": "config/2026-01-20_12-29-41_154877_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-29-43_828117_loadgen_setup_gpu-stress.stdout",
+            "@type": "File",
+            "contentSize": "1842",
+            "dateCreated": "2026-01-20T12:29:43.828117",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-29-43_828117_loadgen_setup_gpu-stress.file"
+            },
+            "name": "loadgen_setup_gpu-stress",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-29-43_828117_loadgen_setup_gpu-stress.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-29-43_828117_loadgen_setup_gpu-stress.stderr",
+            "@type": "File",
+            "contentSize": "270",
+            "dateCreated": "2026-01-20T12:29:43.828117",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-29-43_828117_loadgen_setup_gpu-stress.file"
+            },
+            "name": "loadgen_setup_gpu-stress",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-29-43_828117_loadgen_setup_gpu-stress.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-29-43_828117_loadgen_setup_gpu-stress.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-01-20T12:29:43.828117",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-29-43_828117_loadgen_setup_gpu-stress.file"
+            },
+            "name": "loadgen_setup_gpu-stress",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-29-43_828117_loadgen_setup_gpu-stress.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "malleable_reproduction/",
+            "@type": "Dataset",
+            "description": "This folder contains a reconstructed version of the original experiment, including configuration and all necessary files, to enable the malleable reproduction of the experiment.",
+            "name": "Reconstructed experiment folder"
+        },
+        {
+            "@id": "CITATION.cff",
+            "@type": "File",
+            "contentSize": "446",
+            "dateCreated": "2026-01-20T12:33:03.712162",
+            "description": "Citation File for this RO-Crate. See: https://citation-file-format.github.io/",
+            "name": "Citation metadata file",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/CITATION.cff"
+        },
+        {
+            "@id": "energy/smartcash/",
+            "@type": "Dataset",
+            "description": "Contains measured values of the energy consumption during an experiment",
+            "name": "Energy data for testbed node smartcash"
+        },
+        {
+            "@id": "energy/smartcash/measurement_run0.csv",
+            "@type": "File",
+            "contentSize": "19258",
+            "dateCreated": "2026-01-20T12:39:48.502557",
+            "description": "Energy measurement during experiment on node smartcash. The measurement is done using a GUDE Power Unit providing current, voltage and power consumption values.",
+            "encodingFormat": "csv",
+            "executedOn": {
+                "@id": "smartcash"
+            },
+            "name": "measurement_run0.csv",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/energy/smartcash/measurement_run0.csv",
+            "tags": [
+                "energy"
+            ],
+            "variables": {
+                "@id": "config/2026-01-20_12-29-41_154877_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run.file",
+            "@type": "File",
+            "contentSize": "2662",
+            "dateCreated": "2026-01-20T12:33:02.393782",
+            "executedOn": {
+                "@id": "smartcash"
+            },
+            "loopRuns": [
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run0.loop"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run1.loop"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run2.loop"
+                },
+                {
+                    "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run3.loop"
+                }
+            ],
+            "name": "loadgen_exp_gpu-stress_run",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run.file",
+            "tags": [
+                "command",
+                "script",
+                "looped"
+            ],
+            "variables": {
+                "@id": "config/2026-01-20_12-29-41_154877_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run0.loop",
+            "@type": "File",
+            "contentSize": "28",
+            "dateCreated": "2026-01-20T12:33:02.393782",
+            "duration": "406",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run.file"
+            },
+            "executedOn": {
+                "@id": "smartcash"
+            },
+            "name": "loadgen_exp_gpu-stress_run0",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run0.loop",
+            "status": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run0.status"
+            },
+            "stderr": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run0.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run0.stdout"
+            },
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "tags": [
+                "variables",
+                "loop_run"
+            ],
+            "variables": {
+                "@id": "config/2026-01-20_12-29-41_154877_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run0.stdout",
+            "@type": "File",
+            "contentSize": "171",
+            "dateCreated": "2026-01-20T12:33:02.393782",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run0.loop"
+            },
+            "name": "loadgen_exp_gpu-stress_run0",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run0.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run0.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-01-20T12:33:02.393782",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run0.loop"
+            },
+            "name": "loadgen_exp_gpu-stress_run0",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run0.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run0.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-01-20T12:33:02.393782",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run0.loop"
+            },
+            "name": "loadgen_exp_gpu-stress_run0",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run0.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "energy/smartcash/measurement_run1.csv",
+            "@type": "File",
+            "contentSize": "19678",
+            "dateCreated": "2026-01-20T12:46:34.572055",
+            "description": "Energy measurement during experiment on node smartcash. The measurement is done using a GUDE Power Unit providing current, voltage and power consumption values.",
+            "encodingFormat": "csv",
+            "executedOn": {
+                "@id": "smartcash"
+            },
+            "name": "measurement_run1.csv",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/energy/smartcash/measurement_run1.csv",
+            "tags": [
+                "energy"
+            ],
+            "variables": {
+                "@id": "config/2026-01-20_12-29-41_154877_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run1.loop",
+            "@type": "File",
+            "contentSize": "28",
+            "dateCreated": "2026-01-20T12:33:02.393782",
+            "duration": "812",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run.file"
+            },
+            "executedOn": {
+                "@id": "smartcash"
+            },
+            "name": "loadgen_exp_gpu-stress_run1",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run1.loop",
+            "status": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run1.status"
+            },
+            "stderr": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run1.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run1.stdout"
+            },
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "tags": [
+                "variables",
+                "loop_run"
+            ],
+            "variables": {
+                "@id": "config/2026-01-20_12-29-41_154877_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run1.stdout",
+            "@type": "File",
+            "contentSize": "171",
+            "dateCreated": "2026-01-20T12:33:02.393782",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run1.loop"
+            },
+            "name": "loadgen_exp_gpu-stress_run1",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run1.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run1.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-01-20T12:33:02.393782",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run1.loop"
+            },
+            "name": "loadgen_exp_gpu-stress_run1",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run1.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run1.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-01-20T12:33:02.393782",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run1.loop"
+            },
+            "name": "loadgen_exp_gpu-stress_run1",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run1.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "energy/smartcash/measurement_run2.csv",
+            "@type": "File",
+            "contentSize": "19911",
+            "dateCreated": "2026-01-20T12:53:20.630903",
+            "description": "Energy measurement during experiment on node smartcash. The measurement is done using a GUDE Power Unit providing current, voltage and power consumption values.",
+            "encodingFormat": "csv",
+            "executedOn": {
+                "@id": "smartcash"
+            },
+            "name": "measurement_run2.csv",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/energy/smartcash/measurement_run2.csv",
+            "tags": [
+                "energy"
+            ],
+            "variables": {
+                "@id": "config/2026-01-20_12-29-41_154877_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run2.loop",
+            "@type": "File",
+            "contentSize": "28",
+            "dateCreated": "2026-01-20T12:33:02.393782",
+            "duration": "1218",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run.file"
+            },
+            "executedOn": {
+                "@id": "smartcash"
+            },
+            "name": "loadgen_exp_gpu-stress_run2",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run2.loop",
+            "status": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run2.status"
+            },
+            "stderr": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run2.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run2.stdout"
+            },
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "tags": [
+                "variables",
+                "loop_run"
+            ],
+            "variables": {
+                "@id": "config/2026-01-20_12-29-41_154877_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run2.stdout",
+            "@type": "File",
+            "contentSize": "171",
+            "dateCreated": "2026-01-20T12:33:02.393782",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run2.loop"
+            },
+            "name": "loadgen_exp_gpu-stress_run2",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run2.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run2.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-01-20T12:33:02.393782",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run2.loop"
+            },
+            "name": "loadgen_exp_gpu-stress_run2",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run2.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run2.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-01-20T12:33:02.393782",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run2.loop"
+            },
+            "name": "loadgen_exp_gpu-stress_run2",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run2.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "energy/smartcash/measurement_run3.csv",
+            "@type": "File",
+            "contentSize": "20084",
+            "dateCreated": "2026-01-20T13:00:06.730031",
+            "description": "Energy measurement during experiment on node smartcash. The measurement is done using a GUDE Power Unit providing current, voltage and power consumption values.",
+            "encodingFormat": "csv",
+            "executedOn": {
+                "@id": "smartcash"
+            },
+            "name": "measurement_run3.csv",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/energy/smartcash/measurement_run3.csv",
+            "tags": [
+                "energy"
+            ],
+            "variables": {
+                "@id": "config/2026-01-20_12-29-41_154877_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run3.loop",
+            "@type": "File",
+            "contentSize": "29",
+            "dateCreated": "2026-01-20T12:33:02.393782",
+            "duration": "1624",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run.file"
+            },
+            "executedOn": {
+                "@id": "smartcash"
+            },
+            "name": "loadgen_exp_gpu-stress_run3",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run3.loop",
+            "status": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run3.status"
+            },
+            "stderr": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run3.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run3.stdout"
+            },
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            },
+            "tags": [
+                "variables",
+                "loop_run"
+            ],
+            "variables": {
+                "@id": "config/2026-01-20_12-29-41_154877_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run3.stdout",
+            "@type": "File",
+            "contentSize": "144",
+            "dateCreated": "2026-01-20T12:33:02.393782",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run3.loop"
+            },
+            "name": "loadgen_exp_gpu-stress_run3",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run3.stdout",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run3.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-01-20T12:33:02.393782",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run3.loop"
+            },
+            "name": "loadgen_exp_gpu-stress_run3",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run3.stderr",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run3.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-01-20T12:33:02.393782",
+            "exampleOfWork": {
+                "@id": "scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run3.loop"
+            },
+            "name": "loadgen_exp_gpu-stress_run3",
+            "path": "/srv/testbed/results/warmuth/default/2026-01-20_12-29-40_302478/scripts/smartcash/2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run3.status",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        }
+    ]
+}

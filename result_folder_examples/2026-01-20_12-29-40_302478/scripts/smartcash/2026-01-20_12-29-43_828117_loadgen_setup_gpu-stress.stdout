@@ -1,0 +1,23 @@
+Get:1 http://mirror.lrz.de/debian trixie InRelease [140 kB]
+Get:2 http://security.debian.org trixie-security InRelease [43.4 kB]
+Get:3 http://mirror.lrz.de/debian trixie/main amd64 Packages [9,670 kB]
+Get:4 http://security.debian.org trixie-security/main amd64 Packages [96.1 kB]
+Get:5 http://security.debian.org trixie-security/main Translation-en [60.8 kB]
+Get:6 http://security.debian.org trixie-security/non-free-firmware amd64 Packages [544 B]
+Get:7 http://security.debian.org trixie-security/non-free-firmware Translation-en [352 B]
+Get:8 http://mirror.lrz.de/debian trixie/main Translation-en [6,484 kB]
+Get:9 http://mirror.lrz.de/debian trixie/contrib amd64 Packages [53.8 kB]
+Get:10 http://mirror.lrz.de/debian trixie/non-free-firmware amd64 Packages [6,884 B]
+Get:11 http://mirror.lrz.de/debian trixie/non-free amd64 Packages [100 kB]
+Get:12 http://mirror.lrz.de/debian trixie/non-free Translation-en [67.1 kB]
+Get:13 https://developer.download.nvidia.com/compute/cuda/repos/debian12/x86_64  InRelease [1,581 B]
+Get:14 https://developer.download.nvidia.com/compute/cuda/repos/debian12/x86_64  Packages [1,524 kB]
+Fetched 18.2 MB in 3s (6,080 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+178 packages can be upgraded. Run 'apt list --upgradable' to see them.
+g++ -O3 -Wno-unused-result -I/usr/local/cuda/include -std=c++11 -DIS_JETSON=false -c gpu_burn-drv.cpp
+PATH="/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin::." /usr/local/cuda/bin/nvcc -I/usr/local/cuda/include -arch=compute_75 -ptx compare.cu -o compare.ptx
+g++ -o gpu_burn gpu_burn-drv.o -O3 -lcuda -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib64/stubs -L/usr/local/cuda/lib -L/usr/local/cuda/lib/stubs -Wl,-rpath=/usr/local/cuda/lib64 -Wl,-rpath=/usr/local/cuda/lib -lcublas -lcudart
+setup done

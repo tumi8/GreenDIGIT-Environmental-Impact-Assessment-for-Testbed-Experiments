@@ -1,0 +1,16 @@
+{
+    "loop": {
+        "gpu_load_percent": [
+            25,
+            50,
+            75,
+            100
+        ]
+    },
+    "global": {
+        "runtime": 60,
+        "burn_mem": 90,
+        "window": 400
+    },
+    "smartcash": {}
+}

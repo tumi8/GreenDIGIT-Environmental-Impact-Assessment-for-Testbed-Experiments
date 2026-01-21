@@ -1,0 +1,4 @@
+Starting test 'gpu-burn-dutycycle' for load=25% (window=400)
+GPU ON phase: gpu_burn for 100s
+GPU OFF phase: idle for 300s
+Completed test 'gpu-burn-dutycycle' for load=25%

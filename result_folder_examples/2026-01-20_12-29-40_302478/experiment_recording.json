@@ -1,0 +1,98 @@
+[
+  {
+    "timestamp": "2026-01-20T12:29:40.665362",
+    "request": "/allocations/allocate?nodes=smartcash",
+    "data": null
+  },
+  {
+    "timestamp": "2026-01-20T12:29:41.199335",
+    "request": "/allocations/set_variables/smartcash",
+    "data": {
+      "global": true,
+      "loop": false,
+      "variables": {
+        "runtime": 60,
+        "burn_mem": 90,
+        "window": 400
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-20T12:29:41.711532",
+    "request": "/allocations/set_variables/smartcash",
+    "data": {
+      "global": false,
+      "loop": true,
+      "variables": {
+        "gpu_load_percent": [
+          25,
+          50,
+          75,
+          100
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-20T12:29:42.308212",
+    "request": "/nodes/image/smartcash",
+    "data": {
+      "image": "debian-trixie-nvidia-cuda-toolkit@2025-09-05T08:34:48+00:00",
+      "staging": true
+    }
+  },
+  {
+    "timestamp": "2026-01-20T12:29:43.270134",
+    "request": "/nodes/reset/smartcash",
+    "data": {
+      "queued": false,
+      "access_levels": [
+        "all"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-01-20T12:29:43.830683",
+    "request": "/commands/launch?nodes=smartcash",
+    "data": {
+      "logging": true,
+      "queued": true,
+      "loop_variables": false,
+      "loop_from": 0,
+      "loop_to": null,
+      "loop_only": [],
+      "type": "execfile",
+      "file": "BOxzhX>KoKVRL8-3L_w8cxiMXZ*CxEa&m8S3Ug(2AT4DI3Sn?`Aa!tLVRU5*3L_vxY;SI5AarPDAZKuOEn;<YZXj}HaBp*IbZ>Hb3S(pnXK8dGV{C73WguvDbZ~PzFE3|lbZB*AE@N+PFL!BdX=7tAXK-~bVs&zEE@x?U3JN12Lug@cXJsH{X>w&_bZ>HbAZc!NZy;xIbuD6ba&8J^WFTj7buD6ba&8I=BOpR`X>4R5bZBKDXK-~bVs&zEAarkUYzl2*Yh?-w3T0zxZy+agWps6LAY^ZDWhV*",
+      "id": "loadgen_setup_gpu-stress"
+    },
+    "cmd_ids": [
+      "2026-01-20_12-29-43_828117_loadgen_setup_gpu-stress"
+    ]
+  },
+  {
+    "timestamp": "2026-01-20T12:33:01.854316",
+    "request": "/commands/await/2026-01-20_12-29-43_828117_loadgen_setup_gpu-stress",
+    "data": null
+  },
+  {
+    "timestamp": "2026-01-20T12:33:02.405628",
+    "request": "/commands/launch?nodes=smartcash",
+    "data": {
+      "logging": true,
+      "queued": true,
+      "loop_variables": true,
+      "loop_from": 0,
+      "loop_to": null,
+      "loop_only": [],
+      "type": "execfile",
+      "file": "BOxzhX>KoKVRL8-b7gcOEoF6YAaH4LWoBV%Yzhh^AU!=jJv}`=Jv}`=Jv}`=Jv}`=Jv}`=Jv|B|AV*MDAX9X5Wpi^NRAqB?ASh38bZKvHAVDb#BOpX|ba^dfd1Gv4AZKuOUt)D~ZXi!iFHc5BAarjaWo>nAVRU66Y;R#?AZ%rJWo&aGC^9uKH83wXH7_wRFeNDpBOpCJJv}`=Jv}`=Jv}`=Jv}`=Jv}`=Jv}`N3Up<2bYE^^ZDl<oXK-~bVs&zEEo60cd1HBFY-J(}b8Ka0a9?C~a$$67Z*E^=WoB=3WnXk<b96m23JN12OmA;+Aa-GLX<=e)Wgus8bzf|6VPs!$WpZO>Zge0mAbT=3EHyAJH#ICVFfe@zXK;02Y;R#?UvOn|V`Xl1Jt8D1aBp*8XJvF>c42a9VPb4$AZKuOUu<t-WM6P)a${v~bRaD)W^!+BEo^UZa48}R3L_v#Y;R&=Y#?@Fa%o{=Y-MvGC~b9fbRc47AaHVTc4=f~WFTUBAW%<JAZKiEVqt7^DGDPXcWG{9Z+AK%bZ>NFY#?oAVRLnIWo>0{bRc(WZe(wFAaG@JAZ%}8WFTy1c4cfJD05|FZ*F9BDGDPXVs&zEUu|V=Iv`~(XD%QjIWQ$6Aa8OYA~Y~LHX<M>O+qOyAVg(mVRdYDb0BnYAR;+1B_becW*}~FbRctObS?@bAYyfLZeL}1baG)|VRC14Iv{UwbZKvHVQe5~Y++|}AZ%%CWgsFgbYmhQZ*m|aEo34JcWG{9Z+AT+Bq(rib6;m=bYFI1a%o{=Y-J#KX>Me1cOWe-W^!+BEoW?RVqt74A_@v4AXZ^)X=Gt^Wgu*CVPqh1WpZO>ZgdJ`VRL05A|z*Ubzf|6VPs!$WpZO>Zge6bX>JN2ATl+4H86ZPHGDBJFexBAI|?8mDk%yeARr)RV`y(6B1KYCPf|J{XK;02Y;R#?UvOn|V`Xl1AZ>MXbRc47Aa8DEAa7<MGBqq9H83n7H#ICEF)%P7C}(eUIv^xxaCKj7Z((F#aAk61Wo~pSA_^cNARuLUX>=el3LqdLAUit>WpiO;3JN12LvL+xb#!GQPfjmSMn)iHb#h^JX>V?GASh{WbY*8{av*bMV{dL`b14d9b#iWBZ*Dy#C@3IzX>Me1cOWVtXK;02Y;R#?UvOn|V`Xl1ATJ;>Ffbq~DGFkBa&BL5W@bGkC@3IzX>Me1cOWewVs&zEUvF+8DJcpHBOpRyb7^BBb75|2ba^0SXk}w-a|&r@AX{4?A|!WdZe(wFA|NenWgsvhU0pjMbZBL63Lqe5V`y(6B1KYCPf|J{cWG{9Z+9SVb#rteVr3vcATS^(XK!>mAS8EbZe(wFDIy9WAZ2)IbRaPbW@!ovV`Ly_aCI$Wb#iVB3L_vzZgX{VWgus8bzfq2a&91Lb0A@MVQFk(Vr*p!X=WfHAY*TBZDDR?AT4$vE-z<rbzfq2a&90#FJxtQFK%^gY#=f|CNUr;CLkdoV{dJ3VQyp~Ep{MhaCKi|b#iVXJ}+ctb}w#qY-}JhJ|;0cAarPDZVDhEWn*Y>AR<LlQcqGkAZKuOUt)D~ZXjZ5ZeenHAZ~ATAZBlMZe%VXP<3=5E-z<rbzfq2a&91QWq5QTbZ;PZXlZjGb7OL8aC9JVav)`Hb9HiMAZKuOUt)D~ZXjuMAZczOP(f5kE+PsbAZ2)IbRaPbW@!ovBOpU)Z*OyDAZKuOUt)D~ZXjcCZEaz0WFT;1bZ81kP*q<-RZ>o0LP<_NA}%jyaCKi|b#iVZ3Tb8_As|~@AT4+xA|yvpRbN6?Qchn&NlqdlU0pjMbZBL63LqdyP*q<-RZ>o0LP<_NB4==QUt)D~ZXyb1X$lG>AWv{~X>V>}Y&sxiZgX{VWgt#gNkmCOAarkUY-w(1AZ2)Ib98ecC}?GDaC0DLVQFk2Wnpq`c_43YAZ~ANEk{sQAZ~ADWpgPCX=WfHAY*TBZDDR?AT4$vZgy#8X<;pMZD}ArFJxtQFK%^gY#=f|CNVo8bZBL63Lqe5V`y(6B1KYCPf|J{Zgy#8X<;pMZD}BGZ*(ALZ*^{DE+ABBX>%ZMZ)9a4Y-wv{Y<VDPVRImEZy-)qNkmCOAV*MDATJ<fa%pyDaxNkYARuLUX>=el3T9~v3T0zxZy+L5bYXIIX>MmAbY*jNASWbrWpi|2ZeeX@Cm?2Tav*GPVPridduMQUUu<t-WM6P)a${v~bbTctD0gXYWN&vpBzt#hZe(wFeJLUe3Uh2_WpE%OBy((KWpH0)b#h^JX>V>{Vr6D;a%Eq1Wpi{Q3JN12Q*>c+bRcDJWpZbEAZ=w~b9HiMZDnqBAZBlJAarPHb0BPQZ*U-KbY*g3bZKvHASiHhZ)A02Wpf~HWnpu5a%F90ZggLAb#7Q#E@N|cDGG3Jb6;g{WpZbEUvqR}a&#aqEo^UZa3C!$W@&6?ZeeX@AR=vLVRLnIWo>0{bRr50BOp&sAaH15b7eXpa&>MXXK;02Vs&zEAZBlJAYyfLZeMS1AaiA7Z*F9BASh{OAU+^4DGF(3AX{4?A|zsUa&BL5ZXzHpXLKMiAYENMAarPDZVDhEWn*Y>AR<RlRUl7JAaH15b7eXpXK;02Vs&zEAZBlJAS8QYb#iWBZ*F~aA_^cNBOr2hZXjWEAZ%}Ma4mFUXJ=((AaHVTV`X!5AaidZP)}1JV_|L}baG*1YanTK3LqeGZ*yOAb#5RnEo^UZa3CUVZ((F-Wo|7bbY*jNUv6P-Wg;LgEg&K!M^IH?LRC^uUqVSvA|N6pVs&zEUvF+A3T13_WeOl5Wn*Y>AR<RlRUl7JAaH15b7dfNYiV$BWn>^IFmov)3T9~v3L_v%W*~QEAaitKa&%>6AZKuOUt)D~ZY&^abRctRZ*^>BAZ2c3AYyqSX>@aCY-S)~W^`q8AYyfLZeMS1AaiA7Z*F9BE(#+cQ*>!;Y%CyYW*|^cQy_9>bairWb0BGLZDnL>VRU6|c`P7zWgum4b9HiMAa`XTV{dk4av*eQWgv8EZE0?2Aa`kQWN&va3Uh2_WpE%OBw}@PZeMS1A_@v4AWud{AaH15b7eXpX=H3=AZBlJAYyfLZeMR^W*~EAV{dL`b08>bW*|NwFewUYW*}QzAR;7Ub#iWBZ)Rp9AT4KfATS_ZT{|FjXk~5+ARuL9Xm21QM^IHDPew){aA;w3WjY{fWNc+1W^ZyJBzt0Ya&BL5W@deJA_^cNb8Ka0a3CTiVs&zEUvFk+A_`_{3JN12Q*>`|AZ2c4a%XuUZDnC|b#i5GWo~o|aBp*8Wo~71XL(<9bZ>A93T0zxZy+K=Z*6dFWprg^AarGObRZ`rbY*jNUv6P-WhWqJZ*m}PZ((FTBztFYbzf|6VPs!$WpZO>ZghPmA_@",
+      "id": "loadgen_exp_gpu-stress"
+    },
+    "cmd_ids": [
+      "2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run0",
+      "2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run1",
+      "2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run2",
+      "2026-01-20_12-33-02_393782_loadgen_exp_gpu-stress_run3"
+    ]
+  }
+]

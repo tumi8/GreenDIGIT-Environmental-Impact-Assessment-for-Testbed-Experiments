@@ -1,0 +1,14 @@
+[root] [DEBUG] pos_server: http://172.16.128.1:5555
+[root] [INFO] Start bootstrapping host: 2026-01-20 12:32:46
+[root] [DEBUG] fetching allocation data from: http://172.16.128.1:5555/allocations/get/smartcash
+[root] [INFO] Finished setting up variables: 2026-01-20 12:32:46
+[root] [DEBUG] downloading postools from: http://172.16.128.1:5555/files/pos-tools-v2.tar.gz
+<stdin>:127: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.
+[root] [WARNING] Unable to install postools (via pip): Command '['pip', 'install', '--force', '.']' returned non-zero exit status 1.
+[root] [WARNING] Unable to install postools (via pip3): Command '['pip3', 'install', '--force', '.']' returned non-zero exit status 1.
+[root] [INFO] Finished setting up postools: 2026-01-20 12:32:51
+[root] [INFO] Adding FQDN smartcash.blockchain.net.cit.tum.de to /etc/hosts.
+[root] [INFO] Finished adding FQDN to /etc/hosts.
+[root] [INFO] Clearing ssh public keys from authorized keys file: 2026-01-20 12:32:51
+[root] [INFO] Adding an ssh public key to authorized keys file: 2026-01-20 12:32:51
+[root] [INFO] Adding public key
